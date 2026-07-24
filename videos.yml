@@ -1,0 +1,22 @@
+# YouTube 数学讲座视频索引
+# 每个视频一条记录，字幕文件统一放在 subtitles/ 目录下
+#
+# 字段说明:
+#   id          - YouTube 视频 ID (取自 URL 的 v= 参数)
+#   title       - 视频标题
+#   speaker     - 演讲者
+#   url         - YouTube 完整链接
+#   duration    - 时长 (HH:MM:SS)
+#   files:
+#     en_srt    - Whisper 识别的英文 SRT，可手动修正术语
+#     zh_srt    - 翻译后的双语 SRT，可手动修正翻译
+
+videos:
+  - id: svsidHyNk1k
+    title: "The Classification of Extended Topological Field Theories"
+    speaker: Jacob Lurie
+    url: https://www.youtube.com/watch?v=svsidHyNk1k
+    duration: "01:42:00"
+    files:
+      en_srt: subtitles/svsidHyNk1k.en.srt
+      zh_srt: subtitles/svsidHyNk1k.zh.srt
