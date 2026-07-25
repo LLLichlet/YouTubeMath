@@ -20,3 +20,12 @@ videos:
     files:
       en_srt: subtitles/svsidHyNk1k.en.srt
       zh_srt: subtitles/svsidHyNk1k.zh.srt
+
+  - id: 5QE__xdYtA0
+    title: "What is the K-theory of the Complex Numbers?"
+    speaker: Dustin Clausen
+    url: https://www.youtube.com/watch?v=5QE__xdYtA0
+    duration: "01:11:21"
+    files:
+      en_srt: subtitles/5QE__xdYtA0.en.srt
+      zh_srt: subtitles/5QE__xdYtA0.zh.srt

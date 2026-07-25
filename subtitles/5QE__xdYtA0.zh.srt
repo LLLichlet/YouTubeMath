@@ -1,0 +1,3119 @@
+1
+00:00:00,000 --> 00:00:19,920
+I'm going to announce that from my chest if you'll tell us about the K-theory of the
+有请下一位演讲者，他将告诉我们复数的 K 理论是什么。
+
+2
+00:00:19,920 --> 00:00:20,920
+complex numbers.
+(已与上一条字幕合并)
+
+3
+00:00:20,920 --> 00:00:21,920
+Oh, thank you.
+哦，谢谢。
+
+4
+00:00:21,920 --> 00:00:23,920
+It's very nice to be here giving a talk.
+很高兴在这里做报告。
+
+5
+00:00:24,520 --> 00:00:29,920
+So this is about the K-theory of the complex numbers, and it's a joint work with.
+这是关于复数的 K 理论，并且是一个与 Quillen 和 Suslin 的联合工作。
+
+6
+00:00:33,560 --> 00:00:37,080
+I mean, it's kind of very, there's no big theorems or anything.
+我的意思是，这没有什么大的定理或任何东西。
+
+7
+00:00:37,080 --> 00:00:40,600
+It's kind of a long term project of mine.
+这是我的一个长期项目。
+
+8
+00:00:41,240 --> 00:00:44,920
+Basically, the goal was to ask the right question and then maybe the answer.
+基本上，目标就是提出正确的问题，然后也许能找到答案。
+
+9
+00:00:45,080 --> 00:00:49,640
+Well, I don't know when the answer might come, but maybe someone.
+嗯，我不知道答案何时会来，但也许有人。
+
+10
+00:00:49,920 --> 00:00:50,920
+Yeah, we'll see.
+是的，我们拭目以待。
+
+11
+00:00:51,920 --> 00:00:55,920
+So I hope at least I'll ask the right question by the end of the talk.
+所以我希望至少在演讲结束时能提出正确的问题。
+
+12
+00:00:55,920 --> 00:01:03,920
+So let me by way of background, let me start with a reminder about algebraic K-theory
+那么让我从背景介绍开始，先提醒一下代数 K 理论。
+
+13
+00:01:03,920 --> 00:01:09,920
+before specializing to the case of the complex numbers to talk about the general situation.
+在讨论一般情况之前，让我们专门考虑复数的情况。
+
+14
+00:01:09,920 --> 00:01:11,920
+So let's say we have maybe not too general.
+假设我们有一个不是太一般的环。
+
+15
+00:01:11,920 --> 00:01:14,920
+I'm going to take a ring, but I'm going to assume it's commutative.
+我将取一个交换环，但我会假设它是交换的。
+
+16
+00:01:14,920 --> 00:01:17,920
+And there's two reasons for that.
+这有两个原因。
+
+17
+00:01:17,920 --> 00:01:21,920
+One is that later on in the talk, some kind of tensor product will be important.
+一个是稍后在演讲中会用到某种张量积。
+
+18
+00:01:21,920 --> 00:01:24,920
+And the second reason is that I don't have to say left or right.
+另一个是我不必区分左或右。
+
+19
+00:01:27,920 --> 00:01:31,920
+So then I recall that K zero bar.
+那么我回忆一下 K₀ 群。
+
+20
+00:01:32,920 --> 00:01:39,920
+You take a free abelian group on the set of finitely generated projective R modules.
+你取有限生成投射模集上的自由阿贝尔群。
+
+21
+00:01:39,920 --> 00:01:47,920
+And you want out by some relations, which says that you said this equal to this.
+你希望通过一些关系来得到，这些关系说这个等于那个。
+
+22
+00:01:47,920 --> 00:01:53,920
+There's this nice morphism from M to and direct some key.
+这里有一个从 M 到某个关键的很好的态射。
+
+23
+00:01:53,920 --> 00:01:56,920
+This is kind of the familiar thing.
+这有点像是熟悉的东西。
+
+24
+00:01:56,920 --> 00:02:01,920
+So kind of a universal place where dimension like invariants reside.
+所以这是一个维度不变量所在的通用地方。
+
+25
+00:02:01,920 --> 00:02:04,920
+But I'm not just interested in K zero.
+我不仅仅对 K₀ 感兴趣。
+
+26
+00:02:04,920 --> 00:02:07,920
+There's a reason why the zeros there, the classical algebraic K-theory.
+那些零是因为经典的代数 K 理论。
+
+27
+00:02:07,920 --> 00:02:10,920
+But I'm also interested in the higher algebraic K-theory.
+但我也对高次代数 K 理论感兴趣。
+
+28
+00:02:10,920 --> 00:02:17,920
+And the story there is that, in fact, there is a homotopy type.
+在那里，事实上存在一个同伦型。
+
+29
+00:02:17,920 --> 00:02:23,920
+And I won't give you a precise definition of this homotopy type, instead, I'll tell you the classical thing.
+我不会给你这个同伦型的精确定义，而是告诉你经典的东西。
+
+30
+00:02:23,920 --> 00:02:26,920
+And I'll just give you a specific definition of this homotopy type.
+我就给你这个同伦型的具体定义。
+
+31
+00:02:27,920 --> 00:02:31,920
+But I'm also interested in the higher algebraic K-theory.
+但我也对高次代数 K 理论感兴趣。
+
+32
+00:02:31,920 --> 00:02:33,920
+And the story varies.
+而故事各不相同。
+
+33
+00:02:33,920 --> 00:02:36,920
+In fact, there is a homotopy type.
+实际上，存在一个同伦型。
+
+34
+00:02:36,920 --> 00:02:46,600
+this classical thing. And I won't give you a precise definition of this homotopy type,
+这个经典的对象。我不会给你这个同伦型的精确定义，
+
+35
+00:02:46,600 --> 00:02:52,600
+instead I'll tell you things. For example, one thing I can tell you is that
+相反我会告诉你一些事情。例如，我可以告诉你的一件事是
+
+36
+00:02:55,560 --> 00:03:00,600
+you can think of kind of, so this homotopy type, it doesn't, so you have a set of components,
+你可以把它看作一种类型，所以这个同伦型，并不是说你有一个连通分支集，
+
+37
+00:03:00,600 --> 00:03:03,960
+the pi zero, which is the usual k zero, but then you also have this pi one,
+π₀ 是通常的 K₀，但然后你还有一种 π₁，
+
+38
+00:03:06,920 --> 00:03:19,400
+let's say you gained an understanding of k zero, so you maybe have some list of
+假设你理解了 K₀，那么你可能有一份代表所有元素或 K₀ 群中的元素的列表，
+
+39
+00:03:20,920 --> 00:03:25,560
+representatives for all, or list of elements in this k zero group, and then you give yourself
+然后你自己赋予一个有限生成投射模，
+
+40
+00:03:25,560 --> 00:03:29,960
+a finitely generated project of our module, then you have some understanding of how to equate it
+那么你就有了如何将其等同起来的理解。
+
+41
+00:03:29,960 --> 00:03:35,560
+with something in this list. But maybe there's different ways you can, using these relations,
+通过这些项目中的某个东西。但也许你可以使用这些关系，
+
+42
+00:03:35,560 --> 00:03:39,880
+move your module around to get it to equal to one of the representatives in that list.
+将你的模移动到使其等于该列表中代表之一。
+
+43
+00:03:39,880 --> 00:03:44,680
+And you can kind of, if you squint enough, you'll see yourself tracing some sort of path in some
+而你如果眯着眼睛看，你会看到自己在某种空间中绘制了一条路径，然后也许还可以在这个空间中绘制环路，这就是 π₁ 的意思。
+
+44
+00:03:44,680 --> 00:03:50,120
+space, and then maybe you can also trace loops in that space, and that's kind of what pi one would
+你可以尝试以这种方式识别 k₁，并且如果你已经识别了 k₁，那么
+
+45
+00:03:50,120 --> 00:03:55,640
+be. And you can try to identify k one in that manner, and then if you identified k one, there
+在如何识别所有环路的代表方面可能会有一些模糊性，这会给你一些类似于 k₂ 的东西。你甚至可以将这个形式化为一个定义，
+
+46
+00:03:55,640 --> 00:03:59,800
+may be some ambiguities in how you identified representatives for all the loops, and that would
+更神奇的是，在大量艰苦工作之后，有时你甚至可以在各种简单情况下计算这些 k 群。
+
+47
+00:03:59,800 --> 00:04:04,520
+give you something like k two and so on. And you can make this into a formal definition, and even
+好了，这就是我想说关于这些高次 k 群的一件事。
+
+48
+00:04:04,520 --> 00:04:09,720
+more miraculously, with lots of hard work, sometimes you can even calculate these k groups
+另一件事是，举个场的例子，所以
+
+49
+00:04:09,720 --> 00:04:17,080
+in various simple cases. Okay, and that's one thing I wanted to say about these higher k groups.
+(已与上一条字幕合并)
+
+50
+00:04:17,080 --> 00:04:22,840
+Another thing I want to say is, to give an example of fields, so
+(已与上一条字幕合并)
+
+51
+00:04:25,880 --> 00:04:32,520
+so if r equals k is a field, simplest thing, then there's something we all know that finite
+所以如果 r 等于 k 是一个域，最简单的情况，那么我们都知道有限维向量空间是由它们的维数分类的。由于我们进行了群完成，
+
+52
+00:04:32,520 --> 00:04:36,680
+dimensional vector spaces are classified by their dimension. Since we group completed,
+这就给了我们整数。k 之一是 k 交叉，所以这就是固定我们的一维向量空间时的不确定性。但事实上，固定任意维向量空间的不确定性可以归结为一维向量空间的情况，这意味着你得到 k 交叉。然后有趣的是，你可以实际上给出 k 二的一个表示，这被称为 Matsumoto 表示。现在情况稍微复杂了一些，所以在这里我隐含地使用了一些乘法结构，但好的，
+
+53
+00:04:36,680 --> 00:04:48,280
+that gives us integers. k one of k is k cross, so that's the ambiguity in fixing our one-dimensional
+所以是的，那么你取这个，好吧，这是在乘法下构成阿贝尔群，所以我实际上把它看作加法，在这种情况下它最好被看作是一个
+
+54
+00:04:48,280 --> 00:04:54,440
+vector space, but it turns out that up to some simple rules, the ambiguity in fixing an arbitrary
+(已与上一条字幕合并)
+
+55
+00:04:54,440 --> 00:05:00,600
+dimensional vector space reduces to that in the one-dimensional vector space, meaning you get k
+(已与上一条字幕合并)
+
+56
+00:05:00,600 --> 00:05:06,600
+cross. And then the fun thing is, you can actually give a presentation for k two, this is called
+(已与上一条字幕合并)
+
+57
+00:05:06,600 --> 00:05:15,160
+Matsumoto's presentation. Now it gets a bit more involved, so here implicitly I'm using some
+(已与上一条字幕合并)
+
+58
+00:05:15,800 --> 00:05:18,200
+multiplicative structure, but okay, so
+(已与上一条字幕合并)
+
+59
+00:05:18,200 --> 00:05:30,040
+so yeah, so there's you take the, okay, this is an abelian group under multiplication,
+(已与上一条字幕合并)
+
+60
+00:05:31,320 --> 00:05:35,560
+so I think of it additively actually, in this incarnation it's actually best thought of as an
+(已与上一条字幕合并)
+
+61
+00:05:35,560 --> 00:05:40,520
+additive group, and you take that tensor product with itself as abelian groups, and then you mod
+阿贝尔群，你将它作为阿贝尔群自身进行张量积运算，然后通过一种称为斯坦伯格关系的一组关系进行模
+
+62
+00:05:40,520 --> 00:05:45,320
+out by a single family of relations called the Steinberg relations, they're parameterized by
+出，这些关系由除零和一以外的字段元素参数化，这样你就得到了一些大的群，
+
+63
+00:05:45,320 --> 00:05:50,440
+elements of the field different from zero and one, and you get some big groups this way,
+而且结果就是 K₂ 的定义，一旦你继续往下走，对于一般的 k 值来说，给出明确描述会稍微复杂一点。
+
+64
+00:05:51,000 --> 00:05:56,680
+and that turns out to be what k two is, and it's a little bit more tricky to give
+好吧，这就是我想告诉你另一件事。接下来我要问你的问题或想让你思考的问题是：我们为什么要关心？
+
+65
+00:05:56,680 --> 00:06:03,880
+explicit descriptions once you go farther down the line, I mean for general k. Okay,
+我们为什么关心高次代数 K 理论？嗯，可能有很多不同的原因，但有一个可能是我最关心的，
+
+66
+00:06:03,880 --> 00:06:09,480
+that's another thing I wanted to tell you, the next thing I want to tell you or ask with that,
+也是我想提到的原因，那就是 K 理论与某种称为母题上同调的东西有很强的关系，
+
+67
+00:06:09,480 --> 00:06:19,240
+we'll ask the question together, is why do we care? Why do we care about higher algebraic k
+而母题上同调又与某些东西有很强的关系，也许
+
+68
+00:06:19,240 --> 00:06:23,560
+theory? Well probably there are many different reasons, but there's one that's maybe closest to
+(已与上一条字幕合并)
+
+69
+00:06:23,560 --> 00:06:32,600
+my heart that I certainly want to mention, which is that k theory is strongly related to something
+(已与上一条字幕合并)
+
+70
+00:06:32,600 --> 00:06:42,920
+called motivic cohomology, and motivic cohomology is strongly related to something perhaps
+(已与上一条字幕合并)
+
+71
+00:06:42,920 --> 00:06:48,680
+conjectural, which is x groups, or maybe it's equal to, I don't know, in some category of mixed motives,
+猜想，可能是 x 组群，或者等于某个混合动机范畴中的某些东西，
+
+72
+00:06:51,560 --> 00:06:55,160
+and these are realization functions,
+这些是实现函数，
+
+73
+00:06:55,800 --> 00:07:00,680
+and you get things like x in Galois representations,
+你会得到像 x 在伽罗华表示中的东西，
+
+74
+00:07:02,520 --> 00:07:05,720
+or if you're over the complex numbers, x in mixed odd structures,
+或者如果你在复数域上，x 在混合奇结构中，
+
+75
+00:07:07,960 --> 00:07:14,200
+whatever other realizations you have, and so what you can think of k theory class as kind of a,
+你其他的任何实现，所以你可以把 K 理论类看作是一种，
+
+76
+00:07:15,000 --> 00:07:18,520
+well it's motivic in the sense that it gives this universal source for
+好吧，在动机的意义上，它提供了一个这种通用来源
+
+77
+00:07:20,440 --> 00:07:23,480
+kind of data you might see here, an extension of Galois representations,
+类似于这里可能出现的数据，一种伽罗华表示的推广，
+
+78
+00:07:23,480 --> 00:07:27,880
+essentially mixed odd structures, kind of one object that gives rise to all
+基本上是混合奇结构，一个对象可以产生所有
+
+79
+00:07:28,760 --> 00:07:35,720
+those different things in different worlds. That's one aspect, but the other aspect,
+这些不同的东西在不同的世界中。这是其中一个方面，但另一个方面，
+
+80
+00:07:35,720 --> 00:07:42,760
+but that would be not worth much if it, I mean, if there weren't some reason why this
+但如果没有某种原因使得这种情况有价值，那就不值得讨论了
+
+81
+00:07:42,760 --> 00:07:46,760
+could be understood, and there is a very good reason why this can be understood, and it's that
+可以理解，而且有一个非常好的原因可以解释为什么这可以被理解，那就是
+
+82
+00:07:47,320 --> 00:08:01,000
+k theory is basically just linear algebra, I mean, it's all just about vector space,
+K 理论基本上就是线性代数，也就是说，它全部都是关于向量空间，
+
+83
+00:08:01,000 --> 00:08:04,680
+finite dimensional vector space. You take the category of finite dimensional vector
+有限维向量空间。你取有限维向量空间的范畴，对其进行一些操作，
+
+84
+00:08:04,680 --> 00:08:08,840
+spaces, you do something with it, but in the end it's just linear algebra, right, so
+但最终它只是线性代数，对吧，所以这实际上在很多方面都使得研究变得更容易。
+
+85
+00:08:10,920 --> 00:08:14,040
+that actually does make it easier to study in many ways.
+在那里，例如，为了理解这一点，你需要知道的不仅仅是线性代数，
+
+86
+00:08:17,560 --> 00:08:21,320
+There, for example, to understand this, you need to know, not just linear algebra,
+还需要知道多项式之类的东西，这些是复杂的，
+
+87
+00:08:21,320 --> 00:08:24,360
+you need to know about things like polynomials, those are complicated,
+我的意思是，是的，但不知为何它们之间存在某种关系。好吧，我在这里写了一些东西，写了 Beilinson 在里面，
+
+88
+00:08:25,640 --> 00:08:36,360
+I mean, yeah, but somehow there's a relation. Okay, I wrote some things here, I wrote Beilinson in here,
+而且哦对了，我想说的是这实际上确实行得通，也就是说，我认为我们之所以知道关于 X 和有理数上的混合带母题的事情，
+
+89
+00:08:36,360 --> 00:08:47,240
+and oh yes, and I wanted to say this actually kind of works, I mean, I think the only reason
+是因为
+
+90
+00:08:47,240 --> 00:08:53,320
+we know things about X and mixed-tape motives over the rational numbers, for example, is because
+(已与上一条字幕合并)
+
+91
+00:08:54,840 --> 00:09:00,440
+we can understand enough about general linear groups, the NGLNZ and its cohomology due to
+我们可以理解足够多关于一般线性群 NGLNZ 及其上同调，由于 Quillen 和 Borel 以及 Borel-Serre。
+
+92
+00:09:00,440 --> 00:09:07,880
+Quillen and Borel and Borel-Serre, so really, I mean, this path of going from linear algebra to
+所以实际上，从线性代数到这种高级的东西是有效的，至少在某些情况下。好的，那么回到 KFC，
+
+93
+00:09:07,880 --> 00:09:18,120
+this kind of fancy stuff actually works, at least in some cases. Okay, so well, okay, so then coming
+当我说它听起来像 KFC 时，
+
+94
+00:09:18,120 --> 00:09:22,920
+back to KFC, well, when I said that it sounded like KFC,
+好吧，我会在这儿待一个星期，所以这个，不管这是什么，它应该与，
+
+95
+00:09:29,240 --> 00:09:37,080
+all right, I'll be here all week, so this, whatever this is, it should have to do with,
+沿着这里 Beilinson 的这条线，它应该与复数上的上同调理论有关。
+
+96
+00:09:40,520 --> 00:09:46,600
+following this Beilinson line here, it should have to do with cohomology theories,
+我们感兴趣的是，在讨论复数的 K 理论时进行探测。好的，有任何问题吗？
+
+97
+00:09:48,120 --> 00:09:54,440
+over the complex numbers, that's kind of, that's what we're interested in,
+什么样的上同调理论？
+
+98
+00:09:54,440 --> 00:10:01,480
+in probing here, when we talk about the K theory of complex numbers. Okay, any questions?
+细节稍后给出。原则上是代数簇。
+
+99
+00:10:06,200 --> 00:10:07,640
+cohomology theories of what?
+复数上的上同调理论是什么？
+
+100
+00:10:10,120 --> 00:10:14,600
+Details come later. In principle algebraic varieties.
+细节能稍后再讲。原则上是代数簇。
+
+101
+00:10:19,080 --> 00:10:26,040
+But therein lies the problem, let's be segway into the next. So what is the problem? By the way,
+但问题就在这里，让我们过渡到下一个话题。那么问题是什么？顺便说一下，
+
+102
+00:10:26,040 --> 00:10:30,920
+I have a record, and the first time I gave a talk about this topic was eight years ago,
+我有录音记录，我第一次谈论这个主题是在八年前，
+
+103
+00:10:32,520 --> 00:10:37,960
+almost to the day, and so I've actually been thinking about this for a long time. So what's
+几乎是同一天，所以我实际上已经思考这个问题很长时间了。那么问题是什么？
+
+104
+00:10:37,960 --> 00:10:54,360
+the problem? So well, K theory, this construction K theory only refers to the abstract field
+所以，K理论，这种构造的K理论只指的是抽象域C。
+
+105
+00:10:54,360 --> 00:11:07,880
+C. So it's going to be the same for C as for any, so algebraically closed, characteristic zero,
+它对于C来说会和任何具有这些性质的域一样，
+
+106
+00:11:09,320 --> 00:11:15,560
+cardinality, continue. It's going to be the same for any field with those properties,
+代数闭域、特征为零、基数等等。它对于任何具有这些性质的域都会相同，
+
+107
+00:11:15,560 --> 00:11:18,600
+it doesn't know that T is a very special field that has a topology,
+它不知道T是一个非常特殊的领域，具有拓扑结构，
+
+108
+00:11:19,560 --> 00:11:28,600
+a tendon geometry and so on. So let's look at this more concretely. So
+腱性几何等。所以让我们更具体地看看。
+
+109
+00:11:31,560 --> 00:11:40,040
+I invite you to try to ponder the structure of this K2 group, or lack thereof,
+我邀请你尝试思考这个K2群的结构或缺乏结构，
+
+110
+00:11:40,840 --> 00:11:50,200
+and somehow take into account the topology of the complex numbers or something else. It's really
+并且设法考虑到复数的拓扑或其他因素。这真的
+
+111
+00:11:50,200 --> 00:11:58,360
+quite messy. I mean, so in fact, there's a theorem of Milner, which is, I'll say it loosely,
+相当混乱。也就是说，事实上有一个 Milnor 的定理，我会粗略地说，
+
+112
+00:11:59,640 --> 00:12:03,720
+you can try to put a topology on this, but in any case, the maximal house door quotient
+你可以尝试在这个结构上加上拓扑，但无论如何，最大 Hausdorff 商群
+
+113
+00:12:03,720 --> 00:12:15,000
+is zero. So this is a huge group, make no mistake, but it's all chaotic.
+是零。所以这是一个巨大的群，不要误解，但它都是混乱的。
+
+114
+00:12:20,760 --> 00:12:21,720
+So this suggests
+所以这表明
+
+115
+00:12:26,040 --> 00:12:28,200
+whatever it may mean, the completed K2
+不管它意味着什么，完成后的 K₂
+
+116
+00:12:28,200 --> 00:12:31,800
+should be zero.
+应该是零。
+
+117
+00:12:36,760 --> 00:12:40,680
+With K0 and K1, there's no problem. Z and C cross are perfectly
+对于 K₀ 和 K₁ 没有问题。Z 和 C 乘积是完全合理的，
+
+118
+00:12:40,680 --> 00:12:47,720
+reasonable things, but once you get to K2, things get a bit funny. But on the other hand,
+但一旦到了 K₂，事情就有点奇怪了。不过另一方面，
+
+119
+00:12:50,920 --> 00:12:55,560
+it can't be true that the completed, whatever it means, that the completed things should be zero
+完成后，不管它意味着什么，在所有大于一的度数上不应该都是零
+
+120
+00:12:56,360 --> 00:13:00,920
+in all degrees bigger than one, because they're a regulator maps.
+因为它们是调节子映射。
+
+121
+00:13:06,680 --> 00:13:11,400
+K2 and minus one of the complex numbers goes to C mod 2 pi i,
+K₂ 和 -1 个复数映射到 C mod 2πi，
+
+122
+00:13:14,040 --> 00:13:19,400
+regulator, regulator maps, this being for n bigger than zero.
+调节子，调节映射，这适用于 n 大于零的情况。
+
+123
+00:13:20,360 --> 00:13:27,320
+So there are, and we know these maps are non-trivial, because we map K of K2 and minus
+所以存在这些映射，并且我们知道这些映射是非平凡的，因为我们把 K(K₂) 和 -1 个 Z 映射进去，得到了一些有趣的东西。所以在奇数维度中，在正奇数维度中，
+
+124
+00:13:27,320 --> 00:13:36,760
+one of Z in there, you get something interesting. So in odd degrees, in positive odd degrees,
+应该有一些合理的内容在里面，或者一些合理的商空间，你可以这样想，它可能不是一个商空间，有些合理的内容映射到，好的，
+
+125
+00:13:36,760 --> 00:13:41,480
+there should be something reasonable inside these, or some reasonable, maybe quotient,
+有些合理的内容映射到，好的，尽管在各个群本身
+
+126
+00:13:41,480 --> 00:13:45,400
+you can think of it, it's probably not a quotient, something reasonable that is maps to, okay,
+将会有和 K₂ 情况相同的问题，会有一些狂野的东西，
+
+127
+00:13:45,720 --> 00:13:49,880
+something reasonable that is maps to, okay, even though in the individual groups themselves
+一个看起来很疯狂的非良构存储。现在我将提出这个问题的模糊形式，
+
+128
+00:13:49,880 --> 00:13:53,320
+will have the same problems as in the K2 case, there'll be some wild stuff,
+或者呈现它，让我来说这个问题的模糊形式，或者各种问题。
+
+129
+00:13:53,320 --> 00:14:01,000
+a non-house store for crazy looking things. So now I will ask the vague form of the,
+(已与上一条字幕合并)
+
+130
+00:14:01,000 --> 00:14:05,400
+or present it, let me say the vague form of the question, or a variety of questions.
+(已与上一条字幕合并)
+
+131
+00:14:05,400 --> 00:14:20,120
+So, does there exist a stated variance?
+所以，存在一个陈述方差吗？
+
+132
+00:14:26,680 --> 00:14:31,080
+The algebraic k-period of the complex numbers, capturing regulators,
+复数的代数 K-周期，捕捉调节子，
+
+133
+00:14:31,720 --> 00:14:34,600
+how to calculate it,
+如何计算它，
+
+134
+00:14:38,920 --> 00:14:42,200
+and what is the relation to cohomology theories?
+以及它与上同调理论的关系是什么？
+
+135
+00:14:46,840 --> 00:14:49,320
+And say, is there more than just regulators?
+而且，除了调节子之外还有什么？
+
+136
+00:14:53,800 --> 00:14:55,320
+Just regulators, yeah, right.
+只有调节子，是的，没错。
+
+137
+00:14:55,320 --> 00:15:08,440
+So those are the kind of questions I want to address, or no, I want to make precise, yeah.
+所以我想要解决这些问题，或者不，我要使它们更加精确，没错。
+
+138
+00:15:10,200 --> 00:15:13,480
+But are there any, do you have any questions for me right now?
+现在你有任何问题要问我吗？
+
+139
+00:15:13,480 --> 00:15:21,000
+Okay.
+好的。
+
+140
+00:15:21,000 --> 00:15:23,720
+What is the relationship to KU?
+它与 KU 有什么关系？
+
+141
+00:15:23,720 --> 00:15:30,840
+To KU? Well, KU, I mean, you know, KU is like just this part, bumped up to the next degree.
+到 KU？嗯，KU，你知道的，KU 就像是这个部分提升到了下一个同伦度。
+
+142
+00:15:30,840 --> 00:15:34,760
+Well, it's like, if you take the homotopy, if you imagine taking the homotopy type of this,
+好吧，如果你取同伦型，想象一下取这个对象的同伦类型，
+
+143
+00:15:34,760 --> 00:15:39,080
+turns into a circle, that's like a Z in the next degree, and that's, you've seen KU even,
+它会变成一个圆圈，就像在下一个同伦度中的 Z，你甚至见过 KU，
+
+144
+00:15:40,040 --> 00:15:43,560
+Does that mean the answer to is there more than just regulators will be no?
+这是否意味着关于调节子之外的答案将是否？
+
+145
+00:15:44,440 --> 00:15:51,640
+Well, I think there's an underlying false assumption behind your question,
+我认为你的问题背后有一个错误的前提，
+
+146
+00:15:51,640 --> 00:15:53,720
+which is that this completed variant will be KU.
+就是说这个完成版本将会是 KU。
+
+147
+00:15:56,680 --> 00:16:01,800
+I mean, it's definitely more refined than KU. It should map to KU, but it should be more refined.
+意思是它肯定比 KU 更精细。它应该映射到 KU，但应该是更精细的。
+
+148
+00:16:01,800 --> 00:16:06,760
+So I think, because it should see these things, and not just these things in the next degree.
+所以我认为因为它应该看到这些东西，而不仅仅是下一个同伦度中的这些东西。
+
+149
+00:16:09,720 --> 00:16:10,680
+Could I answer your question?
+我能回答你的问题吗？
+
+150
+00:16:11,560 --> 00:16:15,160
+Yes, maybe. Okay. Maybe your question will make more sense later.
+是的，也许可以。好的。也许你晚些时候会更好地理解你的问题。
+
+151
+00:16:16,120 --> 00:16:22,200
+Okay. So next topic is
+好的。下一个主题是
+
+152
+00:16:24,840 --> 00:16:29,000
+candidate, candidate complete.
+候选，候选完备。
+
+153
+00:16:34,360 --> 00:16:35,960
+So let me give the basic idea.
+所以让我给出基本的想法。
+
+154
+00:16:39,080 --> 00:16:46,440
+So well, what was K of C based on linear algebra, finite dimensional complex vector spaces.
+那么，K(C) 是基于线性代数和有限维复向量空间。
+
+155
+00:16:49,400 --> 00:16:54,520
+But this is bad because it only uses C as an abstract field.
+但这不好，因为它只将 C 当作抽象域使用。
+
+156
+00:16:59,560 --> 00:17:03,560
+And then the complete thing, which I'll switch to calling an analytic thing.
+然后是完整的部分，我将称之为分析部分。
+
+157
+00:17:03,560 --> 00:17:11,960
+So this will be based on a certain topological, let's see vector spaces.
+这个将是基于某种拓扑的向量空间。
+
+158
+00:17:34,520 --> 00:17:37,960
+Let's see if I can.
+我看看能不能说清楚。
+
+159
+00:17:50,600 --> 00:17:54,760
+Well, wait, because I'm going to pull the rug out from under your feet immediately.
+好吧，等等，因为我要立刻从你的脚下抽走地毯。
+
+160
+00:17:54,760 --> 00:18:01,320
+So, well, okay. But there's a problem with this. Interpreting this too naively leads to problems.
+所以，好吧，可以。但这个方法有问题。如果解释得太简单会导致问题。
+
+161
+00:18:02,360 --> 00:18:10,680
+Namely that categories of interesting, non-finite dimensional categories of topological vector
+换句话说，有趣的非有限维拓扑向量空间范畴往往会有岛屿-桥梁纺锤体。
+
+162
+00:18:10,680 --> 00:18:16,680
+spaces tend to have island-bridge spindle.
+所以可能有些完成后的无限直和的任何对象，并将其与原始事物相加，这并不会改变它。这就给出了关系 X 等于 1 加上 X 和 K 理论，
+
+163
+00:18:16,760 --> 00:18:24,040
+So there's maybe some completed infinite direct sum of any object and to direct sum your original
+这证明了 1 等于 0。整个东西必须匹配。希尔伯特旅馆，是的。
+
+164
+00:18:24,040 --> 00:18:28,920
+thing with that, it doesn't change it. And this gives a relation X equals one plus X and K theory,
+所以让我们看看我能否回答你的问题。
+
+165
+00:18:28,920 --> 00:18:33,960
+which proves that one equals zero. And the whole thing has to match. Hilbert Hotel, yeah.
+如果你过于天真地解释这个，你的完成后的 K-理论将会只是零，
+
+166
+00:18:34,760 --> 00:18:36,760
+So let's see if I can answer your question.
+永远完全地，完全是零。
+
+167
+00:18:36,840 --> 00:18:42,440
+So if you interpret this too naively, your completed K-theory is just going to be zero,
+所以我们需要一个新想法。
+
+168
+00:18:42,440 --> 00:18:44,920
+ever completely, just totally zero.
+幸运的是，一个新的 brilliant 想法，我一会儿就要谈到。
+
+169
+00:18:48,200 --> 00:18:50,200
+So we need a new idea.
+(已与上一条字幕合并)
+
+170
+00:18:53,880 --> 00:18:58,200
+And thankfully, a new brilliant idea, which I'm going to talk about in a moment,
+(已与上一条字幕合并)
+
+171
+00:18:58,200 --> 00:19:02,680
+is that we're going to have a new idea, and we're going to have to change it.
+这就是我们将有一个新想法，并且需要改变它。
+
+172
+00:19:03,320 --> 00:19:10,760
+And thankfully, a new brilliant idea was provided by Aleksandr Efimov. So this is
+幸运的是，Aleksandr Efimov 提供了一个新的 brilliant 灵感。所以这将
+
+173
+00:19:13,720 --> 00:19:18,680
+then to the new theory of K-theory, or extended the context of algebraic K-theory.
+适用于新的 K-理论理论，或者扩展代数 K-理论的上下文。
+
+174
+00:19:19,320 --> 00:19:24,280
+And let me explain how it goes. Without giving details, although I'll give more and more details
+而我将解释它是如何进行的。虽然在讨论我关心的例子时我会给出越来越多的细节，
+
+175
+00:19:24,280 --> 00:19:31,000
+as I discuss the example I care about. But first, I won't tell you anything, but then, yeah, okay.
+但首先，我不会告诉你任何东西，但好吧，好的。
+
+176
+00:19:33,160 --> 00:19:37,960
+I'll just set the stage. So what did we have? We had finite dimensional, I'm going to stick to C,
+我只是设置一下场景。那么我们有什么？我们有有限维的，我要坚持用 C，
+
+177
+00:19:37,960 --> 00:19:42,440
+yeah, we have finite dimensional, or no, well, finally generated projective R-modules.
+是的，我们有有限维的，不，最终生成的 R-模。
+
+178
+00:19:46,680 --> 00:19:51,160
+The first thing you have to do is change the context a little bit. You have to go
+首先你需要做的是稍微改变一下上下文。你必须进入
+
+179
+00:19:51,160 --> 00:19:56,600
+derived. This is not the most important part of it, but it's something you do have to do
+有界的。这不是最重要的部分，但这是你需要做的事情之一
+
+180
+00:19:56,600 --> 00:20:01,800
+to get the theory to work. So you replace this by perfect complexes of R-modules.
+来让理论运作起来。所以你要用 R-模的完美复形来替换它。
+
+181
+00:20:02,680 --> 00:20:08,760
+And again, there's a version of K-theory. So where K0 is a free abelian group generated by
+又有一个 K 理论的版本。所以 K₀ 是由所有完美复形生成的自由阿贝尔群。
+
+182
+00:20:08,760 --> 00:20:13,080
+all perfect complexes. And now the relation you write down is that the class of M equals the class
+而你现在写出的关系是，M 的类等于 M 加上 P 的类，如果存在余纤维序列。
+
+183
+00:20:13,080 --> 00:20:20,280
+of M plus the class of P, if there exists a co-fiber sequence. So MPM, so distinguished
+所以 MPM，即在同伦范畴中的一个区分三角配边范畴。
+
+184
+00:20:20,280 --> 00:20:30,280
+triangle broad category in the homotopy category. And it's the same as the K0 you had here. That's
+这和你这里有的 K₀ 是一样的。这通过解析你的完美复形就可以很容易看出。
+
+185
+00:20:30,280 --> 00:20:34,520
+not difficult to see just by resolving your perfect complexes. So here you're thinking of
+在这里你考虑的是普遍欧拉特征。在这里你考虑的是普遍维数。
+
+186
+00:20:34,520 --> 00:20:38,920
+universal Euler characteristics. Here you're thinking of universal dimensions. It's the same
+还是同样的事情。
+
+187
+00:20:38,920 --> 00:20:44,280
+thing. And that also extends to the hierarchy. You can also define hierarchy groups here. And
+而这也扩展到了层级结构中。你可以在这里定义层级群。
+
+188
+00:20:44,280 --> 00:20:48,840
+it also is the same as the hierarchy groups you have here. That's not as easy to see, but okay.
+也和你这里的层级群是一样的。这不太容易看出，但没关系。
+
+189
+00:20:50,040 --> 00:20:57,000
+So you want to work in this kind of derived context as a first, but then the real change comes next.
+所以你想在这个导出范畴中工作作为第一步，但真正的改变将在下一步。
+
+190
+00:20:57,960 --> 00:21:03,080
+So what, first of all, what kind of an object is this? This is well, it's some kind of
+那么首先，这种对象是什么类型的？这是一个很好的问题，它是一种
+
+191
+00:21:04,120 --> 00:21:07,800
+derived, small, small derived category. So let's say a small,
+导出，小，小导出范畴。所以让我们说一个小的，
+
+192
+00:21:10,280 --> 00:21:15,960
+and let's also say idempotent complete, stable infinity category.
+并且让我们也说幂等完备的，稳定无穷范畴。
+
+193
+00:21:15,960 --> 00:21:26,200
+And now here's the cool thing. So the Lurie showed that this world actually has an enlargement.
+而现在这里有个酷的事情。所以 Lurie 证明了这个世界实际上有一个扩展。
+
+194
+00:21:27,000 --> 00:21:33,640
+The category of these kinds of categories sits naturally inside of a larger category of other
+这些类别的范畴自然地嵌入在一个更大的其他类别的范畴中。所以小的，稳定的，幂等完备的，无穷范畴。这些类别的范畴完全忠实地位于称为可对偶化、可表现的无穷范畴之中。
+
+195
+00:21:34,600 --> 00:21:45,720
+categories. So small, stable, idempotent complete, infinity categories. The category of those sits
+所以这些都是大的范畴。它们不再有集合数量的对象了。它们由集合数量的对象生成，但它们是大的。而在这个范畴中的态射是那些余极限保持的。
+
+196
+00:21:45,720 --> 00:21:55,080
+fully faithfully inside of something called dualizable, presentable, infinity categories.
+我的手写体可能不太好，请听我的话。
+
+197
+00:21:55,080 --> 00:22:00,920
+So these are big categories. They don't have a set's worth of objects anymore. They're generated
+书写只是为了放慢我讲话的速度，余极限保持函子主义运动-余极限保持
+
+198
+00:22:00,920 --> 00:22:07,080
+under co-limits by a set's worth of objects, but they are big. And the morphisms here in this category
+(已与上一条字幕合并)
+
+199
+00:22:08,600 --> 00:22:18,360
+are those co-limit preserving. I apologize for my handwriting. Just listen to my words.
+(已与上一条字幕合并)
+
+200
+00:22:18,360 --> 00:22:25,640
+And my writing is just there to slow me down, co-limit-preserving-functorist-movement-pro-limit-preserving
+(已与上一条字幕合并)
+
+201
+00:22:28,120 --> 00:22:35,480
+right-adjoint. So that's a mouthful, right? Okay. And then what is this inclusion implemented by?
+右伴随。所以这说起来有点费劲，对吧？好的。那么这个包含是由什么实现的？
+
+202
+00:22:35,480 --> 00:22:38,840
+You have a small category, and you take its in category.
+你有一个小范畴，然后你在其中取其函子。
+
+203
+00:22:41,400 --> 00:22:45,400
+And then you have a small category, and you take its in category.
+然后你有一个小范畴，然后你在其中取其函子。
+
+204
+00:22:46,120 --> 00:22:53,800
+And you can see that this condition on morphisms on the level of in categories is just the condition
+你可以看到，在中的态射上的这个条件只是
+
+205
+00:22:53,800 --> 00:22:58,760
+that means that it corresponds to a functional level of small categories. So it commutes with
+这个条件意味着它对应于小范畴的功能层面。所以它与共余极限交换，
+
+206
+00:22:58,760 --> 00:23:02,760
+co-limits, so it's determined by what it does on C. Then the condition on the right-adjoint means
+因此由它在C上的作用决定。右伴随的条件意味着
+
+207
+00:23:02,760 --> 00:23:11,960
+that C has to go to D, such a function in C to in D. And the important condition is the dualizable,
+C必须映射到D，即从C到D中的函数。重要的是可对偶化，
+
+208
+00:23:11,960 --> 00:23:14,680
+and this means close enough to compactly generated.
+这意味着接近紧生成。
+
+209
+00:23:16,840 --> 00:23:19,640
+And I'm not going to make that precise again until later in the talk.
+我不会再次精确说明这个内容直到稍后在演讲中。
+
+210
+00:23:21,640 --> 00:23:25,560
+Suffice it to say that they're in some sense controlled by compactly generated categories,
+说白了，它们在某种意义上由紧生成范畴控制。
+
+211
+00:23:25,560 --> 00:23:30,280
+but they do not themselves have to be compactly generated. So this is what I mean by pulling a
+但它们自己不必是紧生成的。所以这就是我所说的从脚下抽走地毯。
+
+212
+00:23:30,280 --> 00:23:39,000
+rug out from under your feet, because we like being compactly generated. It's great. But now
+因为我们喜欢紧生成性，这很好。但现在
+
+213
+00:23:39,000 --> 00:23:45,400
+I really believe we have to learn to get there. It turns out there are so many interesting examples
+我真的相信我们必须学会这样做。事实证明，有如此多有趣的例子
+
+214
+00:23:45,400 --> 00:23:49,800
+to be categorized. People never even noticed before looking into this. They do all sorts of
+需要被分类。人们以前甚至都没有注意到这一点。它们为你做了各种各样的事情。
+
+215
+00:23:49,800 --> 00:23:56,200
+things for you. We have to get used to not having enough compact objects. There's another reason
+我们必须习惯没有足够的紧致对象。还有另一个原因。
+
+216
+00:23:56,200 --> 00:24:06,520
+for that. I just realized staring at Tomer in the audience. Okay. Right. Okay.
+我刚才盯着观众中的汤默。好的。对。好的。
+
+217
+00:24:09,240 --> 00:24:15,640
+So I'm claiming, I claim these things are everywhere, but I'm not going to give an example yet.
+所以我声称，我认为这些东西无处不在，但我暂时不会给出例子。
+
+218
+00:24:21,880 --> 00:24:24,040
+Is it normal that these boards are so difficult to move?
+这些白板为什么这么难移动？
+
+219
+00:24:25,000 --> 00:24:33,080
+They're actually weak.
+它们实际上是弱的。
+
+220
+00:24:46,200 --> 00:24:47,640
+I have one advantage though.
+但有一点优势。
+
+221
+00:24:54,040 --> 00:25:02,360
+Okay. Right. So I have to, I'm afraid this is all very abstract and I didn't even give you
+好的。好吧。所以我要介绍的内容确实非常抽象，甚至没有给你们举例子，但我必须向你们介绍一个变体，这个变体实际上有助于产生例子。
+
+222
+00:25:02,360 --> 00:25:08,040
+examples, but I have to introduce you also to a variant, which actually helps to produce examples.
+所以这里有一个包含张量结构的整体故事的类比。
+
+223
+00:25:09,720 --> 00:25:11,640
+So there's an analog of this whole story
+因此，在这种情况下，我需要在小的一侧放置的是具有对称幺半张量积且所有对象都可对偶化的稳定无穷范畴。
+
+224
+00:25:14,200 --> 00:25:16,280
+with tensor structure included.
+因此，再一次，如果 R 是一个交换环，perf R 是一个非常完美的例子。
+
+225
+00:25:16,280 --> 00:25:25,320
+So there I would say the thing to put on the, on the small side is small, stable infinity categories
+因此，再一次，如果 R 是一个交换环，perf R 是一个非常完美的例子。
+
+226
+00:25:26,680 --> 00:25:31,320
+with symmetric monoidal tensor product and all objects are dualizable.
+这个嵌入到了所谓的刚性可表现对称幺半无穷范畴中，即稳定无穷范畴。
+
+227
+00:25:35,720 --> 00:25:39,720
+So again, perf R, if R is a commutative ring, is a perfectly nice example.
+(已与上一条字幕合并)
+
+228
+00:25:40,600 --> 00:25:44,440
+So again, perf R, if R is a commutative ring, is a perfectly nice example.
+(已与上一条字幕合并)
+
+229
+00:25:46,920 --> 00:25:54,520
+This embeds into what are called rigid presentable symmetric monoidal
+(已与上一条字幕合并)
+
+230
+00:25:56,680 --> 00:25:59,400
+infinity categories, stable infinity categories.
+(已与上一条字幕合并)
+
+231
+00:26:00,280 --> 00:26:04,760
+These were investigated, but defined and studied by Gates, Gorey, Rosenblum.
+这些已经被研究过，但由 Gates、Gorey 和 Rosenblum 定义和研究。
+
+232
+00:26:10,520 --> 00:26:15,720
+And so it's some big tensor categories. Okay. And again, the function that implements this is C
+所以这是些大的张量范畴。好的。同样地，实现这个函数的是 C 映射到偶数 C。这里有个不错的地方，即我想要的，
+
+233
+00:26:15,720 --> 00:26:22,600
+goes to even C. And there's something nice over here, which is that here I want, you know,
+而这里的态射是保持余极限的张量函子。
+
+234
+00:26:22,600 --> 00:26:30,040
+and morphisms here are co-limit preserving tensor functions.
+一个不错的地方在于右边，它自动具有右共轭且与余极限交换。
+
+235
+00:26:32,120 --> 00:26:36,120
+And a nice thing here is that the right, it all automatically has a right to join the commutes
+所以你之前需要的那个额外性质在这里消失了。
+
+236
+00:26:36,120 --> 00:26:41,080
+and co-limits. So that weirdness that you had to have that extra property disappears here.
+你可以验证这一点，并且这里有些东西在基本像域中因为它是张量函子。所以它必须将可对偶化对象映射到可对偶化对象，
+
+237
+00:26:41,080 --> 00:26:46,440
+You can kind of, you can verify that and there's things in the essential image here because
+但假设保证了可对偶化等同于紧致。所以是的。
+
+238
+00:26:46,440 --> 00:26:50,040
+it's a tensor functor. So it has to send dualizable objects to dualizable objects,
+你能说，从这里读取，你的概念是在可对偶化下生成的吗？
+
+239
+00:26:50,040 --> 00:26:56,120
+but the hypothesis is guaranteed that dualizable is the same thing as compact. So yeah.
+(已与上一条字幕合并)
+
+240
+00:26:57,160 --> 00:27:00,600
+Can you say, reading here, your notion is generated under dualizable?
+(已与上一条字幕合并)
+
+241
+00:27:00,600 --> 00:27:03,800
+No, no, I haven't said what it means. And if not that,
+No, no, 我还没有说它的意思。而且如果不是那样，
+
+242
+00:27:04,760 --> 00:27:05,240
+it's a,
+它是，
+
+243
+00:27:12,840 --> 00:27:19,400
+so then the main theorem, so this is a fema,
+所以主要定理，所以这是一个女性，
+
+244
+00:27:22,440 --> 00:27:25,480
+k-theory naturally extends
+K 理论自然地扩展
+
+245
+00:27:29,000 --> 00:27:31,400
+to dualizable categories.
+到可对偶化的范畴。
+
+246
+00:27:34,760 --> 00:27:42,040
+Meaning the k-theory functor from this thing to spectra, whatever you like, or kn for any n,
+意味着从这个对象到谱的 K 理论函子，无论你喜欢什么，或者 kn 对于任何 n，
+
+247
+00:27:42,040 --> 00:27:47,800
+functor to a abelian groups, canonically extends to a functor from this category to the same
+函子到阿贝尔群，规范地扩展到一个函子从这个范畴到相同的
+
+248
+00:27:47,800 --> 00:27:52,680
+target. The k-theory here factors through this included, meaning there's a bigger world in which
+目标。这里的 K 理论通过这个包含因子化，意味着有一个更大的世界，在其中
+
+249
+00:27:52,680 --> 00:27:59,800
+algebraic k-theory can be defined. For things of the form in C, it's just you pass the compact
+代数 K 理论可以被定义。对于形式在 C 中的东西，它只是你传递紧
+
+250
+00:27:59,800 --> 00:28:04,440
+objects and take the normal k-theory you know there. For things not in the form in C, it's not
+对象并取你知道的正常 K 理论。对于不在形式在 C 中的东西，它不是
+
+251
+00:28:04,440 --> 00:28:18,840
+that. Nothing new and mysterious. Okay? And also, yeah, if C is rigid, then K of C gets a ring
+那么，没有新的和神秘的东西。好吧？而且，如果 C 是刚性的，那么 K(C) 获取一个环结构。
+
+252
+00:28:18,840 --> 00:28:28,440
+structure. Morally speaking, the tensor product on C induces a ring structure on K of C, just like
+按照道德观念来说，在 C 上的张量积诱导了 K(C) 的环结构，就像通常的情况一样。
+
+253
+00:28:28,440 --> 00:28:41,240
+usual. Okay, now here's a nice fact that inclusion from rigid presentable stable tensor categories
+好的，现在这里有一个很好的事实：从刚性可表现稳定张量范畴到所有可表现稳定张量范畴的包含具有一个右伴随。
+
+254
+00:28:43,400 --> 00:28:51,800
+into all presentable stable tensor categories has a right of choice.
+刚性的过程。所以你现在看到这些事物确实无处不在。你取任意一个
+
+255
+00:28:58,440 --> 00:29:04,040
+Oh, the rigidification. So now you see that these things really are everywhere. You take any
+张量范畴，你用这个方法处理它，你会得到一个刚性的东西，并且令人惊讶的是，
+
+256
+00:29:04,920 --> 00:29:11,960
+tensor category you happen to run across, you hit it with this, you get something rigid, and surprisingly
+它很少是紧生成的。即使从一个非常熟悉的开始，你也能够产生一些真正新的东西。
+
+257
+00:29:11,960 --> 00:29:16,120
+enough, it's very rarely compactly generated. You produce something genuinely new, even if you start
+即使你开始使用一个实际上已经紧生成但不是刚性的。应用刚性化过程，你会得到一个新的范畴是刚性的并且不是紧生成的。
+
+258
+00:29:16,120 --> 00:29:24,280
+with a very familiar one of these. Even if you start with one that's actually compactly generated,
+所以事实上，这些事物无处不在，并且它们是非常、非常普遍的。
+
+259
+00:29:24,280 --> 00:29:30,600
+but not rigid. You apply rigidification, you get a new category is rigid and not compactly generated.
+(已与上一条字幕合并)
+
+260
+00:29:31,320 --> 00:29:36,120
+So really, these things are everywhere, and they're extremely, yeah, well, yeah.
+(已与上一条字幕合并)
+
+261
+00:29:38,120 --> 00:29:46,520
+And so if the unit in C is compact, then even better, this C ridge is actually sitting
+而且如果 C 的单位是紧的，那么更好，这个 C 岭实际上确实嵌入在 C 中。
+
+262
+00:29:46,840 --> 00:29:55,240
+faithfully inside C. And how to think about this, it's a C ridge is an improved version
+思考这一点的方式是，C 岭是一个可对偶化对象集合的改进版本。
+
+263
+00:29:59,800 --> 00:30:03,800
+of taking into the set of dualizable objects.
+在这种情况下，当单位是紧的。它比那更大，并且不是紧生成的。
+
+264
+00:30:07,640 --> 00:30:13,640
+In this case, where the unit is compact. It's bigger than that, and it's not compactly generated.
+好的，关于这一点我会说更多，在我讲到关心的例子时，我会详细解释它是如何工作的，
+
+265
+00:30:13,640 --> 00:30:21,320
+Okay, again, I will say more about this and how it actually works when we when I get to the example
+但我不想过多讨论不在这次演讲重点中的例子，因为我希望尽快讲完一些内容。
+
+266
+00:30:21,320 --> 00:30:25,240
+I care about, but I don't want to say too much about examples that aren't in the focus of the
+好的，那么我们现在要做什么？我仍然在这个部分候选完备 K(C)。这个表述准确吗？
+
+267
+00:30:25,240 --> 00:30:32,360
+talk because I want to get through some things. Okay, so now what are we going to do? I'm still
+我不知道我的手机是否没电了。它快了几分钟。是 501。谢谢。
+
+268
+00:30:32,360 --> 00:30:41,720
+in this section candidate complete K of C. Is this block accurate? Could I ask?
+已经超过一个小时了。是的，是的，是的。
+
+269
+00:30:42,440 --> 00:30:48,280
+I don't know if my phone is out of batteries. It's a couple of minutes fast. It's 501. Thank you.
+我在模 60 下。是的。
+
+270
+00:30:55,240 --> 00:30:58,360
+It's an hour plus. Yeah, yeah, yeah. I'm in modulo 60. Yeah.
+(已与上一条字幕合并)
+
+271
+00:31:03,800 --> 00:31:10,200
+Okay, so what we're going to do is we're going to produce instead of thinking about trying to
+好的，我们要做的不是试图构造一个小范畴并考虑特殊情况，而是要构造一个大范畴，并以新的意义来理解这个范畴。我们不需要担心是否能产生一个可对偶化的对象，只要你能生成一个张量范畴，我们可以在最后使其刚性化。现在来看一下这里的情况。
+
+272
+00:31:10,200 --> 00:31:14,040
+produce a small category and taking cases that we're going to produce a large category,
+这里有一个实验事实。
+
+273
+00:31:14,040 --> 00:31:19,080
+take the cater in this new sense. We don't even have to worry about producing a dualizable one
+如果 C 是任何合理的，我不知道，合理。我的意思是，这并不是一个数学事实，对吧？
+
+274
+00:31:19,080 --> 00:31:23,720
+as long as you produce a tensor category, we can just rigidify it at the end. Now here's a
+这是一个可以表现的稳定无穷范畴，并且具有张量积的对象
+
+275
+00:31:25,240 --> 00:31:29,400
+here's it. So here's a experimental fact.
+似乎像某种完备拓扑 C 向量空间。好的，你可以有很多选择来定义什么是完备拓扑 C 向量空间。
+
+276
+00:31:29,400 --> 00:31:44,440
+If C is any reasonable, I don't know, reasonable. I mean, this is not a mathematical fact, right?
+(已与上一条字幕合并)
+
+277
+00:31:44,440 --> 00:31:51,560
+This is if this is any presentable stable infinity category with tensor product
+(已与上一条字幕合并)
+
+278
+00:31:55,160 --> 00:31:55,880
+whose objects
+(已与上一条字幕合并)
+
+279
+00:31:55,880 --> 00:32:04,680
+feel like some kind of complete topological C vector spaces. Okay, there's millions of options
+(已与上一条字幕合并)
+
+280
+00:32:04,680 --> 00:32:09,240
+for what you could mean by a topological C vector complete topological C vector space
+(已与上一条字幕合并)
+
+281
+00:32:09,240 --> 00:32:16,680
+based on Banach spaces, whatever, Hilbert spaces, whatever you want. But a fact, an empirical fact
+基于 Banach 空间，或者 Hilbert 空间，随便你选哪个。但一个事实是，
+
+282
+00:32:16,680 --> 00:32:23,400
+is that whatever choice you make, once you rigidify, you always get the same thing.
+一旦你固定选择后，无论你做怎样的选择，最终总是得到同样的东西。
+
+283
+00:32:24,360 --> 00:32:28,680
+You always get the same thing. So you get something truly canonical.
+你总是得到同样的东西。所以你得到了一个真正规范的选择。
+
+284
+00:32:34,920 --> 00:32:38,440
+So all of the subtlety of infinite dimensional topological vector spaces,
+所以无穷维拓扑向量空间的所有微妙之处，
+
+285
+00:32:39,000 --> 00:32:41,400
+different kinds of convexity properties, whether you have
+不同类型的凸性性质，比如你是否拥有
+
+286
+00:32:42,840 --> 00:32:47,720
+Banach, you know, open balls fundamental or compact set, the kind of dual thing where compact
+Banach 空间中的开球基本性质或紧集，以及紧集作为基本对象的对偶性质。一旦你能构造出编码它们的范畴，
+
+287
+00:32:47,720 --> 00:32:51,880
+compact sets are fundamental. Once you can make categories that encode any of them,
+但一旦你固定选择后，总是得到完全相同的东西。这就是我要宣传的主要观点：
+
+288
+00:32:51,880 --> 00:32:55,560
+but once you rigidify, you always get the exact same thing. This is the main thing
+实际上确实有一个规范的选择适用于
+
+289
+00:32:55,560 --> 00:32:58,360
+I want to advertise is there really is a canonical choice for
+线性代数和无穷维拓扑向量空间。
+
+290
+00:32:59,240 --> 00:33:03,000
+linear algebra and infinite dimensions topological vector spaces.
+(已与上一条字幕合并)
+
+291
+00:33:03,880 --> 00:33:06,920
+So think of this as some version of the phenomenon that the
+所以可以把这个看作有限维向量空间具有唯一拓扑的一种现象。
+
+292
+00:33:06,920 --> 00:33:09,320
+finite dimensional vector space has a unique topology.
+有限维向量空间有一个独特的拓扑结构。当然，这听起来不错。是的，也许从现在开始我会这样认为。
+
+293
+00:33:10,680 --> 00:33:15,800
+Sure, that sounds good. Yeah, maybe I will from now on.
+我是实验者，你可能是理论家。
+
+294
+00:33:15,800 --> 00:33:21,080
+So I'm the experimentalist, maybe you're theoretical.
+是的。我是实验者，也许你是理论家。
+
+295
+00:33:24,840 --> 00:33:33,640
+Right. So I won't, I will tell you my, or our, I should say preferred way of.
+那么我不会改变这个说法，我会告诉你我们更喜欢的方式。
+
+296
+00:33:35,960 --> 00:33:39,960
+So this will be that you have everything that's derived. This is including experimental
+所以这里包括所有导出的内容。这不仅包括实验观察，还包括如何解决一种编织方式的事实。
+
+297
+00:33:39,960 --> 00:33:44,440
+observations about how you resolve one kind of weave. Like this is include facts like how
+比如你如何通过紧致型对象来解决巴拿赫空间的问题，以及如何通过巴拿赫空间来解决紧致型对象的问题。它包含了所有的这些解析因素。
+
+298
+00:33:44,440 --> 00:33:48,120
+you would resolve like Banach space by compact type things, how you resolve a compact type
+是的。
+
+299
+00:33:48,120 --> 00:33:50,600
+thing by balance. It has all these resolution factors. Yeah.
+这与直接看到它无关，但同时也包括了这些解析因素。
+
+300
+00:33:53,560 --> 00:33:56,440
+It does nothing to do with seeing it, but also, well,
+但这与直接观察它无关，也包括了这些解析因素。
+
+301
+00:33:59,720 --> 00:34:02,120
+I might get to non-archimedean stuff at the end of the talk.
+我可能会在演讲的最后讲一些非阿基米德的内容。
+
+302
+00:34:03,560 --> 00:34:07,080
+It turns out in the non-archimedean world, there's actually maybe two choices,
+事实上，在非阿基米德世界里，其实有两种选择，
+
+303
+00:34:09,000 --> 00:34:12,520
+but you're happy. There's a choice in the non-archimedean world that doesn't exist
+但你很高兴。非阿基米德世界中有一种不存在于阿基米德世界的选项，并且它是更简单的那个。好的。其他问题。
+
+304
+00:34:12,520 --> 00:34:19,880
+in the Archimedean world and it's the easier one. Okay. Other questions.
+好的。哦，当然可以。是的。我即将解释这是极其通用的。
+
+305
+00:34:22,920 --> 00:34:29,720
+Okay. Oh, sure. Yeah. I'm about to explain that it's extremely general.
+是的。所以，所以我将给你一个我们首选的大 C 10 张量，
+
+306
+00:34:42,520 --> 00:34:50,760
+Yeah. So, so what's, so I'll give you one, our, our preferred C 10 big C tensor,
+我们可以用它来刚化。所以，也许我也借此机会宣传一下
+
+307
+00:34:50,760 --> 00:34:56,200
+which we can rigidify. So, yeah, maybe I also take the opportunity to advertise that
+彼得和我现在正在教授一门关于分析堆栈的课程，在这门课中我们提出了新的
+
+308
+00:34:56,200 --> 00:35:01,480
+Peter and I are currently teaching a class on, on analytic stacks, where we propose new
+分析几何的基础，并且它们正在被发布在 IHS 的 YouTube 网站上等等。
+
+309
+00:35:01,480 --> 00:35:08,200
+foundations for analytic geometry. And they're being posted on IHS's YouTube site and so on.
+现在我将部分联系到那门课程。所以如果让我们，嗯，有，
+
+310
+00:35:08,920 --> 00:35:14,360
+And now I'll make contact with that course to some extent. So if let's, well, there's,
+我们现在开始讲一些凝聚数学的内容。
+
+311
+00:35:14,360 --> 00:35:17,640
+there's many different things you can start with as your familiar input data,
+你可以从许多不同的熟悉输入数据开始，
+
+312
+00:35:17,640 --> 00:35:22,840
+but let me just take an arbitrary bond offering with the norm specified.
+但让我就取一个具有范数指定的任意债券发行。
+
+313
+00:35:23,960 --> 00:35:27,800
+And from such a thing, you can produce an analytic stack in our sense. So
+从这样的东西，你可以生成我们在意义上的分析堆栈。所以
+
+314
+00:35:28,760 --> 00:35:35,880
+liquid, so-called liquid analytic stack associated to this. And every such thing has a derived
+液态，所谓的液态分析堆栈与此相关。并且每个这样的东西都有一个导出
+
+315
+00:35:35,880 --> 00:35:47,960
+category. And it's one of these C tensor guys. But it's not rigid, but you can then rigid rigidify
+范畴。它是一个 C 张量家伙。但它不是刚性的，但你可以在其中进行刚化。
+
+316
+00:35:47,960 --> 00:35:57,720
+it. And then you get something that I claim that all the steps are canonical, but certainly
+然后你会得到一些我声称所有步骤都是规范的，但当然
+
+317
+00:35:57,720 --> 00:36:03,880
+this composition of steps is, is canonical. You might bicker a bit about how we set the
+这些步骤的组合是规范的。你可能会对我们的基础设置有些争论，
+
+318
+00:36:03,880 --> 00:36:07,000
+foundations up, but it doesn't mean the composition is certainly canonical.
+但这并不意味着组合一定是规范的。
+
+319
+00:36:08,760 --> 00:36:14,600
+And so if, if this is a trivial norm, so basically if you're thinking of this as being discrete,
+因此，如果这是一个平凡范数，也就是说，如果你认为这是离散的，
+
+320
+00:36:14,600 --> 00:36:21,800
+then what is this? It's D, R, truth, liquid, bridge. It's just the usual
+那么这又是什么？它是 D, R, 真实, 液态, 桥。它只是通常的
+
+321
+00:36:22,440 --> 00:36:29,880
+big derived category of R. It's compactly generated and this K theory is the usual K theory of R.
+大有界导出范畴 of R。它是紧生成的，这个 K 理论就是通常的 R 的 K 理论。
+
+322
+00:36:30,440 --> 00:36:33,960
+But now when we fit it into a machine where we don't need to plug in a discrete ring,
+但现在当我们把它放入一个机器中，我们不需要插入离散环，
+
+323
+00:36:33,960 --> 00:36:39,560
+we can plug in a bond offering, for example, and we naturally get something where we can take K3.
+我们可以插入债券发行，例如，然后自然得到我们可以取 K3 的东西。
+
+324
+00:36:40,200 --> 00:36:53,880
+Okay. Now let me say, let me give you a description of what, so when R
+好的。现在让我这么说，让我给你描述一下，所以当 R
+
+325
+00:36:53,880 --> 00:37:01,160
+is C with the usual absolute value, usual Archimedean absolute value. So here is a description.
+是复数 C 并且通常带有绝对值时，通常是阿基米德绝对值。所以这里有一个描述。
+
+326
+00:37:07,080 --> 00:37:12,440
+Can I ask a question? Just a sec. The resulting rigid category. Yes.
+我可以问一个问题吗？稍等一下。结果的刚性范畴。是的。
+
+327
+00:37:13,080 --> 00:37:17,000
+You don't really mean that every step is canonical. It still depends on P, right?
+你其实并不意味着每一步都是规范的。它仍然依赖于 P，对吧？
+
+328
+00:37:17,000 --> 00:37:20,040
+P? Like this. No, no, no, no, no. P is in the norm.
+P？就像这样。不，不，不，不，不。P 在范数中。
+
+329
+00:37:20,840 --> 00:37:25,480
+Oh, okay.
+哦，明白了。
+
+330
+00:37:28,440 --> 00:37:33,320
+Like there's different norms you can put on R. There's the usual one and then there's the
+就像是你可以给 R 放上不同的范数。有一个通常的范数，然后还有
+
+331
+00:37:33,320 --> 00:37:40,680
+Pth power for any P between zero and one. It matches up. Yeah, it's cool. Yeah. Okay.
+任意 P 在零和一之间的 P 次幂。它匹配上了。是的，很好。好的。
+
+332
+00:37:43,080 --> 00:37:46,200
+Right. So here is a description of the resulting rigid category.
+好的。所以这里是对最终刚性范畴的一个描述。
+
+333
+00:37:47,080 --> 00:37:52,200
+Right. So I'm not going to, so this thing lives inside there, but because that's not familiar,
+好的。所以我不会详细说明，这个东西存在于那里，但因为那不熟悉，
+
+334
+00:37:52,200 --> 00:37:56,280
+I'm going to instead embed it in something more familiar to describe this category and something
+我会把它嵌入到一个更熟悉的环境中来描述这个范畴，并基于 Hilbert 空间，我认为我们都可以同意这是一个相当不错的东西。
+
+335
+00:37:56,280 --> 00:38:00,360
+based on Hilbert spaces, which I think we can all agree on kind of nice, nice enough things.
+所以，我将称这个为最终的刚性范畴。我会称之为
+
+336
+00:38:00,920 --> 00:38:05,800
+So, and I'm going to call this the resulting rigid category. I'll call it
+复数的分析驱动范畴。所以
+
+337
+00:38:05,800 --> 00:38:08,680
+analytic drive category of the complex numbers. So
+这样，你可以把它放进去。我会写成一个有界导出范畴的内范畴
+
+338
+00:38:08,680 --> 00:38:19,000
+so this, so you can put it inside. I'll write it as an in category
+的形式，基于可分 Hilbert 空间。让我们说可分 Hilbert 空间。
+
+339
+00:38:20,280 --> 00:38:26,040
+of a bounded derived category of Hilbert spaces. Let's say separable Hilbert spaces.
+而在这里，所有短正合序列都分裂了。这就像一个精确
+
+340
+00:38:29,160 --> 00:38:31,800
+And here all short exact sequence of split. This is like an exact
+序列一样。
+
+341
+00:38:33,400 --> 00:38:38,120
+or split exact split exact category, if you like.
+或分裂精确的分裂精确范畴，如果你喜欢。
+
+342
+00:38:38,680 --> 00:38:43,560
+So you just, it's basically just a, you take finite chain complexes of Hilbert spaces,
+所以你只需要，基本上就是，你取有限链复形的 Hilbert 空间，
+
+343
+00:38:43,560 --> 00:38:48,120
+and then you pass to the chain homotopy category, some infinity category version of that.
+然后你转移到链同伦范畴，某种无穷范畴版本的那一个。
+
+344
+00:38:50,280 --> 00:38:53,000
+And then you make it big. So you pretend like it's derived category
+然后你把它扩大。所以你假装它是导出范畴
+
+345
+00:38:53,880 --> 00:38:56,440
+and so on. So then it's, it's just a full subcategory of that.
+诸如此类。然后它就只是那个范畴的一个全子范畴。
+
+346
+00:38:57,720 --> 00:39:01,480
+And which full subcategory is it? It's the one that's generated under co-limits.
+那么这个全子范畴是哪个？是由所谓的强核对偶 Fréchet 空间生成的。
+
+347
+00:39:01,480 --> 00:39:07,880
+All right. And now I have to specify for you a nice class of more or less topological vector spaces.
+好了。现在我必须为你指定一个不错的拓扑向量空间类别。
+
+348
+00:39:07,880 --> 00:39:18,760
+So, well, I lost my others.
+所以，好吧，我弄丢了其他的。
+
+349
+00:39:31,640 --> 00:39:52,760
+Okay. Generated under co-limits by what are called the strongly nuclear dual Frechet spaces.
+好吧。由所谓的强核对偶 Fréchet 空间生成的余极限。
+
+350
+00:39:52,760 --> 00:40:07,240
+What are these? These are co-limits of Hilbert spaces, sequential co-limits,
+这些是什么？这些是 Hilbert 空间的余极限，序列余极限。
+
+351
+00:40:07,240 --> 00:40:13,240
+let's say injective maps. It doesn't really matter where the transition maps. So each
+让我们说是单射。转换映射的具体位置并不重要。所以每个
+
+352
+00:40:13,720 --> 00:40:19,720
+each and each and plus one is a compact operator
+每个和每个加一是紧算子
+
+353
+00:40:22,760 --> 00:40:29,560
+whose singular values decay rapidly.
+它们的奇异值衰减得非常快。
+
+354
+00:40:35,640 --> 00:40:40,280
+Okay. That's the canonical class of topological vector spaces. So
+好的。这就是拓扑向量空间的标准类。所以
+
+355
+00:40:41,240 --> 00:40:46,120
+they're faster than any inverse polynomial or slower or faster.
+他们比任何逆多项式更快或更慢或更快。
+
+356
+00:40:50,200 --> 00:40:54,120
+Yeah. So here's a non-example.
+是的。这是一个非例子。
+
+357
+00:40:56,600 --> 00:41:00,520
+So there are, there are co-limits of Hilbert spaces. So there are things that feel like
+所以在某种意义上，有 Hilbert 空间的余极限。有一些东西感觉像是
+
+358
+00:41:01,720 --> 00:41:07,480
+in that regard, they feel like say distributions on a, on a manifold, but a non-example is the
+在这种意义上，它们感觉像是流形上的分布，但一个非例子是
+
+359
+00:41:07,480 --> 00:41:13,400
+usual space of distributions on any compact manifold, for example, S1, which is the space of
+通常任何紧流形上的分布空间，例如 S1，它是缓慢增加序列的空间。
+
+360
+00:41:14,600 --> 00:41:16,120
+slowly increasing sequences.
+慢慢增加的序列空间。
+
+361
+00:41:20,680 --> 00:41:25,800
+Again, slower than any polynomial, it's cool to rapid decay. So there's a funny thing. I mean,
+再慢于任何多项式，它具有快速衰减性质。所以有一个有趣的现象。也就是说，
+
+362
+00:41:25,800 --> 00:41:31,400
+this is a, this is a basic example of what's called a, not of a nuclear dual Frechet space.
+这是一个基本的例子，称为强核对偶 Fréchet 空间。
+
+363
+00:41:32,360 --> 00:41:36,760
+The absolute most basic one, but it's not strongly nuclear dual because the transition maps here
+最基本的一个例子，但它不是强核对偶的，因为这里的过渡映射
+
+364
+00:41:37,640 --> 00:41:45,080
+are like their trace class, but they're not rapid decay. They decay kind of linearly instead of
+类似于它们的迹类算子，但它们并不是快速衰减的。而是线性衰减。
+
+365
+00:41:45,080 --> 00:41:52,840
+rapidly. So, but an example is if you take a holomorphic functions on a
+所以，但是一个例子是如果你取 C^D 中紧集 K 上的全纯函数。
+
+366
+00:41:53,480 --> 00:41:57,080
+K where K is a compact subset of C to the D.
+因此，我们知道复分析或幂级数为基础的内容是可以允许的，但 C^∞ 内容是不允许的。这就是故事的核心。
+
+367
+00:41:57,160 --> 00:42:05,320
+So, you know, complex analysis or power series based stuff is allowed, but C infinity stuff is
+而这更一般地，我只是说我们通常，
+
+368
+00:42:05,320 --> 00:42:14,360
+not allowed, is the moral of the story. And this is more generally, I'll just say that we're more
+如果你有椭圆微分方程的解，我们在你身上有一个椭圆复形，
+
+369
+00:42:14,360 --> 00:42:18,360
+generally, you know, if you have solutions of an elliptic differential, we have some elliptic
+椭圆微分算子，包括 C^∞，你知道，
+
+370
+00:42:18,360 --> 00:42:22,840
+complex, elliptic differential operator on you, including C infinity, you know,
+(已与上一条字幕合并)
+
+371
+00:42:23,800 --> 00:42:27,640
+some elliptic complex, elliptic differential operator on including space and you choose a
+一些椭圆复形，椭圆微分算子在包括空间中，你选择一个紧子集。
+
+372
+00:42:27,640 --> 00:42:32,200
+compact subset, you're going to have this condition on the rapid decay and the transition maps.
+你会在这个紧子集中满足快速衰减和过渡映射的条件。
+
+373
+00:42:37,080 --> 00:42:42,840
+This category, let yourself expose kind of generators that you just mentioned.
+这个范畴，让你暴露一些刚刚提到的生成元。
+
+374
+00:42:42,920 --> 00:42:54,120
+Yeah, it's not quite clear. Yeah, yeah. Does this category have any T structure on it?
+是的，这还不太清楚。是的，是的。这个范畴上有没有 T 结构？
+
+375
+00:42:54,840 --> 00:42:58,920
+It does have a T structure. Yeah, so there's an Abelian category as well,
+它确实有一个 T 结构。是的，所以这是一个阿贝尔范畴，
+
+376
+00:42:59,800 --> 00:43:05,320
+but it has some non-Hausdorff things in it as it sort of has to. So these aren't the,
+但其中有一些非豪斯多夫的对象，因为它必须如此。这些不是，
+
+377
+00:43:05,320 --> 00:43:12,280
+this isn't an Abelian category. Formal quotients of things like this would be the Abelian category.
+这不是一个阿贝尔范畴。形式化的这种东西的商才是阿贝尔范畴。
+
+378
+00:43:13,000 --> 00:43:17,800
+Things like this are in the heart. Yeah, yeah. The T structure is kind of very naive, you could say.
+这些东西在核心中。是的，是的。T 结构可以说相当原始。
+
+379
+00:43:19,800 --> 00:43:27,560
+Okay, go over to my notes. This is the point where when I was preparing my talk, my son,
+好的，看看我的笔记。这是我准备演讲时儿子来的时候，
+
+380
+00:43:28,600 --> 00:43:31,720
+I must have gone to the bathroom or something, my son came and drew a math monster.
+我可能去洗手间了或其他事情，他画了一个数学怪兽。
+
+381
+00:43:37,480 --> 00:43:42,040
+So I hope you all can see it out there. It's pretty nice. He's got numbers on his face.
+所以我希望你们都能看到它。挺漂亮的。他的脸上有数字。
+
+382
+00:43:42,840 --> 00:43:51,640
+Making a mean expression. Okay, he's enchanted by Halloween. So, okay, so now I've told you what
+做了个阴森的表情。好的，他被万圣节迷住了。所以，好的，现在我已经告诉你这个范畴是什么了，对吧？我想谈谈 K 理论，但我甚至没有告诉你 FEMOG 的 K 理论是如何工作的。所以现在让我用这个例子来解释。
+
+383
+00:43:51,640 --> 00:43:55,480
+the category is, right? I want to talk about K-theory, but I didn't even tell you, I didn't
+结果是 K 理论，我称之为
+
+384
+00:43:55,480 --> 00:44:00,200
+tell you how the K-theory of FEMOG works. So now let me do it in this example. So
+K 理论。好吧，这里有个窍门。我说这些可对偶化的对象总是接近紧生成的对象。更精确地说，你可以将它们放在一个紧生成的对象中，使得商也是紧生成的。好吧，这实际上是自动的。所以局部化序列中的左项总是紧生成的，而其他两项是紧生成的。
+
+385
+00:44:05,640 --> 00:44:07,320
+the resulting K-theory, which I'm calling
+如果 C 是可对偶化的，并且存在一个局部化，
+
+386
+00:44:12,840 --> 00:44:23,000
+K-theory. Well, here's the trick. I said these dualizable guys are always close to compactly
+那么这个局部化过程中的左项总是紧生成的。
+
+387
+00:44:23,000 --> 00:44:27,160
+generated guys. And the more precise version of that is that you can always put them inside
+(已与上一条字幕合并)
+
+388
+00:44:27,160 --> 00:44:34,600
+a compactly generated guy such that the quotient is also compactly generated. Well, that's actually
+(已与上一条字幕合并)
+
+389
+00:44:34,600 --> 00:44:42,200
+kind of automatic. So there's always the left-hand term in a localization sequence where the other
+(已与上一条字幕合并)
+
+390
+00:44:42,200 --> 00:44:48,120
+two terms are compactly generated. So if C is dualizable, where there exists a localization
+(已与上一条字幕合并)
+
+391
+00:44:48,120 --> 00:45:06,840
+sequence, C goes to D. And then K of C is just the homotopy fiber of the usual K-theory of the
+序列，C 到 D。然后 K(C) 就是通常的紧对象在此处映射到彼处通常的紧对象的同伦纤维。
+
+392
+00:45:06,840 --> 00:45:11,080
+compact objects here mapping to the usual K-theory of the compact objects there.
+紧对象的有界导出范畴在这里映射到彼处紧对象的有界导出范畴的通常 K-理论。
+
+393
+00:45:12,200 --> 00:45:16,840
+That's kind of how you can get your hands on it. Well, provided you accept that algebraic K-theory
+这就是你如何掌握它的方法。当然，前提是接受小范畴的代数 K-理论是具体的且只是值得商榷的。但 D 和 E 究竟是什么我们了解吗？
+
+394
+00:45:16,840 --> 00:45:24,040
+of small categories is concrete and just debatable. But do we know what the D and the E kind of are?
+很多选择。这是一个艺术，选择合适的那个。但在这种情况下，
+
+395
+00:45:24,680 --> 00:45:30,440
+Well, there's many choices. And it's an art, selecting the right one. But now in this case,
+我们知道它们是什么。所以现在我可以具体地告诉你。是的。在我们的情况下，
+
+396
+00:45:30,440 --> 00:45:35,880
+we know what they are. So now I can tell you kind of concretely. Yeah. So in our case,
+所以我们有我们的 D。它就是这里这个有界的导出范畴。但这也等同于
+
+397
+00:45:35,880 --> 00:45:43,800
+so we have our D. It's just this bounded derived category here. But that's also the same thing as
+有界。也就是说，这里有唯一的生成元，你可以选择任意无限维 Hilbert 空间。
+
+398
+00:45:43,800 --> 00:45:49,000
+the bounded. I mean, there's a single generator here, which is pick your favorite Hilbert space
+然后这个范畴就只是那个非交换环在这个 Hilbert 空间的有界算子上的有界的右导出范畴。当你
+
+399
+00:45:49,000 --> 00:45:55,320
+of infinite dimension. And then this category is just the same thing as the bounded right category
+在考虑这个范畴时，你实际上学到的是，如果仔细看，它更像一个单射，并且它命中的东西就是我们所说的完全可对偶化对象。
+
+400
+00:45:55,320 --> 00:46:01,640
+of non-commutative ring this time with bounded operators on that Hilbert space. And when you
+(已与上一条字幕合并)
+
+401
+00:46:01,640 --> 00:46:05,320
+calculate the quotient, it's also going to be generated by a single object, just the image of
+计算商，它也将由单个对象生成，即你最喜欢的 Hilbert 空间的像。
+
+402
+00:46:05,320 --> 00:46:10,600
+your favorite Hilbert space. But then the endomorphisms change. And what you get is,
+但是自同态变了。于是你得到的是，
+
+403
+00:46:12,920 --> 00:46:14,920
+maybe I should say perf, actually, just to be safe.
+或许我应该说 perf，为了安全起见。
+
+404
+00:46:20,280 --> 00:46:25,720
+Mounded operators on Hilbert space. Modulo, the specific so-called Schatten ideal,
+在 Hilbert 空间上的紧算子。模掉具体的所谓 Schatten 理想，
+
+405
+00:46:25,720 --> 00:46:30,200
+which actually we've already encountered. This is the ideal of compact operators
+实际上我们已经遇到过这个理想。这是具有快速衰减奇异对象的紧算子的理想。
+
+406
+00:46:30,200 --> 00:46:46,040
+with rapid decay singular objects. Okay. But no, but this guy, this cat, this guy,
+好吧，但这家伙，这只猫，这家伙，
+
+407
+00:46:46,040 --> 00:46:49,640
+or this category is one of those types of categories I was talking about that has an
+或者说是这个范畴是我之前提到的那种类型之一，它有一个
+
+408
+00:46:49,640 --> 00:46:55,800
+Eilenberg swindle. So it's K theory is zero. So at the end of the day, what you find is that
+Eilenberg swindle。所以它的 K 理论是零。最终你会发现，
+
+409
+00:46:55,800 --> 00:47:03,160
+this analytic K theory of the complex numbers is just a shift of the usual K theory of a
+复数上的分析 K 理论只是通常的某个奇怪环的 K 理论的一个移位。因此这是 Hilbert 空间上的有界算子。
+
+410
+00:47:04,120 --> 00:47:11,480
+rather strange ring, some analog of a Calkin algebra. So this bounded operators on the Hilbert
+(已与上一条字幕合并)
+
+411
+00:47:11,480 --> 00:47:21,800
+space modulo, this Schatten ideal. But let me make a remark that the ring structure
+空间模去，这个 Schatten 理想。但让我做一个说明，在 KNC 上由这个范畴中自然具有的张量积诱导的环结构从这个角度看是模糊不清的。
+
+412
+00:47:21,800 --> 00:47:27,000
+on KNC, which is induced by the tensor product you naturally have on this category is obscured
+在 KNC 上，由这个范畴中的自然张量积诱导的环结构在这种视角下被遮蔽了。所以这种视角实际上并不是最好的理解方式，虽然它是具体的，但未必是最好的理解方法。我只是为了让你感到舒适而给你展示它。
+
+413
+00:47:27,000 --> 00:47:33,720
+from this perspective. So this perspective isn't actually nice for, it's concrete, so to speak,
+你可以把这个东西重写为一个普通环的 K-3，好吧。
+
+414
+00:47:33,720 --> 00:47:38,920
+but it's not necessarily the best way to understand what this thing is. Just giving it to you for
+但现在我已经说了足够多的内容来说明这个猜想是什么了。
+
+415
+00:47:38,920 --> 00:47:44,920
+comfort. You can rewrite this thing up to a shift as the K-3 of an ordinary ring. Okay.
+所以在同伦群的层面上来说，复数上的分析 K 理论的 πn 应该是 z 在零度，而在一度应该是 c×。但可能最好的理解方式是将其视为均匀化后的 2πi c 模去 2πi z，我想。然后更一般地，当 n 是 2m-1 的形式时，你应该把它写为 (2πi)∧m z。
+
+416
+00:47:44,920 --> 00:47:50,040
+But now I've said enough maybe to say what the conjecture is.
+(已与上一条字幕合并)
+
+417
+00:48:14,920 --> 00:48:32,200
+So I'll give on the level of homotopy groups. So pi n of this analytic K theory of the complex
+(已与上一条字幕合并)
+
+418
+00:48:32,200 --> 00:48:42,520
+numbers should be z in degree zero, and it should be c cross in degree one. But probably the best
+(已与上一条字幕合并)
+
+419
+00:48:42,520 --> 00:48:59,240
+way to understand this c cross is as uniformized, 2 pi i, c mod 2 pi i z, I guess. And then more
+(已与上一条字幕合并)
+
+420
+00:48:59,240 --> 00:49:05,880
+generally, when n is like 2m minus one, you should write this as 2 pi i to the m z.
+(已与上一条字幕合并)
+
+421
+00:49:05,880 --> 00:49:15,400
+But then if n is 2m, and this is for m positive, if n is 2m and positive, you should get zero,
+但如果 n 是 2m，且 m 为正数，即 n 是 2m 且正数时，你应该得到零，
+
+422
+00:49:15,400 --> 00:49:21,480
+generalizing our discussion about K2 of the complex numbers. So this is exactly the regulators,
+这是关于复数的 K2 的讨论的推广。所以这就是调节子，
+
+423
+00:49:21,480 --> 00:49:28,760
+right? And then you should get z if n is 2m and m is less than or equal to zero.
+对吧？然后如果 n 是 2m 而 m 小于或等于零，你应该得到 z。
+
+424
+00:49:31,480 --> 00:49:34,840
+So there should be stuff in negative degrees as well. It's an aspect I didn't mention that
+所以在负次中也应该有东西。这是我之前没有提到的一个方面。
+
+425
+00:49:34,840 --> 00:49:40,360
+once you go to this idempotent complete context, then K3 naturally has stuff in negative degrees as
+在你进入幂等完备的上下文中，K3 自然也有负次的东西。
+
+426
+00:49:40,360 --> 00:49:59,560
+well. OK. So yeah. So let me note. So this. I'm sorry? Did I not mention that? Wait. Oh,
+好的。所以是的。让我做个笔记。对不起？我没有提到吗？等等。哦，
+
+427
+00:49:59,560 --> 00:50:13,560
+thank you. Thank you. Yes, I mean 2 pi i to the m. Thank you.
+谢谢。谢谢。我是指 2πi 的 m 次方。谢谢。
+
+428
+00:50:17,400 --> 00:50:27,320
+So note. So this suggests that. So in terms of like thinking of K3 in terms of x in some
+所以注意。这表明了 K3 在某些其他范畴中的表示方式。
+
+429
+00:50:27,320 --> 00:50:30,440
+other category, this suggests that a theory is like.
+这表明了一个理论是这样的。
+
+430
+00:50:34,760 --> 00:50:40,440
+I won't bother trying to make it precise, but that's in the category of pairs.
+我不会费心去精确表达，但这是在配对的范畴中。
+
+431
+00:50:41,880 --> 00:50:50,360
+So L filtration on the complexification. So this is a abelian group. This is a decreasing filtration
+所以在复化上的 L 过滤。这是一个阿贝尔群。这是一项递减过滤。
+
+432
+00:50:50,360 --> 00:51:00,920
+on complexification. So it's kind of mixed hodge structures without the weight filtration, you could say.
+在复化上。所以你可以认为这是一种混合霍奇结构，没有权重过滤。
+
+433
+00:51:04,920 --> 00:51:08,920
+OK. And now I want to say something about the evidence for this conjecture.
+好的。现在我想说一下这个猜想的一些证据。
+
+434
+00:51:11,400 --> 00:51:16,440
+Does the construction of these K groups only as abstract groups or do you see the topology on them?
+你只是把这些 K 群组构造成抽象群吗？还是能看到它们上的拓扑？
+
+435
+00:51:16,440 --> 00:51:23,480
+In principle, you only see them as abstract groups, but let me address that more later.
+原则上，你只能看到它们是抽象群，但我会稍后更多地讨论这一点。
+
+436
+00:51:23,480 --> 00:51:44,520
+Negative. So I understand X, X can have something to do with K and positive. What about negative?
+负数。所以我理解 X，X 可能与 K 有关。那么负数呢？
+
+437
+00:51:45,480 --> 00:51:49,640
+It's also X. I mean, there are homes in this category.
+也是 X。我的意思是，在这个范畴中有自同态。
+
+438
+00:51:50,920 --> 00:51:56,360
+I mean, there are homes from Z to Z minus M. Right.
+我的意思是从 Z 到 Z-M 的自同态。对的。
+
+439
+00:52:14,520 --> 00:52:31,000
+So the evidence, the first bit of evidence is that it's proven true.
+证据的第一个部分是它已被证明为真。
+
+440
+00:52:32,520 --> 00:52:37,640
+That's, I guess, the theorem of us in degrees less than or equal to zero.
+那就是我们关于非零及以下度数的结果。
+
+441
+00:52:38,360 --> 00:52:41,240
+So the part where you're just getting Z's and zero.
+所以你只是得到 Z 和零的部分。
+
+442
+00:52:43,240 --> 00:52:48,920
+And also, it's probably within reach in degree one to see that you get the C cross like you expect.
+而且，在一阶中，很可能可以看到你会得到预期的 C×。
+
+443
+00:52:48,920 --> 00:52:52,280
+It's not obvious by any means, but it's probably within reach.
+这一点远非显而易见，但很可能在可及范围内。
+
+444
+00:52:54,520 --> 00:53:01,640
+Another thing is that there does exist a comparison map, natural comparison map from
+另外，确实存在一个自然比较映射，
+
+445
+00:53:02,280 --> 00:53:06,840
+so K and analytics to the expected target, expected value.
+从 K 理论到分析期望的目标值。
+
+446
+00:53:09,080 --> 00:53:11,800
+So extending the right regulator maps, basically.
+所以扩展通常的调节子映射。
+
+447
+00:53:15,800 --> 00:53:21,160
+So the usual, the usual K theory, algebraic K theory of C kind of maps to this naturally.
+通常来说，代数 C 的 K 理论会自然地映射到这里。
+
+448
+00:53:21,160 --> 00:53:24,040
+This would be if you did the naive thing of taking your category,
+这是如果你采取最直接的方法，取你的范畴，
+
+449
+00:53:24,040 --> 00:53:28,040
+taking compact objects and then taking K theory instead of taking this better thing.
+取紧对象然后取 K 理论而不是取那个更好的东西。
+
+450
+00:53:28,040 --> 00:53:49,960
+In fact, so in fact, there exists a commutative square of rings in the spectrum.
+实际上，事实上，在谱中存在一个交换的环方块。
+
+451
+00:53:50,280 --> 00:54:00,120
+So K and C goes to do this one first. KU, that's the topological K theory.
+所以 K 和 C 先来做这个。KU，那就是拓扑 K 理论。
+
+452
+00:54:00,120 --> 00:54:05,720
+That would be if you just had the Z's or just if it was just zero, Z, zero, zero, Z everywhere.
+这就是如果你只有 Z 或者只是零，Z，零，零，Z 到处都是的情况。
+
+453
+00:54:06,440 --> 00:54:08,280
+And then you have to add in some Durham data.
+然后你还需要加入一些达勒姆数据。
+
+454
+00:54:08,280 --> 00:54:13,000
+So you use, you can use, for example, negative cyclic homology, say over the reals, it doesn't
+所以你可以使用负周期上同调，比如说在实数域上，这并不在意复数或周期上同调，实数就是复数。
+
+455
+00:54:13,000 --> 00:54:18,040
+matter the complex numbers or periodic cyclic homology, the reals are the complex numbers.
+这就像拓扑或贝蒂，这是像达勒姆。
+
+456
+00:54:18,040 --> 00:54:22,200
+So this is like, this is like topological or Betty, this is like Durham.
+这是达勒姆加上过滤，这么说吧。
+
+457
+00:54:22,200 --> 00:54:24,360
+This is Durham plus filtration, so to speak.
+而真正的猜想是在谱层面上的版本。
+
+458
+00:54:26,440 --> 00:54:29,560
+And then the conjecture, the real conjecture is that this is a pullback
+对，还有一件事，我不会谈到非阿基米德证据，尽管它很重要。
+
+459
+00:54:30,200 --> 00:54:32,840
+or the honest version of the conjecture, a spectrum level version.
+也就是说，这个实证或诚实版本的猜想是在谱层面的版本。
+
+460
+00:54:32,840 --> 00:54:51,320
+Right, and another thing, I'm not going to get to the non-archimedean evidence, although it's
+是的，还有另一件事，我不会谈到非阿基米德证据，虽然它非常重要。
+
+461
+00:54:51,320 --> 00:54:57,160
+interesting. Maybe I'll just say it in words while I'm erasing. There is a non-archimedean
+有趣。也许我会用词语说它的时候擦掉它。这是一个非阿基米德
+
+462
+00:54:57,160 --> 00:55:03,560
+analog of this, say for Cp, you can identify everything. You can prove it using a theorem
+类似物，比如说对于 Cp，你可以识别一切。你可以使用亚历山大定理
+
+463
+00:55:03,560 --> 00:55:10,120
+of Sasha's, of humor. Then using this theorem, you can do a calculation and actually confirm
+的幽默版本来证明它。然后利用这个定理进行计算，并实际上确认
+
+464
+00:55:10,120 --> 00:55:20,120
+the analog of this conjecture for Cp or a variant maybe, solid variant as opposed to liquid.
+这个猜想在 Cp 或其变体中的类似物，固态版本而非液态版本。
+
+465
+00:55:20,120 --> 00:55:25,160
+It's, you know, it's fun. You see, you need to see period rings popping up.
+你知道，这很有趣。你看，你需要看到周期环出现。
+
+466
+00:55:28,600 --> 00:55:29,400
+Substrict R.
+子严格 R。
+
+467
+00:55:31,000 --> 00:55:31,720
+Where are we?
+我们在哪里？
+
+468
+00:55:31,720 --> 00:55:35,160
+That bottom board. C minus sub R.
+那个底板。C 减子 R。
+
+469
+00:55:35,160 --> 00:55:36,120
+Oh, the real numbers?
+哦，实数？
+
+470
+00:55:38,520 --> 00:55:40,760
+Well, you don't want to do it over the rational numbers.
+嗯，你不希望在有理数上做这个。
+
+471
+00:55:40,760 --> 00:55:41,880
+But over C.
+但是当系数为 C。
+
+472
+00:55:41,880 --> 00:55:45,560
+Yeah, over C it's the same as over R. Yeah, I mean, as I told you.
+是的，在 C 上它和在 R 上是一样的。我之前跟你说过的。
+
+473
+00:55:46,280 --> 00:55:52,920
+Okay. To me, it feels more principled. Because in principle, this is a more refined thing,
+好的。对我来说，这感觉更符合原则。因为原则上来说，这是一个更加精细的东西，
+
+474
+00:55:53,800 --> 00:55:55,480
+but of course, it's the same thing. But anyway.
+当然，但它还是同样的东西。总之。
+
+475
+00:55:59,480 --> 00:56:05,400
+Oh, yes, and here. By the way, does this address your question earlier in the talk? Okay.
+哦，对了，还有这里。顺便问一下，这个是否回答了你刚才在演讲中提出的问题？好的。
+
+476
+00:56:08,120 --> 00:56:14,040
+Also, this Kn functor, it actually extends in two different directions. It extends to
+这个 Kn 函子实际上有两个不同的方向可以扩展。它可以扩展到
+
+477
+00:56:14,840 --> 00:56:17,000
+arbitrary complex analytic spaces.
+任意的复分析空间。
+
+478
+00:56:21,960 --> 00:56:31,400
+And then, then the conjecture is that Kmc is compact based basically well related to
+然后，猜想是 Kmc 是紧基于的基本上很好地与
+
+479
+00:56:31,400 --> 00:56:37,080
+in the same way that K theory is related to motivic cohomology, compactly supported Deligne cohomology.
+类似于 K 理论与母题上同调、紧支撑 Deligne 上同调的关系。
+
+480
+00:56:37,080 --> 00:56:45,560
+But it also extends to arbitrary, let me just say smooth, although it's not really necessary,
+同时，它也可以扩展到任意的，让我简单说一下光滑的，虽然这并不是必要的。
+
+481
+00:56:46,200 --> 00:56:48,120
+complex algebraic varieties.
+复代数簇。
+
+482
+00:56:52,120 --> 00:56:54,440
+Oh, thank you. Sorry. Yes, yes, yes, yes.
+哦，谢谢。对不起。是的，是的，是的，是的。
+
+483
+00:56:55,400 --> 00:57:02,120
+And then the conjecture is, is that K theory analytic is some version of Deligne-Beilinson cohomology.
+然后猜想是，K理论分析某种意义上就是Deligne-Beilinson上同调的一个版本。
+
+484
+00:57:09,000 --> 00:57:14,760
+Note that if you take an algebraic variety, you're getting a different value for it than
+注意，如果你取一个代数簇，你会得到不同的值，
+
+485
+00:57:14,760 --> 00:57:21,320
+its analytical, which is natural. And then you're getting a different value for it than
+其分析意义下的值也是自然的。然后你还会得到不同的值，
+
+486
+00:57:21,320 --> 00:57:30,040
+its analytical, which is natural. But you're taking the base seed to be always analytic
+其分析意义下的值也是自然的。但你是以总是分析为基础种子
+
+487
+00:57:30,040 --> 00:57:32,760
+in the sense that you're remembering the topology. But when you do things over it,
+的方式来做的，也就是说你在记住拓扑结构。但在其上做事情时，
+
+488
+00:57:32,760 --> 00:57:36,440
+you can choose whether they be algebraic or analytic. You get different answers.
+你可以选择它们是代数的还是分析的。你会得到不同的答案。
+
+489
+00:57:38,760 --> 00:57:43,000
+And this, I'm supposed to be giving evidence, but this is just a good cover.
+而我应该提供证据，但这只是一个好的覆盖。
+
+490
+00:57:43,640 --> 00:57:50,120
+But the point is that the functoriality
+但关键是函子性
+
+491
+00:57:52,840 --> 00:57:54,360
+and the projective bundle formula
+并且投影丛公式也匹配。
+
+492
+00:57:57,800 --> 00:58:04,440
+all match up. So the functoriality you see in compactly supported Deligne cohomology,
+它们都一致。所以在紧支撑的 Deligne 上同调中你看到的函子性质，
+
+493
+00:58:05,640 --> 00:58:09,880
+whichever directions you have it, you get it over that you can prove it exists here,
+无论你从哪个方向看，你都能证明它在这里存在，
+
+494
+00:58:09,880 --> 00:58:15,480
+and same with Deligne-Beilinson and then over here. So they feel the same in that respect.
+同样适用于 Deligne-Beilinson 上同调，然后这里也是如此。所以在这方面它们感觉是一样的。
+
+495
+00:58:20,600 --> 00:58:25,720
+You don't get compactly supported in the second case. So there's a good reason why,
+在第二种情况下你没有紧支撑。所以有很好的理由，
+
+496
+00:58:25,720 --> 00:58:35,400
+but I won't get into it. Okay. And also this kind of geometry goes into
+但我不会深入讨论。好的。而且这种几何学也进入了
+
+497
+00:58:35,400 --> 00:58:43,240
+the proof that it holds in degrees less than or equal to two. Sorry, less than or equal to zero.
+它在小于或等于二的范围内成立的证明。对不起，是小于或等于零。
+
+498
+00:58:44,200 --> 00:58:50,440
+So we use this extension to complex analytic spaces to get a handle on what's going on over
+所以我们使用这个扩展到复分析空间的方法来了解这一点上发生了什么。因此，在这种意义上，它是一种流动的形式主义。现在我可以回答你关于这些结构是否有额外结构的问题。是的，确实有。它们都是
+
+499
+00:58:50,440 --> 00:58:54,920
+a point. So in that sense, it's kind of a fluid sort of formalism. And this, now I can address
+全可对偶化对象。
+
+500
+00:58:54,920 --> 00:58:59,800
+your other question about whether there's extra structure on these. Yes, there is. They're all
+(已与上一条字幕合并)
+
+501
+00:58:59,800 --> 00:59:04,920
+sheaves on complex analytic spaces, which is stronger than having a topological structure.
+复分析空间上的层，比具有拓扑结构更强。
+
+502
+00:59:04,920 --> 00:59:15,000
+So it's A1. Yeah, it actually would be something like A1. Yeah, A1 analytics. Yeah.
+所以是 A1。是的，实际上会是类似 A1 的东西。是的，A1 分析学。是的。
+
+503
+00:59:17,240 --> 00:59:20,040
+And the last thing I was going to talk about was non-acromedian analogs,
+最后我要谈论的是非阿克马登类比，
+
+504
+00:59:20,040 --> 00:59:22,120
+but I think I won't. So thank you for your attention.
+但我认为我不说了。所以感谢您的关注。
+
+505
+00:59:22,120 --> 00:59:32,200
+Any questions?
+有任何问题吗？
+
+506
+00:59:34,040 --> 00:59:42,760
+It's a very vague question. Why do we not have like negative homology for like discrete fields,
+这是一个非常模糊的问题。为什么我们没有像离散场那样的负同调，
+
+507
+00:59:43,400 --> 00:59:51,720
+but we do have negative. No, even for CP, there's nothing in negative degrees.
+但我们确实有负的。不，即使是 CP，也没有任何东西在负次数中。
+
+508
+00:59:52,520 --> 00:59:57,560
+And it's just something. There's something about those complex numbers.
+就是这样。那些复数有些特别之处。
+
+509
+01:00:01,400 --> 01:00:04,200
+It's really not obvious. It's not obvious why it has something. I mean,
+真的是不明显。不明显为什么会有这样的东西。也就是说，
+
+510
+01:00:04,920 --> 01:00:07,480
+there's something to do with the Betty realization that you have this.
+和 Betty 实现有关，你有了这个。
+
+511
+01:00:10,360 --> 01:00:15,720
+Nowhere else do you get it. I don't have a good answer, as you can tell.
+现在别处都没有了。我也没有一个好的回答，正如你可以看出的。
+
+512
+01:00:15,720 --> 01:00:24,920
+Yeah. Oh, you just, you would just take fixed points for, you know, come to the Galois group
+嗯。哦，你只需要取伽罗瓦群作用下的不动点。所以这与伽玛函数的姿态有关。对不起。这与伽玛函数的姿态有关。
+
+513
+01:00:24,920 --> 01:00:32,760
+acting. So it's related to the pose of the gamma. Sorry. It's related to the pose of the gamma
+函数。嗯，是的。是的。不，我的意思是，这是，我指的是，是的。也就是说，这种东西应该与调节子相关，并且它们是正整数。所以我在这段时间里，
+
+514
+01:00:32,760 --> 01:00:38,760
+function. Well, yeah. Yeah. No, I mean, this is, I mean, yeah. And so, I mean, this kind of thing is
+我的意思是，你想要这些家伙在负次也包括进来。你考虑整个 L 函数。嗯。说一些关于这些定义如何
+
+515
+01:00:39,320 --> 01:00:46,840
+what should be related to regulators and that's positive integers. So I'm speaking
+与算子字母表的 K 理论中的经典定义进行比较的话。
+
+516
+01:00:48,040 --> 01:00:51,960
+and over this year, I mean, you want, I think you want these guys in the negative degrees as well.
+是的。谢谢你的提问。我很乐意有机会。他们证明了一些非常有趣的定理。例如，如果你取，
+
+517
+01:00:53,880 --> 01:01:00,600
+You think about the whole L function. Yeah. Say a few words about how these definitions would
+谢谢你。如果取，我在研究算子字母表的 K 理论时，
+
+518
+01:01:00,600 --> 01:01:04,360
+compare with more classical definitions in the K theory of operator alphabets.
+你看看这些定义如何与经典定义进行比较。
+
+519
+01:01:05,080 --> 01:01:10,600
+Yes. Thank you for that. I'm happy for the opportunity. They proved some very interesting
+是的。谢谢你的提问。我很乐意有机会。他们证明了一些非常有趣的定理。例如，如果你取，
+
+520
+01:01:10,600 --> 01:01:19,240
+theorems. For example, if you take, yeah, thanks a lot. If you take, I was looking at K theory of
+谢谢。我正在查看算子字母表的 K 理论。
+
+521
+01:01:19,240 --> 01:01:25,160
+bounded operators on the Hilbert space, modulo this Schatten ideal. If you look instead at
+在 Hilbert 空间上的有界算子，模去这个 Schatten 理想。如果你改而考虑
+
+522
+01:01:25,160 --> 01:01:30,600
+K theory of bounded operators on a Hilbert space, modulo, the ideal of all compact operators,
+有界算子的 K 理论，模去所有紧算子的理想，
+
+523
+01:01:31,560 --> 01:01:35,800
+then this, and you take loop space, and this is KU.
+那么这就变成了 KU。
+
+524
+01:01:37,800 --> 01:01:44,280
+With algebraic K theory? Yep, algebraic K theory. Yep. No, it's amazing. Yeah. But so,
+用代数 K 理论？是的，就是代数 K 理论。是的。不，这很神奇。是的。但所以，
+
+525
+01:01:44,280 --> 01:01:48,360
+so what's, what's the difference? Well, the difference is if you have a compact operator,
+所以有什么不同呢？嗯，不同的地方在于如果你有一个紧算子，
+
+526
+01:01:48,360 --> 01:01:52,680
+you can't define a trace. If you have a trace class operator or even better,
+就不能定义迹。如果你有一个迹类算子甚至更好，
+
+527
+01:01:52,680 --> 01:01:58,680
+a rapid decay operator, you can define the trace. And that's why this is picking up more over here.
+一个快速衰减算子，就可以定义迹。这就是为什么这里抓取了更多东西。
+
+528
+01:02:01,320 --> 01:02:08,280
+Um, there has been investigations of the analog where you replace this by the Schatten ideal P
+嗯，在用这个替换 Schatten 理想 P 的类似研究中，P 是正的。我有些，我认为是库恩特和西蒙斯的一个定理，我希望汤姆还记得，
+
+529
+01:02:08,280 --> 01:02:16,040
+for P positive. I've been some, I think it's a theorem of Courtney S and I hope Tom, perhaps
+我忘了，请不要引用我说的话，但也许这里 cyclotomic 迹的纤维是
+
+530
+01:02:16,040 --> 01:02:21,880
+I forget, please don't quote me on it, but that maybe the fiber of the cyclotomic trace here is
+(已与上一条字幕合并)
+
+531
+01:02:21,880 --> 01:02:27,960
+also KU. And it would be very interesting to, but their methods, unfortunately do not reach this,
+也包括 KU。不过他们的方法不幸地未能达到这一点，
+
+532
+01:02:28,040 --> 01:02:31,720
+which is the truly canonical thing. But it would be very interesting if there was some way to
+这才是真正规范的东西。但如果能找到某种方式利用他们的结果，那么在 P 大于零的区域中取得一些进展将非常有趣。
+
+533
+01:02:31,720 --> 01:02:36,120
+leverage their results, the challenge in the P greater than zero regime to get something here.
+在 P 大于零的区域中取得配边挑战以获得某些东西。
+
+534
+01:02:36,120 --> 01:02:40,120
+So the reason this isn't good is because it doesn't, it doesn't correspond to a dualizable
+之所以不好是因为它不对应到一个真正的可对偶化范畴。
+
+535
+01:02:40,120 --> 01:02:44,760
+category really. And it doesn't, yeah, we're a rigid category. This is, I mean, yeah,
+而且它不是，确实，我们是一个刚性范畴。这也就是说，
+
+536
+01:02:44,760 --> 01:02:49,080
+unfortunately they haven't investigated the only, like the truly canonical thing, but they've done
+不幸的是他们还没有研究那个真正规范的东西，但他们做了一些有趣的相关工作，
+
+537
+01:02:49,080 --> 01:02:54,040
+a bunch of interesting related work, which could serve as, um, stepping boards for understanding
+这些工作可以作为理解这个东西的踏脚石。是的。
+
+538
+01:02:54,040 --> 01:03:00,120
+this thing. Yes. So you kind of said that this description is bad because of the ring structure,
+你大概说了这个描述不好是因为有环结构，
+
+539
+01:03:00,120 --> 01:03:03,960
+but then the kind of list you gave, you didn't at least talk about the ring structure. I didn't
+但你给出的列表中，并没有至少提到环结构。我没有在那里讨论环结构。
+
+540
+01:03:03,960 --> 01:03:10,200
+talk about the ring structure there. Or wait. But, but so then, which means that you could still
+或者等等。但这意味着你仍然
+
+541
+01:03:10,200 --> 01:03:14,120
+address since you didn't talk about the ring structure, you could still address that table
+由于你没有提到环结构，仍然可以讨论那个表格
+
+542
+01:03:14,120 --> 01:03:18,840
+from this thing conceivably. I don't understand. It didn't sound like a question.
+从这个东西可能来看。我不明白。这听起来不像一个问题。
+
+543
+01:03:18,840 --> 01:03:24,600
+Like you said that you prove these negative results using a totally different method,
+就像你说的那样，你用完全不同的方法证明了这些负结果，
+
+544
+01:03:24,600 --> 01:03:28,360
+but you have, I didn't even understand that. Sorry. Well, you have a description of the
+但是你有，我没有理解那部分。抱歉。好吧，你有关于 MLBK 理论的 K 群描述。不，这是猜想性的。是的。等等，不，这个，这个，是的，是的，是的。
+
+545
+01:03:28,360 --> 01:03:33,960
+K of the MLBK theory there. No, it's conjectural. Yeah. Wait, no, this, this, yes, yes, yes.
+一个描述。是的。你也给出了答案。也就是说，不是所有的你都证明了。
+
+546
+01:03:33,960 --> 01:03:39,880
+A description. Yeah. And you gave some answers. I mean, no, but some of them you said you proved.
+哦，是的。但是你能看到它们吗？你们自己能从算子理论的角度理解这些类吗？
+
+547
+01:03:39,880 --> 01:03:45,080
+Oh yeah. But can you see them? Can you understand them at all in an operator theoretic way yourselves?
+可能吧。你能看出这些类是从这个更新中来的吗？这不，
+
+548
+01:03:45,080 --> 01:03:49,720
+Probably. Can you see where those classes are coming from in, in this update? It's not,
+这并不有趣。所以，这个人，应该是 Karubi 找到了度数减二的类。
+
+549
+01:03:49,720 --> 01:03:55,640
+it's not fun. So, so the guy, it was Karubi, I should say, who found the degree minus two class
+你可以用他的方法找到同样的类列表在这里显示。
+
+550
+01:03:55,640 --> 01:04:01,480
+here. And you can use his method to find the same, show the same class list here.
+(已与上一条字幕合并)
+
+551
+01:04:03,880 --> 01:04:06,440
+It's fun. It's a, yeah, it's kind of the inverse to the bottom.
+这很有趣。它有点像是底面的逆。
+
+552
+01:04:07,880 --> 01:04:12,360
+And the bottom in itself doesn't exist because we haven't passed the homotopy yet. But,
+而底面本身不存在，因为我们还没有经过同伦。但，
+
+553
+01:04:12,440 --> 01:04:19,560
+but, but, but it's, it's, it's a bit of a slog, but we have a clean geometric way of producing
+但是，但是，但是这确实有些繁琐，但我们有一个干净的几何方法来产生
+
+554
+01:04:19,560 --> 01:04:29,880
+the same class. Once you have that. So you said it's a sheath in a meditator. So if I take
+同样的类。一旦你有了那个。所以你说这是一个在冥想中的护套。那么如果我取
+
+555
+01:04:29,880 --> 01:04:34,920
+like Stein manifold and like consider it's an etiquette in a conjecture, they should get like
+类似 Stein 流形并考虑它是猜想中的护套，它们应该得到同伦函数的商。完全正确。也就是说，
+
+556
+01:04:34,920 --> 01:04:41,320
+quotient of homotopy function. Exactly. I mean, it's just, yeah, there's no, I mean, there's no
+没有护套上同调在整个线性上同调的错误部分。所以你可以写下它是什么。你提到有一个循环托内特。是的，当然。是的。
+
+557
+01:04:41,320 --> 01:04:47,000
+sheath cohomology in the whole, the wrong part of the linear cohomology. So you can even write
+你能描述目标吗？哦，就是这样。谢谢。另一个，是的。这里有一个同伴猜想。
+
+558
+01:04:47,000 --> 01:04:54,920
+down what it is. You mentioned there is a cyclotonic tracenet. Yeah, sure. Yeah.
+我们就谈谈吧，实际上它是 Q 上的，对吧？这是一个 Q 线性范畴。所以
+
+559
+01:04:55,720 --> 01:05:03,880
+Can you describe the target? Oh, that's it. Thank you. Another, yeah. Here's a companion conjecture.
+(已与上一条字幕合并)
+
+560
+01:05:03,880 --> 01:05:09,080
+Let's just talk about, I mean, it's, it's actually over Q, right? It's a Q linear category. So
+(已与上一条字幕合并)
+
+561
+01:05:09,080 --> 01:05:14,600
+so forget cyclotomic, it doesn't do anything, but the companion conjecture
+所以先忘了循环，它不起作用，但伴随猜想
+
+562
+01:05:18,520 --> 01:05:24,840
+it's about the Hochschild cohomology over sphere spectrum Z. It doesn't matter of this. Well,
+它是关于球面谱 Z 上的 Hochschild 上同调。这并不重要。好吧，
+
+563
+01:05:24,840 --> 01:05:33,880
+let me say for this ring. It's just, maybe I want to say suspension.
+让我来说说这个环。我只是，也许我想说悬挂。
+
+564
+01:05:33,880 --> 01:05:43,960
+So it should just, for the Hochschild cohomology of the category I'm interested in should just be C
+因此对于我感兴趣的范畴的 Hochschild 上同调应该只是 C
+
+565
+01:05:43,960 --> 01:05:51,720
+and degree zero. And that should correspond to the fact that you can take traces. So, but actually
+并且零度。这应该对应于你可以取迹的事实。但事实上
+
+566
+01:05:51,720 --> 01:05:56,120
+this again unwinds to something that looks completely unbelievable that you can, this is
+这再次展开成看起来完全不可信的东西，你可以在一个无幺环上构造 Hochschild 复形，并且它计算了这个东西的圈。但这实际上是带有这个
+
+567
+01:05:56,120 --> 01:06:01,880
+a non-unital ring and you can make the Hochschild complex there and that computes the thing, the
+环的代数 Hochschild 复形。所以你是用 Q 张量积这个环并构造通常的 Hochschild 复形。
+
+568
+01:06:01,880 --> 01:06:08,040
+loops of this. And it's, but it's really the algebraic Hochschild complex with this
+而它的断言是在正度是上同调的。这无归一an 模拟也是如此。
+
+569
+01:06:08,040 --> 01:06:12,360
+ring. So you're tensoring this ring together over Q and making the usual Hochschild complex.
+(已与上一条字幕合并)
+
+570
+01:06:12,360 --> 01:06:17,080
+And the claim is it's acyclic and positive degrees. And the non-archimedean analog of this is
+(已与上一条字幕合并)
+
+571
+01:06:17,080 --> 01:06:25,240
+equally unbelievable, but it was proven by my student Adriano Cordova. So take compact, now
+同样难以置信，但被我的学生 Adriano Cordova 证明了。所以现在取紧致，
+
+572
+01:06:25,240 --> 01:06:30,440
+compact and trace class is all the same in the periodic setting, but you take the Hochschild
+紧致和迹类在周期性设置中是一样的，但你取 Hochschild
+
+573
+01:06:31,240 --> 01:06:36,680
+Hochschild complex and this thing with algebraic tensor products and you can get Qt in degree zero
+Hochschild 复形以及带有代数张量积的这个东西，在零度你可以得到 Qt，
+
+574
+01:06:36,680 --> 01:06:40,360
+and you get zero in positive degrees. This proof does not go by analyzing this Hochschild complex.
+在正度则为零。这个证明不通过分析这个 Hochschild 复形来完成。
+
+575
+01:06:40,360 --> 01:06:45,240
+It uses a whole bunch of crazy stuff, including a few months results and then just go with the
+它使用了大量疯狂的东西，包括几个月的结果，然后就用笛卡尔坐标系中的各种胡言乱语。但总之，无论如何，这确实是这样，
+
+576
+01:06:45,240 --> 01:06:50,040
+Cartesian, all sorts of nonsense. But yeah, anyway, that's yeah, but you could in principle
+但是你可以尝试盯着这个 Hochschild 复形看。如果你能证明它在正度是上同调的，
+
+577
+01:06:50,040 --> 01:06:53,720
+just try staring at this Hochschild complex and you'll, if you manage to prove it's acyclic and
+那么你就差不多完成了我们的投影证明。所以试试吧。
+
+578
+01:06:53,720 --> 01:06:59,080
+positive degrees, then you'll be halfway to proving our projection. So give it a shot.
+嗯。
+
+579
+01:07:01,000 --> 01:07:01,320
+Yeah.
+是的。
+
+580
+01:07:02,280 --> 01:07:05,800
+The multiplicative structure is the only phase level one.
+只有乘法结构处于一级相位水平。
+
+581
+01:07:06,440 --> 01:07:11,320
+Yes. Yeah. And I mean, one of the reasons I like this is because it kind of makes it plain.
+是的。是的。而且我之所以喜欢这个是因为它有点明了。
+
+582
+01:07:12,120 --> 01:07:17,560
+But yeah, there's also, yeah, there's also a tensor structure on this category and,
+但确实，还有一个张量结构在这个范畴上，
+
+583
+01:07:18,200 --> 01:07:21,400
+you know, you know, the tape twists are multiplicative in the appropriate sense of that
+你知道，这些带子扭曲是按适当的意义相乘的。
+
+584
+01:07:21,400 --> 01:07:26,440
+kind of thing. So if you do lift that class, the minus two class up, can you then see that it's
+所以如果你提升那个类，负二类，你可以看到它
+
+585
+01:07:26,440 --> 01:07:31,880
+classed in on like a bit as high a power as that non-zero by regulating it in some way and then
+在某种方式调节后处于一个相当高的幂次中。然后
+
+586
+01:07:33,000 --> 01:07:36,600
+like you release get a kind of embedding of the answer into the thing.
+比如说你得到一种答案嵌入到这个东西中的方式。
+
+587
+01:07:36,600 --> 01:07:41,320
+I don't, because I'm sorry. Once again, I'm having trouble understanding your question.
+不好意思，因为我又没听清楚你的问题。
+
+588
+01:07:41,320 --> 01:07:45,240
+Well, you lifted the negative two. Yes. Yes. Then you could take its powers and
+你是把负二提升起来了。是的。是的。那么你可以取它的幂，
+
+589
+01:07:45,240 --> 01:07:48,040
+you're allegedly generating all the negative stuff. Exactly.
+并声称生成了所有负数部分。正是这样。
+
+590
+01:07:48,040 --> 01:07:51,720
+Can you see those all non-zero by regularizing it, heating them with.
+你能通过某种方式调节它并加热它们看到它们都非零吗？
+
+591
+01:07:51,720 --> 01:07:55,240
+Oh, you detect them. I mean, yeah, you, you, but that's not really how the proof goes. I mean,
+哦，你检测到了它们。我说的是，是的，你们，但是这并不是证明的过程。我意思是，
+
+592
+01:07:55,640 --> 01:08:00,040
+I know. Yeah, yeah, you can, you can detect them in topological cake here. Yeah. But it's
+我知道。是的，是的，你可以在这里拓扑蛋糕中检测到它们。是的。但这不对。这不是那个点上的调节子问题，因为没有，
+
+593
+01:08:00,040 --> 01:08:03,400
+not right. It's not about regulators at that point, because there's no, there's no,
+这就是调节子真正所在的地方。这是调节子中的不确定性。
+
+594
+01:08:04,280 --> 01:08:08,680
+this is where the regulators really are. It's the, it's the ambiguity in the regulator.
+那有点像积分的东西。
+
+595
+01:08:08,680 --> 01:08:09,880
+That's kind of the integral thing.
+不是这样，它是一种形式，某种形式。是的。
+
+596
+01:08:09,880 --> 01:08:34,440
+It's not so, it's some form, some form of it. Yeah.
+嗯，这是一个好问题。所以从顶部来说，我可以说唯一的，我说的是，
+
+597
+01:08:40,600 --> 01:08:45,800
+Um, that's a good question. So the top, I would say that the only, I mean,
+它必须在某种，呃，某种 dagger 上下文中，某种，某种类型的，或者某种什么，
+
+598
+01:08:45,800 --> 01:08:51,800
+it'd have to be in some, uh, some dagger context, some, some, some kind of, or some whatever,
+你知道我的意思。然后它可能再次只是紧致的。
+
+599
+01:08:52,600 --> 01:09:00,760
+you know, you know what I mean by this. And then it would probably again, just be compact.
+是的。不，我想答案是我不知道。是的。但应该是肯定的，我相信
+
+600
+01:09:01,240 --> 01:09:11,720
+Yeah. No, I guess the answer is I don't know. Yeah. But it should be positive that I'm sure
+我们应该知道。
+
+601
+01:09:11,720 --> 01:09:14,280
+if I think I can answer it, but I'm not right now. Yeah.
+如果我认为能回答它，但现在不行。是的。
+
+602
+01:09:15,400 --> 01:09:18,360
+Is this diagonal supposed to be valid for any X?
+这个对角线对于任何 X 都有效吗？
+
+603
+01:09:20,680 --> 01:09:24,760
+Yeah. If you put like KU of X here and yeah, yeah.
+是的。如果你放 KU(X) 在这里，是的，是的。
+
+604
+01:09:24,760 --> 01:09:33,080
+Correct. For the, for algebraic. Oh, no, no, sorry. But for only for compact analytic
+正确。对于代数来说。哦，不，不，对不起。但只对于紧复解析
+
+605
+01:09:33,960 --> 01:09:34,680
+varieties. Yeah.
+品种。是的。
+
+606
+01:09:38,200 --> 01:09:42,440
+Correct. Otherwise you'd have to put the compactly supported variants of all the things.
+正确。否则你需要放入所有事物的紧支撑版本。
+
+607
+01:09:43,800 --> 01:09:48,120
+But okay. I mean, it's also depends on what exact, what exactly you want to mean by this.
+但是好的。我的意思是，这也取决于你具体想用这个表示什么。
+
+608
+01:09:48,120 --> 01:09:52,120
+There's a non-compactly supported variant too, but it's not directly the K theory of something.
+还有一个非紧支撑的版本，但它不是直接某个对象的 K 理论。
+
+609
+01:09:52,920 --> 01:09:57,000
+Um, so I mean, I mean, the, the, by sort of point for anyone,
+嗯，所以我的意思是，通过某种点，
+
+610
+01:09:57,000 --> 01:10:03,480
+you can always get one from the other. Um, we're not even concrete or just the sheet theory.
+你可以总是从一个得到另一个。我们甚至没有具体的或只是层理论。
+
+611
+01:10:05,160 --> 01:10:10,120
+So here you said the functionality matched up. Yeah. Like, like the, do you have like, uh,
+所以你说功能匹配上了。是的，比如，你有类似，
+
+612
+01:10:11,080 --> 01:10:17,000
+push forward for, for all the conversions for, for like a quasi-coherent sheaves?
+推前运算符对于所有拟凝聚层的转换？
+
+613
+01:10:17,800 --> 01:10:21,320
+Look, um, I don't remember the details of anything, but yeah,
+看看，嗯，我不记得细节了，但确实，
+
+614
+01:10:21,320 --> 01:10:25,320
+I checked all the phone for it. I mean, whatever happens, if you have one here,
+我已经检查过电话了。也就是说，无论发生什么，如果你这里有一个，
+
+615
+01:10:25,320 --> 01:10:30,040
+you have one there. I mean, yeah. So I mean, it's going to be a little more helpful than that.
+那里也会有一个。也就是说，这会比那更有帮助。
+
+616
+01:10:33,560 --> 01:10:38,440
+I mean, the, we have also the six functor formalism for these, uh, for this theory of
+也就是说，我们也有六函子形式体系来处理这些拟凝聚层理论，
+
+617
+01:10:38,440 --> 01:10:42,280
+quasi-coherent sheaves we've built on analytic spaces. And so when, when you're supposed to get
+在我们建立在分析空间上的时候。所以当你应该得到
+
+618
+01:10:42,280 --> 01:10:45,720
+them, when you're supposed to get a map on K theory is supposed to get when we have a functor
+K-理论的映射时，当我们有一个与余极限交换且右伴随也与余极限交换的函子时，
+
+619
+01:10:45,720 --> 01:10:48,760
+which commutes with co-limits and who's right. A joint commutes with co-limits.
+你应该得到这样的映射。
+
+620
+01:10:49,560 --> 01:10:56,040
+So an example of that would be if you have a smooth map and you take lower shriek, right. Um,
+这个例子就是如果你有一个光滑映射并取下惊叹号运算符的话。
+
+621
+01:10:56,040 --> 01:11:01,080
+but another example of that would be if, uh, you have an arbitrary map, uh, or sorry, you know,
+但另一个例子是，如果你有一个任意映射，或者对不起，你知道的，
+
+622
+01:11:01,880 --> 01:11:06,840
+uh, what was I saying? Do you have a, yeah, no, smooth map. Can you take lower shriek? Yeah.
+对不起，我在说什么？你有这个吗？对，没错，光滑映射。你可以取下惊叹号函子。可以。
+
+623
+01:11:06,840 --> 01:11:12,200
+Another example would be if you have a proper map and you take upper star. So this, yeah.
+另一个例子是，如果你有一个紧合映射并取上星号。所以就是这样。
+
+624
+01:11:12,200 --> 01:11:19,640
+Okay. We have no further questions. Thank you, Mr. Speaker.
+好吧。我们没有进一步的问题了。谢谢，先生，发言人。

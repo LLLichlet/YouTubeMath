@@ -4,7 +4,9 @@
 
 ### 人名：保留原文不翻译
 Witten、Atiyah、Lurie、Jones、Vaughan、Chern、Simons、Dolan、Fukaya、Drinfeld、Kontsevich、
-Grothendieck、Segal、Donaldson、Floer、Kapustin、Witten、Seiberg、Polyakov 等人名一律保留原文。
+Grothendieck、Segal、Donaldson、Floer、Kapustin、Witten、Seiberg、Polyakov、
+Quillen、Suslin、Milnor、Beilinson、Deligne、Bloch、Voevodsky、
+Borel、Serre、Matsumoto、Steinberg、Schatten、Clausen、Scholze 等人名一律保留原文。
 
 ### 定理/理论名：人名保留 + 通用词翻译
 - Chern-Simons theory → Chern-Simons 理论
@@ -17,6 +19,14 @@ Grothendieck、Segal、Donaldson、Floer、Kapustin、Witten、Seiberg、Polyako
 - Seiberg-Witten invariants → Seiberg-Witten 不变量
 - Donaldson invariants → Donaldson 不变量
 - Polyakov action → Polyakov 作用量
+- Deligne-Beilinson cohomology → Deligne-Beilinson 上同调
+- Matsumoto's presentation → Matsumoto 表示
+- Hochschild complex → Hochschild 复形
+- Calkin algebra → Calkin 代数
+- Schatten ideal → Schatten 理想
+- Hilbert space → Hilbert 空间
+- Banach space → Banach 空间
+- Fréchet space → Fréchet 空间
 
 ### 数学术语表（务必遵守，保持全文一致）
 
@@ -56,7 +66,131 @@ Grothendieck、Segal、Donaldson、Floer、Kapustin、Witten、Seiberg、Polyako
 - fully dualizable → 完全可对偶化
 - coherence condition → 相容性条件
 
-拓扑量子场论：
+### 代数 K 理论与导出范畴
+- K-theory → K 理论
+- algebraic K-theory → 代数 K 理论
+- higher K-theory / higher algebraic K-theory → 高次 K 理论 / 高次代数 K 理论
+- topological K-theory → 拓扑 K 理论
+- K₀ / K₁ / K₂ → K₀ / K₁ / K₂（不翻译）
+- Grothendieck group → Grothendieck 群
+- projective module → 投射模
+- finitely generated → 有限生成
+- free abelian group → 自由阿贝尔群
+- group completion → 群化
+- Quillen → Quillen
+- Suslin → Suslin
+- Milnor → Milnor
+- Voevodsky → Voevodsky
+- Beilinson → Beilinson
+- Bloch → Bloch
+- Deligne → Deligne
+- Borel-Serre → Borel-Serre
+- Matsumoto's presentation → Matsumoto 表示
+- Deligne-Beilinson cohomology → Deligne-Beilinson 上同调
+- motivic cohomology → 母题上同调
+- regulator → 调节子
+- Chern character → Chern 特征标
+- trace map → 迹映射
+- derived category → 导出范畴
+- bounded derived category → 有界导出范畴
+- perfect complex → 完美复形
+- chain complex → 链复形
+- chain homotopy → 链同伦
+- Hochschild complex → Hochschild 复形
+- Hochschild cohomology → Hochschild 上同调
+- cyclic homology → 循环同调
+- ring spectrum → 环谱
+- sphere spectrum → 球面谱
+- module → 模
+- ring → 环
+- commutative ring → 交换环
+- unital ring → 含幺环
+- non-unital ring → 无幺环
+- field → 域
+- algebra → 代数
+- Calkin algebra → Calkin 代数
+
+### 凝聚数学与泛函分析
+- condensed mathematics → 凝聚数学
+- solid module / solid variant → 固态模 / 固态版本
+- liquid module / liquid variant → 液态模 / 液态版本
+- Hilbert space → Hilbert 空间
+- separable Hilbert space → 可分 Hilbert 空间
+- Banach space → Banach 空间
+- Fréchet space / Frechet space → Fréchet 空间
+- strongly nuclear dual Fréchet space → 强核对偶 Fréchet 空间
+- bounded operator → 有界算子
+- compact operator → 紧算子
+- Schatten ideal → Schatten 理想
+- trace class operator → 迹类算子
+- bounded derived category of Hilbert spaces → Hilbert 空间的有界导出范畴
+- colimit → 余极限
+- sequential colimit → 序列余极限
+- compactly generated → 紧生成的
+- localization → 局部化
+
+### 无穷范畴与同伦论
+- infinity category → 无穷范畴
+- stable infinity category → 稳定无穷范畴
+- idempotent complete → 幂等完备的
+- dualizable → 可对偶化
+- dualizable object → 可对偶化对象
+- presentable infinity category → 可表现无穷范畴
+- rigid presentable → 刚性可表现
+- symmetric monoidal → 对称幺半的
+- tensor product → 张量积
+- tensor functor → 张量函子
+- morphism → 态射
+- functor → 函子
+- natural transformation → 自然变换
+- fully faithful → 全忠实的
+- right adjoint → 右伴随
+- homotopy type → 同伦型
+- homotopy group → 同伦群
+- π₀ / pi zero → π₀
+- π₁ / pi one → π₁
+- spectrum (同伦论意义) → 谱
+- Eilenberg-MacLane spectrum → Eilenberg-MacLane 谱
+- connective spectrum → 连通谱
+- classifying space → 分类空间
+
+### 几何
+- analytic space → 分析空间
+- complex analytic space → 复分析空间
+- algebraic variety → 代数簇
+- compact variety → 紧簇
+- quasi-coherent sheaf → 拟凝聚层
+- six functor formalism → 六函子形式体系
+- proper map → 紧合映射
+- smooth map → 光滑映射
+- lower shriek / f_! → f_!（下惊叹号函子）
+- upper star / f^* → f^*（上星号函子）
+- compactly supported → 紧支撑的
+- topological space → 拓扑空间
+- scheme → 概形
+- point (几何意义) → 点
+- complex numbers → 复数
+
+### 通用学术词
+- conjecture → 猜想
+- theorem → 定理
+- lemma → 引理
+- corollary → 推论
+- proof → 证明
+- construction → 构造
+- invariant → 不变量
+- dimension → 维数
+- finite dimensional → 有限维
+- infinite dimensional → 无穷维
+- abelian group → 阿贝尔群
+- commutative → 交换的
+- isomorphism → 同构
+- bijection → 双射
+- injection → 单射
+- surjection → 满射
+- category → 范畴
+- set → 集合
+- space → 空间
 - topological quantum field theory (TQFT) → 拓扑量子场论 (TQFT)
 - extended TQFT → 扩展 TQFT
 - fully extended TQFT → 全扩展 TQFT

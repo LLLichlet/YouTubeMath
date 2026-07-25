@@ -1,0 +1,2496 @@
+1
+00:00:00,000 --> 00:00:19,920
+I'm going to announce that from my chest if you'll tell us about the K-theory of the
+
+2
+00:00:19,920 --> 00:00:20,920
+complex numbers.
+
+3
+00:00:20,920 --> 00:00:21,920
+Oh, thank you.
+
+4
+00:00:21,920 --> 00:00:23,920
+It's very nice to be here giving a talk.
+
+5
+00:00:24,520 --> 00:00:29,920
+So this is about the K-theory of the complex numbers, and it's a joint work with.
+
+6
+00:00:33,560 --> 00:00:37,080
+I mean, it's kind of very, there's no big theorems or anything.
+
+7
+00:00:37,080 --> 00:00:40,600
+It's kind of a long term project of mine.
+
+8
+00:00:41,240 --> 00:00:44,920
+Basically, the goal was to ask the right question and then maybe the answer.
+
+9
+00:00:45,080 --> 00:00:49,640
+Well, I don't know when the answer might come, but maybe someone.
+
+10
+00:00:49,920 --> 00:00:50,920
+Yeah, we'll see.
+
+11
+00:00:51,920 --> 00:00:55,920
+So I hope at least I'll ask the right question by the end of the talk.
+
+12
+00:00:55,920 --> 00:01:03,920
+So let me by way of background, let me start with a reminder about algebraic K-theory
+
+13
+00:01:03,920 --> 00:01:09,920
+before specializing to the case of the complex numbers to talk about the general situation.
+
+14
+00:01:09,920 --> 00:01:11,920
+So let's say we have maybe not too general.
+
+15
+00:01:11,920 --> 00:01:14,920
+I'm going to take a ring, but I'm going to assume it's commutative.
+
+16
+00:01:14,920 --> 00:01:17,920
+And there's two reasons for that.
+
+17
+00:01:17,920 --> 00:01:21,920
+One is that later on in the talk, some kind of tensor product will be important.
+
+18
+00:01:21,920 --> 00:01:24,920
+And the second reason is that I don't have to say left or right.
+
+19
+00:01:27,920 --> 00:01:31,920
+So then I recall that K zero bar.
+
+20
+00:01:32,920 --> 00:01:39,920
+You take a free abelian group on the set of finitely generated projective R modules.
+
+21
+00:01:39,920 --> 00:01:47,920
+And you want out by some relations, which says that you said this equal to this.
+
+22
+00:01:47,920 --> 00:01:53,920
+There's this nice morphism from M to and direct some key.
+
+23
+00:01:53,920 --> 00:01:56,920
+This is kind of the familiar thing.
+
+24
+00:01:56,920 --> 00:02:01,920
+So kind of a universal place where dimension like invariants reside.
+
+25
+00:02:01,920 --> 00:02:04,920
+But I'm not just interested in K zero.
+
+26
+00:02:04,920 --> 00:02:07,920
+There's a reason why the zeros there, the classical algebraic K-theory.
+
+27
+00:02:07,920 --> 00:02:10,920
+But I'm also interested in the higher algebraic K-theory.
+
+28
+00:02:10,920 --> 00:02:17,920
+And the story there is that, in fact, there is a homotopy type.
+
+29
+00:02:17,920 --> 00:02:23,920
+And I won't give you a precise definition of this homotopy type, instead, I'll tell you the classical thing.
+
+30
+00:02:23,920 --> 00:02:26,920
+And I'll just give you a specific definition of this homotopy type.
+
+31
+00:02:27,920 --> 00:02:31,920
+But I'm also interested in the higher algebraic K-theory.
+
+32
+00:02:31,920 --> 00:02:33,920
+And the story varies.
+
+33
+00:02:33,920 --> 00:02:36,920
+In fact, there is a homotopy type.
+
+34
+00:02:36,920 --> 00:02:46,600
+this classical thing. And I won't give you a precise definition of this homotopy type,
+
+35
+00:02:46,600 --> 00:02:52,600
+instead I'll tell you things. For example, one thing I can tell you is that
+
+36
+00:02:55,560 --> 00:03:00,600
+you can think of kind of, so this homotopy type, it doesn't, so you have a set of components,
+
+37
+00:03:00,600 --> 00:03:03,960
+the pi zero, which is the usual k zero, but then you also have this pi one,
+
+38
+00:03:06,920 --> 00:03:19,400
+let's say you gained an understanding of k zero, so you maybe have some list of
+
+39
+00:03:20,920 --> 00:03:25,560
+representatives for all, or list of elements in this k zero group, and then you give yourself
+
+40
+00:03:25,560 --> 00:03:29,960
+a finitely generated project of our module, then you have some understanding of how to equate it
+
+41
+00:03:29,960 --> 00:03:35,560
+with something in this list. But maybe there's different ways you can, using these relations,
+
+42
+00:03:35,560 --> 00:03:39,880
+move your module around to get it to equal to one of the representatives in that list.
+
+43
+00:03:39,880 --> 00:03:44,680
+And you can kind of, if you squint enough, you'll see yourself tracing some sort of path in some
+
+44
+00:03:44,680 --> 00:03:50,120
+space, and then maybe you can also trace loops in that space, and that's kind of what pi one would
+
+45
+00:03:50,120 --> 00:03:55,640
+be. And you can try to identify k one in that manner, and then if you identified k one, there
+
+46
+00:03:55,640 --> 00:03:59,800
+may be some ambiguities in how you identified representatives for all the loops, and that would
+
+47
+00:03:59,800 --> 00:04:04,520
+give you something like k two and so on. And you can make this into a formal definition, and even
+
+48
+00:04:04,520 --> 00:04:09,720
+more miraculously, with lots of hard work, sometimes you can even calculate these k groups
+
+49
+00:04:09,720 --> 00:04:17,080
+in various simple cases. Okay, and that's one thing I wanted to say about these higher k groups.
+
+50
+00:04:17,080 --> 00:04:22,840
+Another thing I want to say is, to give an example of fields, so
+
+51
+00:04:25,880 --> 00:04:32,520
+so if r equals k is a field, simplest thing, then there's something we all know that finite
+
+52
+00:04:32,520 --> 00:04:36,680
+dimensional vector spaces are classified by their dimension. Since we group completed,
+
+53
+00:04:36,680 --> 00:04:48,280
+that gives us integers. k one of k is k cross, so that's the ambiguity in fixing our one-dimensional
+
+54
+00:04:48,280 --> 00:04:54,440
+vector space, but it turns out that up to some simple rules, the ambiguity in fixing an arbitrary
+
+55
+00:04:54,440 --> 00:05:00,600
+dimensional vector space reduces to that in the one-dimensional vector space, meaning you get k
+
+56
+00:05:00,600 --> 00:05:06,600
+cross. And then the fun thing is, you can actually give a presentation for k two, this is called
+
+57
+00:05:06,600 --> 00:05:15,160
+Matsumoto's presentation. Now it gets a bit more involved, so here implicitly I'm using some
+
+58
+00:05:15,800 --> 00:05:18,200
+multiplicative structure, but okay, so
+
+59
+00:05:18,200 --> 00:05:30,040
+so yeah, so there's you take the, okay, this is an abelian group under multiplication,
+
+60
+00:05:31,320 --> 00:05:35,560
+so I think of it additively actually, in this incarnation it's actually best thought of as an
+
+61
+00:05:35,560 --> 00:05:40,520
+additive group, and you take that tensor product with itself as abelian groups, and then you mod
+
+62
+00:05:40,520 --> 00:05:45,320
+out by a single family of relations called the Steinberg relations, they're parameterized by
+
+63
+00:05:45,320 --> 00:05:50,440
+elements of the field different from zero and one, and you get some big groups this way,
+
+64
+00:05:51,000 --> 00:05:56,680
+and that turns out to be what k two is, and it's a little bit more tricky to give
+
+65
+00:05:56,680 --> 00:06:03,880
+explicit descriptions once you go farther down the line, I mean for general k. Okay,
+
+66
+00:06:03,880 --> 00:06:09,480
+that's another thing I wanted to tell you, the next thing I want to tell you or ask with that,
+
+67
+00:06:09,480 --> 00:06:19,240
+we'll ask the question together, is why do we care? Why do we care about higher algebraic k
+
+68
+00:06:19,240 --> 00:06:23,560
+theory? Well probably there are many different reasons, but there's one that's maybe closest to
+
+69
+00:06:23,560 --> 00:06:32,600
+my heart that I certainly want to mention, which is that k theory is strongly related to something
+
+70
+00:06:32,600 --> 00:06:42,920
+called motivic cohomology, and motivic cohomology is strongly related to something perhaps
+
+71
+00:06:42,920 --> 00:06:48,680
+conjectural, which is x groups, or maybe it's equal to, I don't know, in some category of mixed motives,
+
+72
+00:06:51,560 --> 00:06:55,160
+and these are realization functions,
+
+73
+00:06:55,800 --> 00:07:00,680
+and you get things like x in Galois representations,
+
+74
+00:07:02,520 --> 00:07:05,720
+or if you're over the complex numbers, x in mixed odd structures,
+
+75
+00:07:07,960 --> 00:07:14,200
+whatever other realizations you have, and so what you can think of k theory class as kind of a,
+
+76
+00:07:15,000 --> 00:07:18,520
+well it's motivic in the sense that it gives this universal source for
+
+77
+00:07:20,440 --> 00:07:23,480
+kind of data you might see here, an extension of Galois representations,
+
+78
+00:07:23,480 --> 00:07:27,880
+essentially mixed odd structures, kind of one object that gives rise to all
+
+79
+00:07:28,760 --> 00:07:35,720
+those different things in different worlds. That's one aspect, but the other aspect,
+
+80
+00:07:35,720 --> 00:07:42,760
+but that would be not worth much if it, I mean, if there weren't some reason why this
+
+81
+00:07:42,760 --> 00:07:46,760
+could be understood, and there is a very good reason why this can be understood, and it's that
+
+82
+00:07:47,320 --> 00:08:01,000
+k theory is basically just linear algebra, I mean, it's all just about vector space,
+
+83
+00:08:01,000 --> 00:08:04,680
+finite dimensional vector space. You take the category of finite dimensional vector
+
+84
+00:08:04,680 --> 00:08:08,840
+spaces, you do something with it, but in the end it's just linear algebra, right, so
+
+85
+00:08:10,920 --> 00:08:14,040
+that actually does make it easier to study in many ways.
+
+86
+00:08:17,560 --> 00:08:21,320
+There, for example, to understand this, you need to know, not just linear algebra,
+
+87
+00:08:21,320 --> 00:08:24,360
+you need to know about things like polynomials, those are complicated,
+
+88
+00:08:25,640 --> 00:08:36,360
+I mean, yeah, but somehow there's a relation. Okay, I wrote some things here, I wrote Beilinson in here,
+
+89
+00:08:36,360 --> 00:08:47,240
+and oh yes, and I wanted to say this actually kind of works, I mean, I think the only reason
+
+90
+00:08:47,240 --> 00:08:53,320
+we know things about X and mixed-tape motives over the rational numbers, for example, is because
+
+91
+00:08:54,840 --> 00:09:00,440
+we can understand enough about general linear groups, the NGLNZ and its cohomology due to
+
+92
+00:09:00,440 --> 00:09:07,880
+Quillen and Borel and Borel-Serre, so really, I mean, this path of going from linear algebra to
+
+93
+00:09:07,880 --> 00:09:18,120
+this kind of fancy stuff actually works, at least in some cases. Okay, so well, okay, so then coming
+
+94
+00:09:18,120 --> 00:09:22,920
+back to KFC, well, when I said that it sounded like KFC,
+
+95
+00:09:29,240 --> 00:09:37,080
+all right, I'll be here all week, so this, whatever this is, it should have to do with,
+
+96
+00:09:40,520 --> 00:09:46,600
+following this Beilinson line here, it should have to do with cohomology theories,
+
+97
+00:09:48,120 --> 00:09:54,440
+over the complex numbers, that's kind of, that's what we're interested in,
+
+98
+00:09:54,440 --> 00:10:01,480
+in probing here, when we talk about the K theory of complex numbers. Okay, any questions?
+
+99
+00:10:06,200 --> 00:10:07,640
+cohomology theories of what?
+
+100
+00:10:10,120 --> 00:10:14,600
+Details come later. In principle algebraic varieties.
+
+101
+00:10:19,080 --> 00:10:26,040
+But therein lies the problem, let's be segway into the next. So what is the problem? By the way,
+
+102
+00:10:26,040 --> 00:10:30,920
+I have a record, and the first time I gave a talk about this topic was eight years ago,
+
+103
+00:10:32,520 --> 00:10:37,960
+almost to the day, and so I've actually been thinking about this for a long time. So what's
+
+104
+00:10:37,960 --> 00:10:54,360
+the problem? So well, K theory, this construction K theory only refers to the abstract field
+
+105
+00:10:54,360 --> 00:11:07,880
+C. So it's going to be the same for C as for any, so algebraically closed, characteristic zero,
+
+106
+00:11:09,320 --> 00:11:15,560
+cardinality, continue. It's going to be the same for any field with those properties,
+
+107
+00:11:15,560 --> 00:11:18,600
+it doesn't know that T is a very special field that has a topology,
+
+108
+00:11:19,560 --> 00:11:28,600
+a tendon geometry and so on. So let's look at this more concretely. So
+
+109
+00:11:31,560 --> 00:11:40,040
+I invite you to try to ponder the structure of this K2 group, or lack thereof,
+
+110
+00:11:40,840 --> 00:11:50,200
+and somehow take into account the topology of the complex numbers or something else. It's really
+
+111
+00:11:50,200 --> 00:11:58,360
+quite messy. I mean, so in fact, there's a theorem of Milner, which is, I'll say it loosely,
+
+112
+00:11:59,640 --> 00:12:03,720
+you can try to put a topology on this, but in any case, the maximal house door quotient
+
+113
+00:12:03,720 --> 00:12:15,000
+is zero. So this is a huge group, make no mistake, but it's all chaotic.
+
+114
+00:12:20,760 --> 00:12:21,720
+So this suggests
+
+115
+00:12:26,040 --> 00:12:28,200
+whatever it may mean, the completed K2
+
+116
+00:12:28,200 --> 00:12:31,800
+should be zero.
+
+117
+00:12:36,760 --> 00:12:40,680
+With K0 and K1, there's no problem. Z and C cross are perfectly
+
+118
+00:12:40,680 --> 00:12:47,720
+reasonable things, but once you get to K2, things get a bit funny. But on the other hand,
+
+119
+00:12:50,920 --> 00:12:55,560
+it can't be true that the completed, whatever it means, that the completed things should be zero
+
+120
+00:12:56,360 --> 00:13:00,920
+in all degrees bigger than one, because they're a regulator maps.
+
+121
+00:13:06,680 --> 00:13:11,400
+K2 and minus one of the complex numbers goes to C mod 2 pi i,
+
+122
+00:13:14,040 --> 00:13:19,400
+regulator, regulator maps, this being for n bigger than zero.
+
+123
+00:13:20,360 --> 00:13:27,320
+So there are, and we know these maps are non-trivial, because we map K of K2 and minus
+
+124
+00:13:27,320 --> 00:13:36,760
+one of Z in there, you get something interesting. So in odd degrees, in positive odd degrees,
+
+125
+00:13:36,760 --> 00:13:41,480
+there should be something reasonable inside these, or some reasonable, maybe quotient,
+
+126
+00:13:41,480 --> 00:13:45,400
+you can think of it, it's probably not a quotient, something reasonable that is maps to, okay,
+
+127
+00:13:45,720 --> 00:13:49,880
+something reasonable that is maps to, okay, even though in the individual groups themselves
+
+128
+00:13:49,880 --> 00:13:53,320
+will have the same problems as in the K2 case, there'll be some wild stuff,
+
+129
+00:13:53,320 --> 00:14:01,000
+a non-house store for crazy looking things. So now I will ask the vague form of the,
+
+130
+00:14:01,000 --> 00:14:05,400
+or present it, let me say the vague form of the question, or a variety of questions.
+
+131
+00:14:05,400 --> 00:14:20,120
+So, does there exist a stated variance?
+
+132
+00:14:26,680 --> 00:14:31,080
+The algebraic k-period of the complex numbers, capturing regulators,
+
+133
+00:14:31,720 --> 00:14:34,600
+how to calculate it,
+
+134
+00:14:38,920 --> 00:14:42,200
+and what is the relation to cohomology theories?
+
+135
+00:14:46,840 --> 00:14:49,320
+And say, is there more than just regulators?
+
+136
+00:14:53,800 --> 00:14:55,320
+Just regulators, yeah, right.
+
+137
+00:14:55,320 --> 00:15:08,440
+So those are the kind of questions I want to address, or no, I want to make precise, yeah.
+
+138
+00:15:10,200 --> 00:15:13,480
+But are there any, do you have any questions for me right now?
+
+139
+00:15:13,480 --> 00:15:21,000
+Okay.
+
+140
+00:15:21,000 --> 00:15:23,720
+What is the relationship to KU?
+
+141
+00:15:23,720 --> 00:15:30,840
+To KU? Well, KU, I mean, you know, KU is like just this part, bumped up to the next degree.
+
+142
+00:15:30,840 --> 00:15:34,760
+Well, it's like, if you take the homotopy, if you imagine taking the homotopy type of this,
+
+143
+00:15:34,760 --> 00:15:39,080
+turns into a circle, that's like a Z in the next degree, and that's, you've seen KU even,
+
+144
+00:15:40,040 --> 00:15:43,560
+Does that mean the answer to is there more than just regulators will be no?
+
+145
+00:15:44,440 --> 00:15:51,640
+Well, I think there's an underlying false assumption behind your question,
+
+146
+00:15:51,640 --> 00:15:53,720
+which is that this completed variant will be KU.
+
+147
+00:15:56,680 --> 00:16:01,800
+I mean, it's definitely more refined than KU. It should map to KU, but it should be more refined.
+
+148
+00:16:01,800 --> 00:16:06,760
+So I think, because it should see these things, and not just these things in the next degree.
+
+149
+00:16:09,720 --> 00:16:10,680
+Could I answer your question?
+
+150
+00:16:11,560 --> 00:16:15,160
+Yes, maybe. Okay. Maybe your question will make more sense later.
+
+151
+00:16:16,120 --> 00:16:22,200
+Okay. So next topic is
+
+152
+00:16:24,840 --> 00:16:29,000
+candidate, candidate complete.
+
+153
+00:16:34,360 --> 00:16:35,960
+So let me give the basic idea.
+
+154
+00:16:39,080 --> 00:16:46,440
+So well, what was K of C based on linear algebra, finite dimensional complex vector spaces.
+
+155
+00:16:49,400 --> 00:16:54,520
+But this is bad because it only uses C as an abstract field.
+
+156
+00:16:59,560 --> 00:17:03,560
+And then the complete thing, which I'll switch to calling an analytic thing.
+
+157
+00:17:03,560 --> 00:17:11,960
+So this will be based on a certain topological, let's see vector spaces.
+
+158
+00:17:34,520 --> 00:17:37,960
+Let's see if I can.
+
+159
+00:17:50,600 --> 00:17:54,760
+Well, wait, because I'm going to pull the rug out from under your feet immediately.
+
+160
+00:17:54,760 --> 00:18:01,320
+So, well, okay. But there's a problem with this. Interpreting this too naively leads to problems.
+
+161
+00:18:02,360 --> 00:18:10,680
+Namely that categories of interesting, non-finite dimensional categories of topological vector
+
+162
+00:18:10,680 --> 00:18:16,680
+spaces tend to have island-bridge spindle.
+
+163
+00:18:16,760 --> 00:18:24,040
+So there's maybe some completed infinite direct sum of any object and to direct sum your original
+
+164
+00:18:24,040 --> 00:18:28,920
+thing with that, it doesn't change it. And this gives a relation X equals one plus X and K theory,
+
+165
+00:18:28,920 --> 00:18:33,960
+which proves that one equals zero. And the whole thing has to match. Hilbert Hotel, yeah.
+
+166
+00:18:34,760 --> 00:18:36,760
+So let's see if I can answer your question.
+
+167
+00:18:36,840 --> 00:18:42,440
+So if you interpret this too naively, your completed K-theory is just going to be zero,
+
+168
+00:18:42,440 --> 00:18:44,920
+ever completely, just totally zero.
+
+169
+00:18:48,200 --> 00:18:50,200
+So we need a new idea.
+
+170
+00:18:53,880 --> 00:18:58,200
+And thankfully, a new brilliant idea, which I'm going to talk about in a moment,
+
+171
+00:18:58,200 --> 00:19:02,680
+is that we're going to have a new idea, and we're going to have to change it.
+
+172
+00:19:03,320 --> 00:19:10,760
+And thankfully, a new brilliant idea was provided by Aleksandr Efimov. So this is
+
+173
+00:19:13,720 --> 00:19:18,680
+then to the new theory of K-theory, or extended the context of algebraic K-theory.
+
+174
+00:19:19,320 --> 00:19:24,280
+And let me explain how it goes. Without giving details, although I'll give more and more details
+
+175
+00:19:24,280 --> 00:19:31,000
+as I discuss the example I care about. But first, I won't tell you anything, but then, yeah, okay.
+
+176
+00:19:33,160 --> 00:19:37,960
+I'll just set the stage. So what did we have? We had finite dimensional, I'm going to stick to C,
+
+177
+00:19:37,960 --> 00:19:42,440
+yeah, we have finite dimensional, or no, well, finally generated projective R-modules.
+
+178
+00:19:46,680 --> 00:19:51,160
+The first thing you have to do is change the context a little bit. You have to go
+
+179
+00:19:51,160 --> 00:19:56,600
+derived. This is not the most important part of it, but it's something you do have to do
+
+180
+00:19:56,600 --> 00:20:01,800
+to get the theory to work. So you replace this by perfect complexes of R-modules.
+
+181
+00:20:02,680 --> 00:20:08,760
+And again, there's a version of K-theory. So where K0 is a free abelian group generated by
+
+182
+00:20:08,760 --> 00:20:13,080
+all perfect complexes. And now the relation you write down is that the class of M equals the class
+
+183
+00:20:13,080 --> 00:20:20,280
+of M plus the class of P, if there exists a co-fiber sequence. So MPM, so distinguished
+
+184
+00:20:20,280 --> 00:20:30,280
+triangle broad category in the homotopy category. And it's the same as the K0 you had here. That's
+
+185
+00:20:30,280 --> 00:20:34,520
+not difficult to see just by resolving your perfect complexes. So here you're thinking of
+
+186
+00:20:34,520 --> 00:20:38,920
+universal Euler characteristics. Here you're thinking of universal dimensions. It's the same
+
+187
+00:20:38,920 --> 00:20:44,280
+thing. And that also extends to the hierarchy. You can also define hierarchy groups here. And
+
+188
+00:20:44,280 --> 00:20:48,840
+it also is the same as the hierarchy groups you have here. That's not as easy to see, but okay.
+
+189
+00:20:50,040 --> 00:20:57,000
+So you want to work in this kind of derived context as a first, but then the real change comes next.
+
+190
+00:20:57,960 --> 00:21:03,080
+So what, first of all, what kind of an object is this? This is well, it's some kind of
+
+191
+00:21:04,120 --> 00:21:07,800
+derived, small, small derived category. So let's say a small,
+
+192
+00:21:10,280 --> 00:21:15,960
+and let's also say idempotent complete, stable infinity category.
+
+193
+00:21:15,960 --> 00:21:26,200
+And now here's the cool thing. So the Lurie showed that this world actually has an enlargement.
+
+194
+00:21:27,000 --> 00:21:33,640
+The category of these kinds of categories sits naturally inside of a larger category of other
+
+195
+00:21:34,600 --> 00:21:45,720
+categories. So small, stable, idempotent complete, infinity categories. The category of those sits
+
+196
+00:21:45,720 --> 00:21:55,080
+fully faithfully inside of something called dualizable, presentable, infinity categories.
+
+197
+00:21:55,080 --> 00:22:00,920
+So these are big categories. They don't have a set's worth of objects anymore. They're generated
+
+198
+00:22:00,920 --> 00:22:07,080
+under co-limits by a set's worth of objects, but they are big. And the morphisms here in this category
+
+199
+00:22:08,600 --> 00:22:18,360
+are those co-limit preserving. I apologize for my handwriting. Just listen to my words.
+
+200
+00:22:18,360 --> 00:22:25,640
+And my writing is just there to slow me down, co-limit-preserving-functorist-movement-pro-limit-preserving
+
+201
+00:22:28,120 --> 00:22:35,480
+right-adjoint. So that's a mouthful, right? Okay. And then what is this inclusion implemented by?
+
+202
+00:22:35,480 --> 00:22:38,840
+You have a small category, and you take its in category.
+
+203
+00:22:41,400 --> 00:22:45,400
+And then you have a small category, and you take its in category.
+
+204
+00:22:46,120 --> 00:22:53,800
+And you can see that this condition on morphisms on the level of in categories is just the condition
+
+205
+00:22:53,800 --> 00:22:58,760
+that means that it corresponds to a functional level of small categories. So it commutes with
+
+206
+00:22:58,760 --> 00:23:02,760
+co-limits, so it's determined by what it does on C. Then the condition on the right-adjoint means
+
+207
+00:23:02,760 --> 00:23:11,960
+that C has to go to D, such a function in C to in D. And the important condition is the dualizable,
+
+208
+00:23:11,960 --> 00:23:14,680
+and this means close enough to compactly generated.
+
+209
+00:23:16,840 --> 00:23:19,640
+And I'm not going to make that precise again until later in the talk.
+
+210
+00:23:21,640 --> 00:23:25,560
+Suffice it to say that they're in some sense controlled by compactly generated categories,
+
+211
+00:23:25,560 --> 00:23:30,280
+but they do not themselves have to be compactly generated. So this is what I mean by pulling a
+
+212
+00:23:30,280 --> 00:23:39,000
+rug out from under your feet, because we like being compactly generated. It's great. But now
+
+213
+00:23:39,000 --> 00:23:45,400
+I really believe we have to learn to get there. It turns out there are so many interesting examples
+
+214
+00:23:45,400 --> 00:23:49,800
+to be categorized. People never even noticed before looking into this. They do all sorts of
+
+215
+00:23:49,800 --> 00:23:56,200
+things for you. We have to get used to not having enough compact objects. There's another reason
+
+216
+00:23:56,200 --> 00:24:06,520
+for that. I just realized staring at Tomer in the audience. Okay. Right. Okay.
+
+217
+00:24:09,240 --> 00:24:15,640
+So I'm claiming, I claim these things are everywhere, but I'm not going to give an example yet.
+
+218
+00:24:21,880 --> 00:24:24,040
+Is it normal that these boards are so difficult to move?
+
+219
+00:24:25,000 --> 00:24:33,080
+They're actually weak.
+
+220
+00:24:46,200 --> 00:24:47,640
+I have one advantage though.
+
+221
+00:24:54,040 --> 00:25:02,360
+Okay. Right. So I have to, I'm afraid this is all very abstract and I didn't even give you
+
+222
+00:25:02,360 --> 00:25:08,040
+examples, but I have to introduce you also to a variant, which actually helps to produce examples.
+
+223
+00:25:09,720 --> 00:25:11,640
+So there's an analog of this whole story
+
+224
+00:25:14,200 --> 00:25:16,280
+with tensor structure included.
+
+225
+00:25:16,280 --> 00:25:25,320
+So there I would say the thing to put on the, on the small side is small, stable infinity categories
+
+226
+00:25:26,680 --> 00:25:31,320
+with symmetric monoidal tensor product and all objects are dualizable.
+
+227
+00:25:35,720 --> 00:25:39,720
+So again, perf R, if R is a commutative ring, is a perfectly nice example.
+
+228
+00:25:40,600 --> 00:25:44,440
+So again, perf R, if R is a commutative ring, is a perfectly nice example.
+
+229
+00:25:46,920 --> 00:25:54,520
+This embeds into what are called rigid presentable symmetric monoidal
+
+230
+00:25:56,680 --> 00:25:59,400
+infinity categories, stable infinity categories.
+
+231
+00:26:00,280 --> 00:26:04,760
+These were investigated, but defined and studied by Gates, Gorey, Rosenblum.
+
+232
+00:26:10,520 --> 00:26:15,720
+And so it's some big tensor categories. Okay. And again, the function that implements this is C
+
+233
+00:26:15,720 --> 00:26:22,600
+goes to even C. And there's something nice over here, which is that here I want, you know,
+
+234
+00:26:22,600 --> 00:26:30,040
+and morphisms here are co-limit preserving tensor functions.
+
+235
+00:26:32,120 --> 00:26:36,120
+And a nice thing here is that the right, it all automatically has a right to join the commutes
+
+236
+00:26:36,120 --> 00:26:41,080
+and co-limits. So that weirdness that you had to have that extra property disappears here.
+
+237
+00:26:41,080 --> 00:26:46,440
+You can kind of, you can verify that and there's things in the essential image here because
+
+238
+00:26:46,440 --> 00:26:50,040
+it's a tensor functor. So it has to send dualizable objects to dualizable objects,
+
+239
+00:26:50,040 --> 00:26:56,120
+but the hypothesis is guaranteed that dualizable is the same thing as compact. So yeah.
+
+240
+00:26:57,160 --> 00:27:00,600
+Can you say, reading here, your notion is generated under dualizable?
+
+241
+00:27:00,600 --> 00:27:03,800
+No, no, I haven't said what it means. And if not that,
+
+242
+00:27:04,760 --> 00:27:05,240
+it's a,
+
+243
+00:27:12,840 --> 00:27:19,400
+so then the main theorem, so this is a fema,
+
+244
+00:27:22,440 --> 00:27:25,480
+k-theory naturally extends
+
+245
+00:27:29,000 --> 00:27:31,400
+to dualizable categories.
+
+246
+00:27:34,760 --> 00:27:42,040
+Meaning the k-theory functor from this thing to spectra, whatever you like, or kn for any n,
+
+247
+00:27:42,040 --> 00:27:47,800
+functor to a abelian groups, canonically extends to a functor from this category to the same
+
+248
+00:27:47,800 --> 00:27:52,680
+target. The k-theory here factors through this included, meaning there's a bigger world in which
+
+249
+00:27:52,680 --> 00:27:59,800
+algebraic k-theory can be defined. For things of the form in C, it's just you pass the compact
+
+250
+00:27:59,800 --> 00:28:04,440
+objects and take the normal k-theory you know there. For things not in the form in C, it's not
+
+251
+00:28:04,440 --> 00:28:18,840
+that. Nothing new and mysterious. Okay? And also, yeah, if C is rigid, then K of C gets a ring
+
+252
+00:28:18,840 --> 00:28:28,440
+structure. Morally speaking, the tensor product on C induces a ring structure on K of C, just like
+
+253
+00:28:28,440 --> 00:28:41,240
+usual. Okay, now here's a nice fact that inclusion from rigid presentable stable tensor categories
+
+254
+00:28:43,400 --> 00:28:51,800
+into all presentable stable tensor categories has a right of choice.
+
+255
+00:28:58,440 --> 00:29:04,040
+Oh, the rigidification. So now you see that these things really are everywhere. You take any
+
+256
+00:29:04,920 --> 00:29:11,960
+tensor category you happen to run across, you hit it with this, you get something rigid, and surprisingly
+
+257
+00:29:11,960 --> 00:29:16,120
+enough, it's very rarely compactly generated. You produce something genuinely new, even if you start
+
+258
+00:29:16,120 --> 00:29:24,280
+with a very familiar one of these. Even if you start with one that's actually compactly generated,
+
+259
+00:29:24,280 --> 00:29:30,600
+but not rigid. You apply rigidification, you get a new category is rigid and not compactly generated.
+
+260
+00:29:31,320 --> 00:29:36,120
+So really, these things are everywhere, and they're extremely, yeah, well, yeah.
+
+261
+00:29:38,120 --> 00:29:46,520
+And so if the unit in C is compact, then even better, this C ridge is actually sitting
+
+262
+00:29:46,840 --> 00:29:55,240
+faithfully inside C. And how to think about this, it's a C ridge is an improved version
+
+263
+00:29:59,800 --> 00:30:03,800
+of taking into the set of dualizable objects.
+
+264
+00:30:07,640 --> 00:30:13,640
+In this case, where the unit is compact. It's bigger than that, and it's not compactly generated.
+
+265
+00:30:13,640 --> 00:30:21,320
+Okay, again, I will say more about this and how it actually works when we when I get to the example
+
+266
+00:30:21,320 --> 00:30:25,240
+I care about, but I don't want to say too much about examples that aren't in the focus of the
+
+267
+00:30:25,240 --> 00:30:32,360
+talk because I want to get through some things. Okay, so now what are we going to do? I'm still
+
+268
+00:30:32,360 --> 00:30:41,720
+in this section candidate complete K of C. Is this block accurate? Could I ask?
+
+269
+00:30:42,440 --> 00:30:48,280
+I don't know if my phone is out of batteries. It's a couple of minutes fast. It's 501. Thank you.
+
+270
+00:30:55,240 --> 00:30:58,360
+It's an hour plus. Yeah, yeah, yeah. I'm in modulo 60. Yeah.
+
+271
+00:31:03,800 --> 00:31:10,200
+Okay, so what we're going to do is we're going to produce instead of thinking about trying to
+
+272
+00:31:10,200 --> 00:31:14,040
+produce a small category and taking cases that we're going to produce a large category,
+
+273
+00:31:14,040 --> 00:31:19,080
+take the cater in this new sense. We don't even have to worry about producing a dualizable one
+
+274
+00:31:19,080 --> 00:31:23,720
+as long as you produce a tensor category, we can just rigidify it at the end. Now here's a
+
+275
+00:31:25,240 --> 00:31:29,400
+here's it. So here's a experimental fact.
+
+276
+00:31:29,400 --> 00:31:44,440
+If C is any reasonable, I don't know, reasonable. I mean, this is not a mathematical fact, right?
+
+277
+00:31:44,440 --> 00:31:51,560
+This is if this is any presentable stable infinity category with tensor product
+
+278
+00:31:55,160 --> 00:31:55,880
+whose objects
+
+279
+00:31:55,880 --> 00:32:04,680
+feel like some kind of complete topological C vector spaces. Okay, there's millions of options
+
+280
+00:32:04,680 --> 00:32:09,240
+for what you could mean by a topological C vector complete topological C vector space
+
+281
+00:32:09,240 --> 00:32:16,680
+based on Banach spaces, whatever, Hilbert spaces, whatever you want. But a fact, an empirical fact
+
+282
+00:32:16,680 --> 00:32:23,400
+is that whatever choice you make, once you rigidify, you always get the same thing.
+
+283
+00:32:24,360 --> 00:32:28,680
+You always get the same thing. So you get something truly canonical.
+
+284
+00:32:34,920 --> 00:32:38,440
+So all of the subtlety of infinite dimensional topological vector spaces,
+
+285
+00:32:39,000 --> 00:32:41,400
+different kinds of convexity properties, whether you have
+
+286
+00:32:42,840 --> 00:32:47,720
+Banach, you know, open balls fundamental or compact set, the kind of dual thing where compact
+
+287
+00:32:47,720 --> 00:32:51,880
+compact sets are fundamental. Once you can make categories that encode any of them,
+
+288
+00:32:51,880 --> 00:32:55,560
+but once you rigidify, you always get the exact same thing. This is the main thing
+
+289
+00:32:55,560 --> 00:32:58,360
+I want to advertise is there really is a canonical choice for
+
+290
+00:32:59,240 --> 00:33:03,000
+linear algebra and infinite dimensions topological vector spaces.
+
+291
+00:33:03,880 --> 00:33:06,920
+So think of this as some version of the phenomenon that the
+
+292
+00:33:06,920 --> 00:33:09,320
+finite dimensional vector space has a unique topology.
+
+293
+00:33:10,680 --> 00:33:15,800
+Sure, that sounds good. Yeah, maybe I will from now on.
+
+294
+00:33:15,800 --> 00:33:21,080
+So I'm the experimentalist, maybe you're theoretical.
+
+295
+00:33:24,840 --> 00:33:33,640
+Right. So I won't, I will tell you my, or our, I should say preferred way of.
+
+296
+00:33:35,960 --> 00:33:39,960
+So this will be that you have everything that's derived. This is including experimental
+
+297
+00:33:39,960 --> 00:33:44,440
+observations about how you resolve one kind of weave. Like this is include facts like how
+
+298
+00:33:44,440 --> 00:33:48,120
+you would resolve like Banach space by compact type things, how you resolve a compact type
+
+299
+00:33:48,120 --> 00:33:50,600
+thing by balance. It has all these resolution factors. Yeah.
+
+300
+00:33:53,560 --> 00:33:56,440
+It does nothing to do with seeing it, but also, well,
+
+301
+00:33:59,720 --> 00:34:02,120
+I might get to non-archimedean stuff at the end of the talk.
+
+302
+00:34:03,560 --> 00:34:07,080
+It turns out in the non-archimedean world, there's actually maybe two choices,
+
+303
+00:34:09,000 --> 00:34:12,520
+but you're happy. There's a choice in the non-archimedean world that doesn't exist
+
+304
+00:34:12,520 --> 00:34:19,880
+in the Archimedean world and it's the easier one. Okay. Other questions.
+
+305
+00:34:22,920 --> 00:34:29,720
+Okay. Oh, sure. Yeah. I'm about to explain that it's extremely general.
+
+306
+00:34:42,520 --> 00:34:50,760
+Yeah. So, so what's, so I'll give you one, our, our preferred C 10 big C tensor,
+
+307
+00:34:50,760 --> 00:34:56,200
+which we can rigidify. So, yeah, maybe I also take the opportunity to advertise that
+
+308
+00:34:56,200 --> 00:35:01,480
+Peter and I are currently teaching a class on, on analytic stacks, where we propose new
+
+309
+00:35:01,480 --> 00:35:08,200
+foundations for analytic geometry. And they're being posted on IHS's YouTube site and so on.
+
+310
+00:35:08,920 --> 00:35:14,360
+And now I'll make contact with that course to some extent. So if let's, well, there's,
+
+311
+00:35:14,360 --> 00:35:17,640
+there's many different things you can start with as your familiar input data,
+
+312
+00:35:17,640 --> 00:35:22,840
+but let me just take an arbitrary bond offering with the norm specified.
+
+313
+00:35:23,960 --> 00:35:27,800
+And from such a thing, you can produce an analytic stack in our sense. So
+
+314
+00:35:28,760 --> 00:35:35,880
+liquid, so-called liquid analytic stack associated to this. And every such thing has a derived
+
+315
+00:35:35,880 --> 00:35:47,960
+category. And it's one of these C tensor guys. But it's not rigid, but you can then rigid rigidify
+
+316
+00:35:47,960 --> 00:35:57,720
+it. And then you get something that I claim that all the steps are canonical, but certainly
+
+317
+00:35:57,720 --> 00:36:03,880
+this composition of steps is, is canonical. You might bicker a bit about how we set the
+
+318
+00:36:03,880 --> 00:36:07,000
+foundations up, but it doesn't mean the composition is certainly canonical.
+
+319
+00:36:08,760 --> 00:36:14,600
+And so if, if this is a trivial norm, so basically if you're thinking of this as being discrete,
+
+320
+00:36:14,600 --> 00:36:21,800
+then what is this? It's D, R, truth, liquid, bridge. It's just the usual
+
+321
+00:36:22,440 --> 00:36:29,880
+big derived category of R. It's compactly generated and this K theory is the usual K theory of R.
+
+322
+00:36:30,440 --> 00:36:33,960
+But now when we fit it into a machine where we don't need to plug in a discrete ring,
+
+323
+00:36:33,960 --> 00:36:39,560
+we can plug in a bond offering, for example, and we naturally get something where we can take K3.
+
+324
+00:36:40,200 --> 00:36:53,880
+Okay. Now let me say, let me give you a description of what, so when R
+
+325
+00:36:53,880 --> 00:37:01,160
+is C with the usual absolute value, usual Archimedean absolute value. So here is a description.
+
+326
+00:37:07,080 --> 00:37:12,440
+Can I ask a question? Just a sec. The resulting rigid category. Yes.
+
+327
+00:37:13,080 --> 00:37:17,000
+You don't really mean that every step is canonical. It still depends on P, right?
+
+328
+00:37:17,000 --> 00:37:20,040
+P? Like this. No, no, no, no, no. P is in the norm.
+
+329
+00:37:20,840 --> 00:37:25,480
+Oh, okay.
+
+330
+00:37:28,440 --> 00:37:33,320
+Like there's different norms you can put on R. There's the usual one and then there's the
+
+331
+00:37:33,320 --> 00:37:40,680
+Pth power for any P between zero and one. It matches up. Yeah, it's cool. Yeah. Okay.
+
+332
+00:37:43,080 --> 00:37:46,200
+Right. So here is a description of the resulting rigid category.
+
+333
+00:37:47,080 --> 00:37:52,200
+Right. So I'm not going to, so this thing lives inside there, but because that's not familiar,
+
+334
+00:37:52,200 --> 00:37:56,280
+I'm going to instead embed it in something more familiar to describe this category and something
+
+335
+00:37:56,280 --> 00:38:00,360
+based on Hilbert spaces, which I think we can all agree on kind of nice, nice enough things.
+
+336
+00:38:00,920 --> 00:38:05,800
+So, and I'm going to call this the resulting rigid category. I'll call it
+
+337
+00:38:05,800 --> 00:38:08,680
+analytic drive category of the complex numbers. So
+
+338
+00:38:08,680 --> 00:38:19,000
+so this, so you can put it inside. I'll write it as an in category
+
+339
+00:38:20,280 --> 00:38:26,040
+of a bounded derived category of Hilbert spaces. Let's say separable Hilbert spaces.
+
+340
+00:38:29,160 --> 00:38:31,800
+And here all short exact sequence of split. This is like an exact
+
+341
+00:38:33,400 --> 00:38:38,120
+or split exact split exact category, if you like.
+
+342
+00:38:38,680 --> 00:38:43,560
+So you just, it's basically just a, you take finite chain complexes of Hilbert spaces,
+
+343
+00:38:43,560 --> 00:38:48,120
+and then you pass to the chain homotopy category, some infinity category version of that.
+
+344
+00:38:50,280 --> 00:38:53,000
+And then you make it big. So you pretend like it's derived category
+
+345
+00:38:53,880 --> 00:38:56,440
+and so on. So then it's, it's just a full subcategory of that.
+
+346
+00:38:57,720 --> 00:39:01,480
+And which full subcategory is it? It's the one that's generated under co-limits.
+
+347
+00:39:01,480 --> 00:39:07,880
+All right. And now I have to specify for you a nice class of more or less topological vector spaces.
+
+348
+00:39:07,880 --> 00:39:18,760
+So, well, I lost my others.
+
+349
+00:39:31,640 --> 00:39:52,760
+Okay. Generated under co-limits by what are called the strongly nuclear dual Frechet spaces.
+
+350
+00:39:52,760 --> 00:40:07,240
+What are these? These are co-limits of Hilbert spaces, sequential co-limits,
+
+351
+00:40:07,240 --> 00:40:13,240
+let's say injective maps. It doesn't really matter where the transition maps. So each
+
+352
+00:40:13,720 --> 00:40:19,720
+each and each and plus one is a compact operator
+
+353
+00:40:22,760 --> 00:40:29,560
+whose singular values decay rapidly.
+
+354
+00:40:35,640 --> 00:40:40,280
+Okay. That's the canonical class of topological vector spaces. So
+
+355
+00:40:41,240 --> 00:40:46,120
+they're faster than any inverse polynomial or slower or faster.
+
+356
+00:40:50,200 --> 00:40:54,120
+Yeah. So here's a non-example.
+
+357
+00:40:56,600 --> 00:41:00,520
+So there are, there are co-limits of Hilbert spaces. So there are things that feel like
+
+358
+00:41:01,720 --> 00:41:07,480
+in that regard, they feel like say distributions on a, on a manifold, but a non-example is the
+
+359
+00:41:07,480 --> 00:41:13,400
+usual space of distributions on any compact manifold, for example, S1, which is the space of
+
+360
+00:41:14,600 --> 00:41:16,120
+slowly increasing sequences.
+
+361
+00:41:20,680 --> 00:41:25,800
+Again, slower than any polynomial, it's cool to rapid decay. So there's a funny thing. I mean,
+
+362
+00:41:25,800 --> 00:41:31,400
+this is a, this is a basic example of what's called a, not of a nuclear dual Frechet space.
+
+363
+00:41:32,360 --> 00:41:36,760
+The absolute most basic one, but it's not strongly nuclear dual because the transition maps here
+
+364
+00:41:37,640 --> 00:41:45,080
+are like their trace class, but they're not rapid decay. They decay kind of linearly instead of
+
+365
+00:41:45,080 --> 00:41:52,840
+rapidly. So, but an example is if you take a holomorphic functions on a
+
+366
+00:41:53,480 --> 00:41:57,080
+K where K is a compact subset of C to the D.
+
+367
+00:41:57,160 --> 00:42:05,320
+So, you know, complex analysis or power series based stuff is allowed, but C infinity stuff is
+
+368
+00:42:05,320 --> 00:42:14,360
+not allowed, is the moral of the story. And this is more generally, I'll just say that we're more
+
+369
+00:42:14,360 --> 00:42:18,360
+generally, you know, if you have solutions of an elliptic differential, we have some elliptic
+
+370
+00:42:18,360 --> 00:42:22,840
+complex, elliptic differential operator on you, including C infinity, you know,
+
+371
+00:42:23,800 --> 00:42:27,640
+some elliptic complex, elliptic differential operator on including space and you choose a
+
+372
+00:42:27,640 --> 00:42:32,200
+compact subset, you're going to have this condition on the rapid decay and the transition maps.
+
+373
+00:42:37,080 --> 00:42:42,840
+This category, let yourself expose kind of generators that you just mentioned.
+
+374
+00:42:42,920 --> 00:42:54,120
+Yeah, it's not quite clear. Yeah, yeah. Does this category have any T structure on it?
+
+375
+00:42:54,840 --> 00:42:58,920
+It does have a T structure. Yeah, so there's an Abelian category as well,
+
+376
+00:42:59,800 --> 00:43:05,320
+but it has some non-Hausdorff things in it as it sort of has to. So these aren't the,
+
+377
+00:43:05,320 --> 00:43:12,280
+this isn't an Abelian category. Formal quotients of things like this would be the Abelian category.
+
+378
+00:43:13,000 --> 00:43:17,800
+Things like this are in the heart. Yeah, yeah. The T structure is kind of very naive, you could say.
+
+379
+00:43:19,800 --> 00:43:27,560
+Okay, go over to my notes. This is the point where when I was preparing my talk, my son,
+
+380
+00:43:28,600 --> 00:43:31,720
+I must have gone to the bathroom or something, my son came and drew a math monster.
+
+381
+00:43:37,480 --> 00:43:42,040
+So I hope you all can see it out there. It's pretty nice. He's got numbers on his face.
+
+382
+00:43:42,840 --> 00:43:51,640
+Making a mean expression. Okay, he's enchanted by Halloween. So, okay, so now I've told you what
+
+383
+00:43:51,640 --> 00:43:55,480
+the category is, right? I want to talk about K-theory, but I didn't even tell you, I didn't
+
+384
+00:43:55,480 --> 00:44:00,200
+tell you how the K-theory of FEMOG works. So now let me do it in this example. So
+
+385
+00:44:05,640 --> 00:44:07,320
+the resulting K-theory, which I'm calling
+
+386
+00:44:12,840 --> 00:44:23,000
+K-theory. Well, here's the trick. I said these dualizable guys are always close to compactly
+
+387
+00:44:23,000 --> 00:44:27,160
+generated guys. And the more precise version of that is that you can always put them inside
+
+388
+00:44:27,160 --> 00:44:34,600
+a compactly generated guy such that the quotient is also compactly generated. Well, that's actually
+
+389
+00:44:34,600 --> 00:44:42,200
+kind of automatic. So there's always the left-hand term in a localization sequence where the other
+
+390
+00:44:42,200 --> 00:44:48,120
+two terms are compactly generated. So if C is dualizable, where there exists a localization
+
+391
+00:44:48,120 --> 00:45:06,840
+sequence, C goes to D. And then K of C is just the homotopy fiber of the usual K-theory of the
+
+392
+00:45:06,840 --> 00:45:11,080
+compact objects here mapping to the usual K-theory of the compact objects there.
+
+393
+00:45:12,200 --> 00:45:16,840
+That's kind of how you can get your hands on it. Well, provided you accept that algebraic K-theory
+
+394
+00:45:16,840 --> 00:45:24,040
+of small categories is concrete and just debatable. But do we know what the D and the E kind of are?
+
+395
+00:45:24,680 --> 00:45:30,440
+Well, there's many choices. And it's an art, selecting the right one. But now in this case,
+
+396
+00:45:30,440 --> 00:45:35,880
+we know what they are. So now I can tell you kind of concretely. Yeah. So in our case,
+
+397
+00:45:35,880 --> 00:45:43,800
+so we have our D. It's just this bounded derived category here. But that's also the same thing as
+
+398
+00:45:43,800 --> 00:45:49,000
+the bounded. I mean, there's a single generator here, which is pick your favorite Hilbert space
+
+399
+00:45:49,000 --> 00:45:55,320
+of infinite dimension. And then this category is just the same thing as the bounded right category
+
+400
+00:45:55,320 --> 00:46:01,640
+of non-commutative ring this time with bounded operators on that Hilbert space. And when you
+
+401
+00:46:01,640 --> 00:46:05,320
+calculate the quotient, it's also going to be generated by a single object, just the image of
+
+402
+00:46:05,320 --> 00:46:10,600
+your favorite Hilbert space. But then the endomorphisms change. And what you get is,
+
+403
+00:46:12,920 --> 00:46:14,920
+maybe I should say perf, actually, just to be safe.
+
+404
+00:46:20,280 --> 00:46:25,720
+Mounded operators on Hilbert space. Modulo, the specific so-called Schatten ideal,
+
+405
+00:46:25,720 --> 00:46:30,200
+which actually we've already encountered. This is the ideal of compact operators
+
+406
+00:46:30,200 --> 00:46:46,040
+with rapid decay singular objects. Okay. But no, but this guy, this cat, this guy,
+
+407
+00:46:46,040 --> 00:46:49,640
+or this category is one of those types of categories I was talking about that has an
+
+408
+00:46:49,640 --> 00:46:55,800
+Eilenberg swindle. So it's K theory is zero. So at the end of the day, what you find is that
+
+409
+00:46:55,800 --> 00:47:03,160
+this analytic K theory of the complex numbers is just a shift of the usual K theory of a
+
+410
+00:47:04,120 --> 00:47:11,480
+rather strange ring, some analog of a Calkin algebra. So this bounded operators on the Hilbert
+
+411
+00:47:11,480 --> 00:47:21,800
+space modulo, this Schatten ideal. But let me make a remark that the ring structure
+
+412
+00:47:21,800 --> 00:47:27,000
+on KNC, which is induced by the tensor product you naturally have on this category is obscured
+
+413
+00:47:27,000 --> 00:47:33,720
+from this perspective. So this perspective isn't actually nice for, it's concrete, so to speak,
+
+414
+00:47:33,720 --> 00:47:38,920
+but it's not necessarily the best way to understand what this thing is. Just giving it to you for
+
+415
+00:47:38,920 --> 00:47:44,920
+comfort. You can rewrite this thing up to a shift as the K-3 of an ordinary ring. Okay.
+
+416
+00:47:44,920 --> 00:47:50,040
+But now I've said enough maybe to say what the conjecture is.
+
+417
+00:48:14,920 --> 00:48:32,200
+So I'll give on the level of homotopy groups. So pi n of this analytic K theory of the complex
+
+418
+00:48:32,200 --> 00:48:42,520
+numbers should be z in degree zero, and it should be c cross in degree one. But probably the best
+
+419
+00:48:42,520 --> 00:48:59,240
+way to understand this c cross is as uniformized, 2 pi i, c mod 2 pi i z, I guess. And then more
+
+420
+00:48:59,240 --> 00:49:05,880
+generally, when n is like 2m minus one, you should write this as 2 pi i to the m z.
+
+421
+00:49:05,880 --> 00:49:15,400
+But then if n is 2m, and this is for m positive, if n is 2m and positive, you should get zero,
+
+422
+00:49:15,400 --> 00:49:21,480
+generalizing our discussion about K2 of the complex numbers. So this is exactly the regulators,
+
+423
+00:49:21,480 --> 00:49:28,760
+right? And then you should get z if n is 2m and m is less than or equal to zero.
+
+424
+00:49:31,480 --> 00:49:34,840
+So there should be stuff in negative degrees as well. It's an aspect I didn't mention that
+
+425
+00:49:34,840 --> 00:49:40,360
+once you go to this idempotent complete context, then K3 naturally has stuff in negative degrees as
+
+426
+00:49:40,360 --> 00:49:59,560
+well. OK. So yeah. So let me note. So this. I'm sorry? Did I not mention that? Wait. Oh,
+
+427
+00:49:59,560 --> 00:50:13,560
+thank you. Thank you. Yes, I mean 2 pi i to the m. Thank you.
+
+428
+00:50:17,400 --> 00:50:27,320
+So note. So this suggests that. So in terms of like thinking of K3 in terms of x in some
+
+429
+00:50:27,320 --> 00:50:30,440
+other category, this suggests that a theory is like.
+
+430
+00:50:34,760 --> 00:50:40,440
+I won't bother trying to make it precise, but that's in the category of pairs.
+
+431
+00:50:41,880 --> 00:50:50,360
+So L filtration on the complexification. So this is a abelian group. This is a decreasing filtration
+
+432
+00:50:50,360 --> 00:51:00,920
+on complexification. So it's kind of mixed hodge structures without the weight filtration, you could say.
+
+433
+00:51:04,920 --> 00:51:08,920
+OK. And now I want to say something about the evidence for this conjecture.
+
+434
+00:51:11,400 --> 00:51:16,440
+Does the construction of these K groups only as abstract groups or do you see the topology on them?
+
+435
+00:51:16,440 --> 00:51:23,480
+In principle, you only see them as abstract groups, but let me address that more later.
+
+436
+00:51:23,480 --> 00:51:44,520
+Negative. So I understand X, X can have something to do with K and positive. What about negative?
+
+437
+00:51:45,480 --> 00:51:49,640
+It's also X. I mean, there are homes in this category.
+
+438
+00:51:50,920 --> 00:51:56,360
+I mean, there are homes from Z to Z minus M. Right.
+
+439
+00:52:14,520 --> 00:52:31,000
+So the evidence, the first bit of evidence is that it's proven true.
+
+440
+00:52:32,520 --> 00:52:37,640
+That's, I guess, the theorem of us in degrees less than or equal to zero.
+
+441
+00:52:38,360 --> 00:52:41,240
+So the part where you're just getting Z's and zero.
+
+442
+00:52:43,240 --> 00:52:48,920
+And also, it's probably within reach in degree one to see that you get the C cross like you expect.
+
+443
+00:52:48,920 --> 00:52:52,280
+It's not obvious by any means, but it's probably within reach.
+
+444
+00:52:54,520 --> 00:53:01,640
+Another thing is that there does exist a comparison map, natural comparison map from
+
+445
+00:53:02,280 --> 00:53:06,840
+so K and analytics to the expected target, expected value.
+
+446
+00:53:09,080 --> 00:53:11,800
+So extending the right regulator maps, basically.
+
+447
+00:53:15,800 --> 00:53:21,160
+So the usual, the usual K theory, algebraic K theory of C kind of maps to this naturally.
+
+448
+00:53:21,160 --> 00:53:24,040
+This would be if you did the naive thing of taking your category,
+
+449
+00:53:24,040 --> 00:53:28,040
+taking compact objects and then taking K theory instead of taking this better thing.
+
+450
+00:53:28,040 --> 00:53:49,960
+In fact, so in fact, there exists a commutative square of rings in the spectrum.
+
+451
+00:53:50,280 --> 00:54:00,120
+So K and C goes to do this one first. KU, that's the topological K theory.
+
+452
+00:54:00,120 --> 00:54:05,720
+That would be if you just had the Z's or just if it was just zero, Z, zero, zero, Z everywhere.
+
+453
+00:54:06,440 --> 00:54:08,280
+And then you have to add in some Durham data.
+
+454
+00:54:08,280 --> 00:54:13,000
+So you use, you can use, for example, negative cyclic homology, say over the reals, it doesn't
+
+455
+00:54:13,000 --> 00:54:18,040
+matter the complex numbers or periodic cyclic homology, the reals are the complex numbers.
+
+456
+00:54:18,040 --> 00:54:22,200
+So this is like, this is like topological or Betty, this is like Durham.
+
+457
+00:54:22,200 --> 00:54:24,360
+This is Durham plus filtration, so to speak.
+
+458
+00:54:26,440 --> 00:54:29,560
+And then the conjecture, the real conjecture is that this is a pullback
+
+459
+00:54:30,200 --> 00:54:32,840
+or the honest version of the conjecture, a spectrum level version.
+
+460
+00:54:32,840 --> 00:54:51,320
+Right, and another thing, I'm not going to get to the non-archimedean evidence, although it's
+
+461
+00:54:51,320 --> 00:54:57,160
+interesting. Maybe I'll just say it in words while I'm erasing. There is a non-archimedean
+
+462
+00:54:57,160 --> 00:55:03,560
+analog of this, say for Cp, you can identify everything. You can prove it using a theorem
+
+463
+00:55:03,560 --> 00:55:10,120
+of Sasha's, of humor. Then using this theorem, you can do a calculation and actually confirm
+
+464
+00:55:10,120 --> 00:55:20,120
+the analog of this conjecture for Cp or a variant maybe, solid variant as opposed to liquid.
+
+465
+00:55:20,120 --> 00:55:25,160
+It's, you know, it's fun. You see, you need to see period rings popping up.
+
+466
+00:55:28,600 --> 00:55:29,400
+Substrict R.
+
+467
+00:55:31,000 --> 00:55:31,720
+Where are we?
+
+468
+00:55:31,720 --> 00:55:35,160
+That bottom board. C minus sub R.
+
+469
+00:55:35,160 --> 00:55:36,120
+Oh, the real numbers?
+
+470
+00:55:38,520 --> 00:55:40,760
+Well, you don't want to do it over the rational numbers.
+
+471
+00:55:40,760 --> 00:55:41,880
+But over C.
+
+472
+00:55:41,880 --> 00:55:45,560
+Yeah, over C it's the same as over R. Yeah, I mean, as I told you.
+
+473
+00:55:46,280 --> 00:55:52,920
+Okay. To me, it feels more principled. Because in principle, this is a more refined thing,
+
+474
+00:55:53,800 --> 00:55:55,480
+but of course, it's the same thing. But anyway.
+
+475
+00:55:59,480 --> 00:56:05,400
+Oh, yes, and here. By the way, does this address your question earlier in the talk? Okay.
+
+476
+00:56:08,120 --> 00:56:14,040
+Also, this Kn functor, it actually extends in two different directions. It extends to
+
+477
+00:56:14,840 --> 00:56:17,000
+arbitrary complex analytic spaces.
+
+478
+00:56:21,960 --> 00:56:31,400
+And then, then the conjecture is that Kmc is compact based basically well related to
+
+479
+00:56:31,400 --> 00:56:37,080
+in the same way that K theory is related to motivic cohomology, compactly supported Deligne cohomology.
+
+480
+00:56:37,080 --> 00:56:45,560
+But it also extends to arbitrary, let me just say smooth, although it's not really necessary,
+
+481
+00:56:46,200 --> 00:56:48,120
+complex algebraic varieties.
+
+482
+00:56:52,120 --> 00:56:54,440
+Oh, thank you. Sorry. Yes, yes, yes, yes.
+
+483
+00:56:55,400 --> 00:57:02,120
+And then the conjecture is, is that K theory analytic is some version of Deligne-Beilinson cohomology.
+
+484
+00:57:09,000 --> 00:57:14,760
+Note that if you take an algebraic variety, you're getting a different value for it than
+
+485
+00:57:14,760 --> 00:57:21,320
+its analytical, which is natural. And then you're getting a different value for it than
+
+486
+00:57:21,320 --> 00:57:30,040
+its analytical, which is natural. But you're taking the base seed to be always analytic
+
+487
+00:57:30,040 --> 00:57:32,760
+in the sense that you're remembering the topology. But when you do things over it,
+
+488
+00:57:32,760 --> 00:57:36,440
+you can choose whether they be algebraic or analytic. You get different answers.
+
+489
+00:57:38,760 --> 00:57:43,000
+And this, I'm supposed to be giving evidence, but this is just a good cover.
+
+490
+00:57:43,640 --> 00:57:50,120
+But the point is that the functoriality
+
+491
+00:57:52,840 --> 00:57:54,360
+and the projective bundle formula
+
+492
+00:57:57,800 --> 00:58:04,440
+all match up. So the functoriality you see in compactly supported Deligne cohomology,
+
+493
+00:58:05,640 --> 00:58:09,880
+whichever directions you have it, you get it over that you can prove it exists here,
+
+494
+00:58:09,880 --> 00:58:15,480
+and same with Deligne-Beilinson and then over here. So they feel the same in that respect.
+
+495
+00:58:20,600 --> 00:58:25,720
+You don't get compactly supported in the second case. So there's a good reason why,
+
+496
+00:58:25,720 --> 00:58:35,400
+but I won't get into it. Okay. And also this kind of geometry goes into
+
+497
+00:58:35,400 --> 00:58:43,240
+the proof that it holds in degrees less than or equal to two. Sorry, less than or equal to zero.
+
+498
+00:58:44,200 --> 00:58:50,440
+So we use this extension to complex analytic spaces to get a handle on what's going on over
+
+499
+00:58:50,440 --> 00:58:54,920
+a point. So in that sense, it's kind of a fluid sort of formalism. And this, now I can address
+
+500
+00:58:54,920 --> 00:58:59,800
+your other question about whether there's extra structure on these. Yes, there is. They're all
+
+501
+00:58:59,800 --> 00:59:04,920
+sheaves on complex analytic spaces, which is stronger than having a topological structure.
+
+502
+00:59:04,920 --> 00:59:15,000
+So it's A1. Yeah, it actually would be something like A1. Yeah, A1 analytics. Yeah.
+
+503
+00:59:17,240 --> 00:59:20,040
+And the last thing I was going to talk about was non-acromedian analogs,
+
+504
+00:59:20,040 --> 00:59:22,120
+but I think I won't. So thank you for your attention.
+
+505
+00:59:22,120 --> 00:59:32,200
+Any questions?
+
+506
+00:59:34,040 --> 00:59:42,760
+It's a very vague question. Why do we not have like negative homology for like discrete fields,
+
+507
+00:59:43,400 --> 00:59:51,720
+but we do have negative. No, even for CP, there's nothing in negative degrees.
+
+508
+00:59:52,520 --> 00:59:57,560
+And it's just something. There's something about those complex numbers.
+
+509
+01:00:01,400 --> 01:00:04,200
+It's really not obvious. It's not obvious why it has something. I mean,
+
+510
+01:00:04,920 --> 01:00:07,480
+there's something to do with the Betty realization that you have this.
+
+511
+01:00:10,360 --> 01:00:15,720
+Nowhere else do you get it. I don't have a good answer, as you can tell.
+
+512
+01:00:15,720 --> 01:00:24,920
+Yeah. Oh, you just, you would just take fixed points for, you know, come to the Galois group
+
+513
+01:00:24,920 --> 01:00:32,760
+acting. So it's related to the pose of the gamma. Sorry. It's related to the pose of the gamma
+
+514
+01:00:32,760 --> 01:00:38,760
+function. Well, yeah. Yeah. No, I mean, this is, I mean, yeah. And so, I mean, this kind of thing is
+
+515
+01:00:39,320 --> 01:00:46,840
+what should be related to regulators and that's positive integers. So I'm speaking
+
+516
+01:00:48,040 --> 01:00:51,960
+and over this year, I mean, you want, I think you want these guys in the negative degrees as well.
+
+517
+01:00:53,880 --> 01:01:00,600
+You think about the whole L function. Yeah. Say a few words about how these definitions would
+
+518
+01:01:00,600 --> 01:01:04,360
+compare with more classical definitions in the K theory of operator alphabets.
+
+519
+01:01:05,080 --> 01:01:10,600
+Yes. Thank you for that. I'm happy for the opportunity. They proved some very interesting
+
+520
+01:01:10,600 --> 01:01:19,240
+theorems. For example, if you take, yeah, thanks a lot. If you take, I was looking at K theory of
+
+521
+01:01:19,240 --> 01:01:25,160
+bounded operators on the Hilbert space, modulo this Schatten ideal. If you look instead at
+
+522
+01:01:25,160 --> 01:01:30,600
+K theory of bounded operators on a Hilbert space, modulo, the ideal of all compact operators,
+
+523
+01:01:31,560 --> 01:01:35,800
+then this, and you take loop space, and this is KU.
+
+524
+01:01:37,800 --> 01:01:44,280
+With algebraic K theory? Yep, algebraic K theory. Yep. No, it's amazing. Yeah. But so,
+
+525
+01:01:44,280 --> 01:01:48,360
+so what's, what's the difference? Well, the difference is if you have a compact operator,
+
+526
+01:01:48,360 --> 01:01:52,680
+you can't define a trace. If you have a trace class operator or even better,
+
+527
+01:01:52,680 --> 01:01:58,680
+a rapid decay operator, you can define the trace. And that's why this is picking up more over here.
+
+528
+01:02:01,320 --> 01:02:08,280
+Um, there has been investigations of the analog where you replace this by the Schatten ideal P
+
+529
+01:02:08,280 --> 01:02:16,040
+for P positive. I've been some, I think it's a theorem of Courtney S and I hope Tom, perhaps
+
+530
+01:02:16,040 --> 01:02:21,880
+I forget, please don't quote me on it, but that maybe the fiber of the cyclotomic trace here is
+
+531
+01:02:21,880 --> 01:02:27,960
+also KU. And it would be very interesting to, but their methods, unfortunately do not reach this,
+
+532
+01:02:28,040 --> 01:02:31,720
+which is the truly canonical thing. But it would be very interesting if there was some way to
+
+533
+01:02:31,720 --> 01:02:36,120
+leverage their results, the challenge in the P greater than zero regime to get something here.
+
+534
+01:02:36,120 --> 01:02:40,120
+So the reason this isn't good is because it doesn't, it doesn't correspond to a dualizable
+
+535
+01:02:40,120 --> 01:02:44,760
+category really. And it doesn't, yeah, we're a rigid category. This is, I mean, yeah,
+
+536
+01:02:44,760 --> 01:02:49,080
+unfortunately they haven't investigated the only, like the truly canonical thing, but they've done
+
+537
+01:02:49,080 --> 01:02:54,040
+a bunch of interesting related work, which could serve as, um, stepping boards for understanding
+
+538
+01:02:54,040 --> 01:03:00,120
+this thing. Yes. So you kind of said that this description is bad because of the ring structure,
+
+539
+01:03:00,120 --> 01:03:03,960
+but then the kind of list you gave, you didn't at least talk about the ring structure. I didn't
+
+540
+01:03:03,960 --> 01:03:10,200
+talk about the ring structure there. Or wait. But, but so then, which means that you could still
+
+541
+01:03:10,200 --> 01:03:14,120
+address since you didn't talk about the ring structure, you could still address that table
+
+542
+01:03:14,120 --> 01:03:18,840
+from this thing conceivably. I don't understand. It didn't sound like a question.
+
+543
+01:03:18,840 --> 01:03:24,600
+Like you said that you prove these negative results using a totally different method,
+
+544
+01:03:24,600 --> 01:03:28,360
+but you have, I didn't even understand that. Sorry. Well, you have a description of the
+
+545
+01:03:28,360 --> 01:03:33,960
+K of the MLBK theory there. No, it's conjectural. Yeah. Wait, no, this, this, yes, yes, yes.
+
+546
+01:03:33,960 --> 01:03:39,880
+A description. Yeah. And you gave some answers. I mean, no, but some of them you said you proved.
+
+547
+01:03:39,880 --> 01:03:45,080
+Oh yeah. But can you see them? Can you understand them at all in an operator theoretic way yourselves?
+
+548
+01:03:45,080 --> 01:03:49,720
+Probably. Can you see where those classes are coming from in, in this update? It's not,
+
+549
+01:03:49,720 --> 01:03:55,640
+it's not fun. So, so the guy, it was Karubi, I should say, who found the degree minus two class
+
+550
+01:03:55,640 --> 01:04:01,480
+here. And you can use his method to find the same, show the same class list here.
+
+551
+01:04:03,880 --> 01:04:06,440
+It's fun. It's a, yeah, it's kind of the inverse to the bottom.
+
+552
+01:04:07,880 --> 01:04:12,360
+And the bottom in itself doesn't exist because we haven't passed the homotopy yet. But,
+
+553
+01:04:12,440 --> 01:04:19,560
+but, but, but it's, it's, it's a bit of a slog, but we have a clean geometric way of producing
+
+554
+01:04:19,560 --> 01:04:29,880
+the same class. Once you have that. So you said it's a sheath in a meditator. So if I take
+
+555
+01:04:29,880 --> 01:04:34,920
+like Stein manifold and like consider it's an etiquette in a conjecture, they should get like
+
+556
+01:04:34,920 --> 01:04:41,320
+quotient of homotopy function. Exactly. I mean, it's just, yeah, there's no, I mean, there's no
+
+557
+01:04:41,320 --> 01:04:47,000
+sheath cohomology in the whole, the wrong part of the linear cohomology. So you can even write
+
+558
+01:04:47,000 --> 01:04:54,920
+down what it is. You mentioned there is a cyclotonic tracenet. Yeah, sure. Yeah.
+
+559
+01:04:55,720 --> 01:05:03,880
+Can you describe the target? Oh, that's it. Thank you. Another, yeah. Here's a companion conjecture.
+
+560
+01:05:03,880 --> 01:05:09,080
+Let's just talk about, I mean, it's, it's actually over Q, right? It's a Q linear category. So
+
+561
+01:05:09,080 --> 01:05:14,600
+so forget cyclotomic, it doesn't do anything, but the companion conjecture
+
+562
+01:05:18,520 --> 01:05:24,840
+it's about the Hochschild cohomology over sphere spectrum Z. It doesn't matter of this. Well,
+
+563
+01:05:24,840 --> 01:05:33,880
+let me say for this ring. It's just, maybe I want to say suspension.
+
+564
+01:05:33,880 --> 01:05:43,960
+So it should just, for the Hochschild cohomology of the category I'm interested in should just be C
+
+565
+01:05:43,960 --> 01:05:51,720
+and degree zero. And that should correspond to the fact that you can take traces. So, but actually
+
+566
+01:05:51,720 --> 01:05:56,120
+this again unwinds to something that looks completely unbelievable that you can, this is
+
+567
+01:05:56,120 --> 01:06:01,880
+a non-unital ring and you can make the Hochschild complex there and that computes the thing, the
+
+568
+01:06:01,880 --> 01:06:08,040
+loops of this. And it's, but it's really the algebraic Hochschild complex with this
+
+569
+01:06:08,040 --> 01:06:12,360
+ring. So you're tensoring this ring together over Q and making the usual Hochschild complex.
+
+570
+01:06:12,360 --> 01:06:17,080
+And the claim is it's acyclic and positive degrees. And the non-archimedean analog of this is
+
+571
+01:06:17,080 --> 01:06:25,240
+equally unbelievable, but it was proven by my student Adriano Cordova. So take compact, now
+
+572
+01:06:25,240 --> 01:06:30,440
+compact and trace class is all the same in the periodic setting, but you take the Hochschild
+
+573
+01:06:31,240 --> 01:06:36,680
+Hochschild complex and this thing with algebraic tensor products and you can get Qt in degree zero
+
+574
+01:06:36,680 --> 01:06:40,360
+and you get zero in positive degrees. This proof does not go by analyzing this Hochschild complex.
+
+575
+01:06:40,360 --> 01:06:45,240
+It uses a whole bunch of crazy stuff, including a few months results and then just go with the
+
+576
+01:06:45,240 --> 01:06:50,040
+Cartesian, all sorts of nonsense. But yeah, anyway, that's yeah, but you could in principle
+
+577
+01:06:50,040 --> 01:06:53,720
+just try staring at this Hochschild complex and you'll, if you manage to prove it's acyclic and
+
+578
+01:06:53,720 --> 01:06:59,080
+positive degrees, then you'll be halfway to proving our projection. So give it a shot.
+
+579
+01:07:01,000 --> 01:07:01,320
+Yeah.
+
+580
+01:07:02,280 --> 01:07:05,800
+The multiplicative structure is the only phase level one.
+
+581
+01:07:06,440 --> 01:07:11,320
+Yes. Yeah. And I mean, one of the reasons I like this is because it kind of makes it plain.
+
+582
+01:07:12,120 --> 01:07:17,560
+But yeah, there's also, yeah, there's also a tensor structure on this category and,
+
+583
+01:07:18,200 --> 01:07:21,400
+you know, you know, the tape twists are multiplicative in the appropriate sense of that
+
+584
+01:07:21,400 --> 01:07:26,440
+kind of thing. So if you do lift that class, the minus two class up, can you then see that it's
+
+585
+01:07:26,440 --> 01:07:31,880
+classed in on like a bit as high a power as that non-zero by regulating it in some way and then
+
+586
+01:07:33,000 --> 01:07:36,600
+like you release get a kind of embedding of the answer into the thing.
+
+587
+01:07:36,600 --> 01:07:41,320
+I don't, because I'm sorry. Once again, I'm having trouble understanding your question.
+
+588
+01:07:41,320 --> 01:07:45,240
+Well, you lifted the negative two. Yes. Yes. Then you could take its powers and
+
+589
+01:07:45,240 --> 01:07:48,040
+you're allegedly generating all the negative stuff. Exactly.
+
+590
+01:07:48,040 --> 01:07:51,720
+Can you see those all non-zero by regularizing it, heating them with.
+
+591
+01:07:51,720 --> 01:07:55,240
+Oh, you detect them. I mean, yeah, you, you, but that's not really how the proof goes. I mean,
+
+592
+01:07:55,640 --> 01:08:00,040
+I know. Yeah, yeah, you can, you can detect them in topological cake here. Yeah. But it's
+
+593
+01:08:00,040 --> 01:08:03,400
+not right. It's not about regulators at that point, because there's no, there's no,
+
+594
+01:08:04,280 --> 01:08:08,680
+this is where the regulators really are. It's the, it's the ambiguity in the regulator.
+
+595
+01:08:08,680 --> 01:08:09,880
+That's kind of the integral thing.
+
+596
+01:08:09,880 --> 01:08:34,440
+It's not so, it's some form, some form of it. Yeah.
+
+597
+01:08:40,600 --> 01:08:45,800
+Um, that's a good question. So the top, I would say that the only, I mean,
+
+598
+01:08:45,800 --> 01:08:51,800
+it'd have to be in some, uh, some dagger context, some, some, some kind of, or some whatever,
+
+599
+01:08:52,600 --> 01:09:00,760
+you know, you know what I mean by this. And then it would probably again, just be compact.
+
+600
+01:09:01,240 --> 01:09:11,720
+Yeah. No, I guess the answer is I don't know. Yeah. But it should be positive that I'm sure
+
+601
+01:09:11,720 --> 01:09:14,280
+if I think I can answer it, but I'm not right now. Yeah.
+
+602
+01:09:15,400 --> 01:09:18,360
+Is this diagonal supposed to be valid for any X?
+
+603
+01:09:20,680 --> 01:09:24,760
+Yeah. If you put like KU of X here and yeah, yeah.
+
+604
+01:09:24,760 --> 01:09:33,080
+Correct. For the, for algebraic. Oh, no, no, sorry. But for only for compact analytic
+
+605
+01:09:33,960 --> 01:09:34,680
+varieties. Yeah.
+
+606
+01:09:38,200 --> 01:09:42,440
+Correct. Otherwise you'd have to put the compactly supported variants of all the things.
+
+607
+01:09:43,800 --> 01:09:48,120
+But okay. I mean, it's also depends on what exact, what exactly you want to mean by this.
+
+608
+01:09:48,120 --> 01:09:52,120
+There's a non-compactly supported variant too, but it's not directly the K theory of something.
+
+609
+01:09:52,920 --> 01:09:57,000
+Um, so I mean, I mean, the, the, by sort of point for anyone,
+
+610
+01:09:57,000 --> 01:10:03,480
+you can always get one from the other. Um, we're not even concrete or just the sheet theory.
+
+611
+01:10:05,160 --> 01:10:10,120
+So here you said the functionality matched up. Yeah. Like, like the, do you have like, uh,
+
+612
+01:10:11,080 --> 01:10:17,000
+push forward for, for all the conversions for, for like a quasi-coherent sheaves?
+
+613
+01:10:17,800 --> 01:10:21,320
+Look, um, I don't remember the details of anything, but yeah,
+
+614
+01:10:21,320 --> 01:10:25,320
+I checked all the phone for it. I mean, whatever happens, if you have one here,
+
+615
+01:10:25,320 --> 01:10:30,040
+you have one there. I mean, yeah. So I mean, it's going to be a little more helpful than that.
+
+616
+01:10:33,560 --> 01:10:38,440
+I mean, the, we have also the six functor formalism for these, uh, for this theory of
+
+617
+01:10:38,440 --> 01:10:42,280
+quasi-coherent sheaves we've built on analytic spaces. And so when, when you're supposed to get
+
+618
+01:10:42,280 --> 01:10:45,720
+them, when you're supposed to get a map on K theory is supposed to get when we have a functor
+
+619
+01:10:45,720 --> 01:10:48,760
+which commutes with co-limits and who's right. A joint commutes with co-limits.
+
+620
+01:10:49,560 --> 01:10:56,040
+So an example of that would be if you have a smooth map and you take lower shriek, right. Um,
+
+621
+01:10:56,040 --> 01:11:01,080
+but another example of that would be if, uh, you have an arbitrary map, uh, or sorry, you know,
+
+622
+01:11:01,880 --> 01:11:06,840
+uh, what was I saying? Do you have a, yeah, no, smooth map. Can you take lower shriek? Yeah.
+
+623
+01:11:06,840 --> 01:11:12,200
+Another example would be if you have a proper map and you take upper star. So this, yeah.
+
+624
+01:11:12,200 --> 01:11:19,640
+Okay. We have no further questions. Thank you, Mr. Speaker.
+

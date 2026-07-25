@@ -2,11 +2,19 @@
 
 ## 1. 下载视频
 
+YouTube 可能要求登录验证。先在浏览器安装 **Get cookies.txt LOCALLY** 扩展：
+
+- Chrome/Edge: https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc
+
+打开 YouTube，点扩展图标导出 `cookies.txt` 放到项目根目录。
+
 ```bash
-yt-dlp -f "137+140" --merge-output-format mp4 -o "%(title)s.%(ext)s" "<url>"
+yt-dlp --cookies cookies.txt -f "137+140" --merge-output-format mp4 -o "%(title)s.%(ext)s" "<url>"
 ```
 
-`137+140` = 1080p H.264 视频流 + 128k AAC 音频流。查看可用格式：`yt-dlp -F <url>`。
+`137+140` = 1080p H.264 视频流 + 128k AAC 音频流。查看可用格式：`yt-dlp --cookies cookies.txt -F <url>`。
+
+若遇 `n challenge solving failed` 错误，安装 JS 运行时：`scoop install deno`。
 
 ## 2. 提取音频
 

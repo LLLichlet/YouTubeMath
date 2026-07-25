@@ -1,18 +1,27 @@
-# 原始/衍生媒体文件（版权 & 体积）
+# 媒体文件（版权 & 体积）
 *.mp4
 *.wav
 *.m4a
 *.webm
 *.part
 
-# 根目录下的旧字幕（统一在 subtitles/ 下管理）
+# 生成的 ASS 字幕中间产物
+*.ass
+
+# cookies（含认证信息，不可泄漏）
+cookies.txt
+
+# 根目录下的字幕中间产物（正式版在 subtitles/ 下）
 audio.srt
 audio.zh.srt
-audio.zh.ass
+audio_kt.srt
+audio_kt.zh.srt
+
+# 输出视频
+output_*.mp4
 
 # 测试文件
-test_audio.srt
-test_audio.zh.srt
+test_*
 
 # Python
 __pycache__/
