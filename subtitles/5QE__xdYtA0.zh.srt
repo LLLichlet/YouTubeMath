@@ -1201,7 +1201,7 @@ Can you say, reading here, your notion is generated under dualizable?
 241
 00:27:00,600 --> 00:27:03,800
 No, no, I haven't said what it means. And if not that,
-No, no, 我还没有说它的意思。而且如果不是那样，
+我还没有说它的意思。而且如果不是那样，
 
 242
 00:27:04,760 --> 00:27:05,240
@@ -1426,7 +1426,7 @@ different kinds of convexity properties, whether you have
 286
 00:32:42,840 --> 00:32:47,720
 Banach, you know, open balls fundamental or compact set, the kind of dual thing where compact
-Banach 空间中的开球基本性质或紧集，以及紧集作为基本对象的对偶性质。一旦你能构造出编码它们的范畴，
+空间中的开球基本性质或紧集，以及紧集作为基本对象的对偶性质。一旦你能构造出编码它们的范畴，
 
 287
 00:32:47,720 --> 00:32:51,880
@@ -2036,7 +2036,7 @@ or this category is one of those types of categories I was talking about that ha
 408
 00:46:49,640 --> 00:46:55,800
 Eilenberg swindle. So it's K theory is zero. So at the end of the day, what you find is that
-Eilenberg swindle。所以它的 K 理论是零。最终你会发现，
+。所以它的 K 理论是零。最终你会发现，
 
 409
 00:46:55,800 --> 00:47:03,160
@@ -2861,7 +2861,7 @@ compact and trace class is all the same in the periodic setting, but you take th
 573
 01:06:31,240 --> 01:06:36,680
 Hochschild complex and this thing with algebraic tensor products and you can get Qt in degree zero
-Hochschild 复形以及带有代数张量积的这个东西，在零度你可以得到 Qt，
+复形以及带有代数张量积的这个东西，在零度你可以得到 Qt，
 
 574
 01:06:36,680 --> 01:06:40,360

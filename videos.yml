@@ -29,3 +29,12 @@ videos:
     files:
       en_srt: subtitles/5QE__xdYtA0.en.srt
       zh_srt: subtitles/5QE__xdYtA0.zh.srt
+
+  - id: b4BlA7NymIE
+    title: "An Intuitive Introduction to Motivic Homotopy Theory"
+    speaker: Vladimir Voevodsky
+    url: https://www.youtube.com/watch?v=b4BlA7NymIE
+    duration: "00:35:18"
+    files:
+      en_srt: subtitles/b4BlA7NymIE.en.srt
+      zh_srt: subtitles/b4BlA7NymIE.zh.srt

@@ -6,32 +6,32 @@ Thank you very much. So, first, let me begin by apologizing. Juan asked me to gi
 2
 00:00:21,600 --> 00:00:27,400
 talk specifically to give a talk which was directed at an audience of physicists. And
-在准备这个讲座的过程中，我发现我真的不知道该怎么讲。所以我将给出一个和给数学家听众时一样的讲座。
+具体来说，是面向物理学家听众的讲座。而在
 
 3
 00:00:27,400 --> 00:00:31,960
 as I was preparing this talk, I realized that I don't really know how to do that. So I'm
-如果我不明白，请随时打断我。
+在准备这个讲座时，我发现我真的不知道该怎么讲。所以我打算
 
 4
 00:00:31,960 --> 00:00:36,200
 going to give a talk which is really the same talk that I would give to an audience of mathematicians.
-我想从一点历史开始说起。我发现第二排有一位故事中的主要演员。
+讲一个和我给数学家听众讲的一样的讲座。
 
 5
 00:00:36,200 --> 00:00:39,000
 You should feel free to interrupt me if I'm not making sense.
-如果我把历史记错了，请纠正我。
+如果我没讲清楚，请随时打断我。
 
 6
 00:00:41,240 --> 00:00:46,040
 I'd like to begin with a little bit of history. And I noticed that in the second row here,
-我想从80年代末开始讲起，那是一个Natia提出的问题关于Jones多项式。
+我想从一点历史开始讲起。我注意到第二排这里，
 
 7
 00:00:46,040 --> 00:00:49,480
 we have one of the principal actors in the story that I'm going to be telling.
-Jones多项式是纽结的一个不变量，并且它是构造出来的。
+有我要讲的故事中的一位主要参与者。
 
 8
 00:00:49,480 --> 00:00:52,280
@@ -71,7 +71,7 @@ and then checked that this was independent of the particular representation that
 15
 00:01:34,040 --> 00:01:39,000
 And Natia asked if this was actually necessary, or if there was some construction that you could
-Natia 问这是否是必要的，或者是否有某种内在三维的构造
+问这是否是必要的，或者是否有某种内在三维的构造
 
 16
 00:01:39,000 --> 00:01:44,760
@@ -116,7 +116,7 @@ So that gave a sort of physical interpretation of what the Jones polynomial is, 
 24
 00:02:29,080 --> 00:02:35,400
 that the theory of the Jones polynomial is really just a small fragment of some much larger story
-Jones 多项式的理论其实只是更大故事的一个小片段，
+多项式的理论其实只是更大故事的一个小片段，
 
 25
 00:02:35,400 --> 00:02:44,840
@@ -446,7 +446,7 @@ So maybe a remark that I should make at this point, that this has many variants.
 90
 00:11:00,040 --> 00:11:06,040
 Depending on what kind of manifold you want to be talking about. So I have been implicitly so far,
-closed manifold → 闭流形
+闭流形
 
 91
 00:11:06,040 --> 00:11:13,880
@@ -1051,52 +1051,52 @@ multiplications of the two-dimensional TQFTs. So this is a linear map of the two
 211
 00:26:44,920 --> 00:26:51,080
 TQFTs. This is just given by multiplication by a particular scalar, and I'll abuse notation by
-TQFTs. 这只是由特定标量的乘法给出，我将滥用记号直接称之为 Z(M)。
+这只是由特定标量的乘法给出，我将滥用记号直接称之为 Z(M)。
 
 212
 00:26:51,080 --> 00:26:57,560
 just calling that scalar Z of it. So one point of view is that first and foremost,
-This is just given by multiplication by a particular scalar, and I'll abuse notation by 只是通过与某个特定标量相乘给出，并且我会滥用记号
+只是通过与某个特定标量相乘给出，并且我会滥用记号
 
 213
 00:27:04,200 --> 00:27:10,200
 the TQFT on Z is an invariant
-just calling that scalar Z of it. 所以一种观点是，首先，
+所以一种观点是，首先，
 
 214
 00:27:10,200 --> 00:27:13,480
 of the two-dimensional TQFTs.
-So one point of view is that first and foremost, 从某种角度看，最重要的是，
+从某种角度看，最重要的是，
 
 215
 00:27:16,920 --> 00:27:24,840
 Sorry, so thus far you've been using consistently M as a notation for D minus
-the TQFT on Z is an invariant 一个取值为 Z 的 TQFT 是一个不变量
+一个取值为 Z 的 TQFT 是一个不变量
 
 216
 00:27:24,840 --> 00:27:27,480
 one dimensions and B for the D dimensions.
-of the two-dimensional TQFTs. 对于二维 TQFT。
+对于二维 TQFT。
 
 217
 00:27:27,480 --> 00:27:30,760
 Yeah, if you want, we just change that.
-Sorry, so thus far you've been using consistently M as a notation for D minus 抱歉，到目前为止你一直用 M 表示 D-1 维，
+抱歉，到目前为止你一直用 M 表示 D-1 维，
 
 218
 00:27:40,680 --> 00:27:44,760
 Same, same story.
-one dimensions and B for the D dimensions. 并且用 B 表示 D 维。
+并且用 B 表示 D 维。
 
 219
 00:27:44,760 --> 00:27:48,040
 Okay.
-Yeah, if you want, we just change that. 是的，如果你想的话，我们可以改一下。
+是的，如果你想的话，我们可以改一下。
 
 220
 00:27:53,320 --> 00:27:58,040
 So if you believe this folk theorem here, it's telling you that in particular if you
-Same, same story. 一样的故事。
+一样的故事。
 
 221
 00:27:58,040 --> 00:28:06,520
@@ -1426,7 +1426,7 @@ really not true. A high dimensional manifold, first of all, co-dimension one sub
 286
 00:35:36,120 --> 00:35:41,400
 can look very complicated, and if you're letting yourself only cut along closed sub-manifolds,
-codimension-1 的话，那么你可能无法大大简化事物。
+的话，那么你可能无法大大简化事物。
 
 287
 00:35:41,400 --> 00:35:50,040
@@ -1556,7 +1556,7 @@ minus is an object of the category Z of S, and M plus maybe you should think of 
 312
 00:39:47,480 --> 00:39:57,000
 the opposite category. It's kind of the same thing. And then such that the vector space that
-Z(M) 可以被视为从 Z(M-)(M 减号) 到 Z(M+)(M 加号) 在范畴 Z(Z(S)) 中的同态。
+可以被视为从 Z(M-)(M 减号) 到 Z(M+)(M 加号) 在范畴 Z(Z(S)) 中的同态。
 
 313
 00:39:57,480 --> 00:40:00,440
@@ -1641,7 +1641,7 @@ Yeah, I'm reluctant to interrupt, but I think if I explain what this means for
 329
 00:41:31,960 --> 00:41:34,680
 Turing-Simon's theory, this is this might understand you better.
-Atiyah 理论意味着什么，这可能会让你更好地理解。
+理论意味着什么，这可能会让你更好地理解。
 
 330
 00:41:34,680 --> 00:41:35,240
@@ -1651,52 +1651,52 @@ Yeah, go for it.
 331
 00:41:35,240 --> 00:41:38,520
 I'll do that for a second. So first of all, in Turing-Simon's theory,
-I'll do that for a second. 所以首先，在 Turing-Simon 理论中，
+所以首先，在 Turing-Simon 理论中，
 
 332
 00:41:38,520 --> 00:41:42,840
 it's quite a gauge. And when you construct Z of M, M is a Riemann surface,
-it's quite a gauge. 你必须施加一个规范。并且当你构造 Z(M) 时，M 是一个黎曼曲面，
+你必须施加一个规范。并且当你构造 Z(M) 时，M 是一个黎曼曲面，
 
 333
 00:41:42,840 --> 00:41:46,360
 you impose the gauge theory constraint. So there are functions of the connection
-you impose the gauge theory constraint. 你会施加规范场论的约束条件。所以存在一些连接的函数
+你会施加规范场论的约束条件。所以存在一些连接的函数
 
 334
 00:41:46,360 --> 00:41:52,360
 that are gauging that. Now suppose you want to build M out of two pieces.
-that are gauging that. 这些函数是通过规范变换来实现的。现在假设你想用两部分构建 M。
+这些函数是通过规范变换来实现的。现在假设你想用两部分构建 M。
 
 335
 00:41:53,640 --> 00:41:57,400
 You can't completely impose the constraints on either side because then you won't be able
-You can't completely impose the constraints on either side because then you won't be able 你不能完全在每一侧施加约束，因为那样的话你就无法
+你不能完全在每一侧施加约束，因为那样的话你就无法
 
 336
 00:41:57,400 --> 00:42:01,560
 to reconstruct the whole answer by gluing them. Instead, what you do is for one piece,
-to reconstruct the whole answer by gluing them. 将它们粘合起来重建整个答案。相反，对于一部分，
+将它们粘合起来重建整个答案。相反，对于一部分，
 
 337
 00:42:01,560 --> 00:42:04,920
 you impose only the constraints by gauge transformations that are one on the boundary.
-Instead, what you do is for one piece, 你会只通过边界上的规范变换来施加这些约束。
+你会只通过边界上的规范变换来施加这些约束。
 
 338
 00:42:06,120 --> 00:42:09,400
 When you do that, you've got a vector space, but it's much, first of all, it's
-you impose only the constraints by gauge transformations that are one on the boundary. 当你这样做时，你得到一个向量空间，但首先，它
+当你这样做时，你得到一个向量空间，但首先，它
 
 339
 00:42:09,400 --> 00:42:13,080
 infinite dimensional, Z of M for compact surfaces, finite dimensional.
-When you do that, you've got a vector space, but it's much, 是无限维的。对于紧致曲面 Z(M)，它是有限维的。
+是无限维的。对于紧致曲面 Z(M)，它是有限维的。
 
 340
 00:42:13,080 --> 00:42:16,280
 It's an infinite dimensional vector space that has an action of loop group,
-first of all, it's infinite dimensional, Z of M for compact surfaces, finite dimensional. 它是一个无限维向量空间，具有环群的作用。
+它是一个无限维向量空间，具有环群的作用。
 
 341
 00:42:16,280 --> 00:42:19,480
@@ -1786,7 +1786,7 @@ Maybe that's not your question.
 358
 00:43:46,840 --> 00:43:53,320
 Well, in Edward's explanation, this additional thing, which was this loop group in the middle,
-在爱德华的解释中，这个额外的东西，也就是中间的圈群，
+在 Edward 的解释中，这个额外的东西，也就是中间的圈群，
 
 359
 00:43:53,320 --> 00:44:02,440
@@ -1801,52 +1801,52 @@ Here it looks like you're adding some other category.
 361
 00:44:12,760 --> 00:44:16,360
 Well, if you like, he's going to axiomatize the assumption that topological field theory
-Well, if you like, 他将公理化拓扑场论的假设，总是像圈赋值一样。
+他将公理化拓扑场论的假设，总是像圈赋值一样。
 
 362
 00:44:16,360 --> 00:44:20,440
 is always like turn assignment. For the example of turn assignment, I explained to you why this
-for the example of turn assignment, 对于圈赋值的例子，我向你解释了为什么这种结构存在。
+对于圈赋值的例子，我向你解释了为什么这种结构存在。
 
 363
 00:44:20,440 --> 00:44:29,800
 structure exists. Maybe the term topological quantum theory is evoking for you something that
-is always like turn assignment. 这个例子总是像圈赋值一样。
+这个例子总是像圈赋值一样。
 
 364
 00:44:29,800 --> 00:44:38,440
 has more structure than Atiyah axiomatized. So if that explanation of what you were assigning the
-I explained to you why this structure exists. 我向你解释了为什么会有这样的结构。
+我向你解释了为什么会有这样的结构。
 
 365
 00:44:38,440 --> 00:44:46,040
 circle sort of made sense as something that should be there, then Atiyah didn't include that. So
-the term topological quantum theory 可能让你联想到比 Atiyah 公理化的内容更多的结构。
+可能让你联想到比 Atiyah 公理化的内容更多的结构。
 
 366
 00:44:46,680 --> 00:44:47,400
 it needs to be.
-has more structure than Atiyah axiomatized. 所以，如果你觉得圈赋值应该包含某种东西，
+所以，如果你觉得圈赋值应该包含某种东西，
 
 367
 00:44:50,200 --> 00:44:55,160
 It confuses me that the thing that you have in the circle is perhaps some additional perhaps
-So if that explanation of what you were assigning to the circle 如果你对赋予圈的解释是合理的，
+如果你对赋予圈的解释是合理的，
 
 368
 00:44:55,160 --> 00:45:00,760
 vector space or set of variables. Maybe call them edge models or something like this.
-sort of made sense as something that should be there, 那么 Atiyah 并没有包括这些。
+那么 Atiyah 并没有包括这些。
 
 369
 00:45:03,640 --> 00:45:04,360
 Category doesn't work.
-then Atiyah didn't include that. 所以这是必要的。
+所以这是必要的。
 
 370
 00:45:10,360 --> 00:45:11,880
 You don't want to think of it as a category.
-it needs to be. 你需要这样考虑。
+你需要这样考虑。
 
 371
 00:45:11,880 --> 00:45:16,440
@@ -1856,7 +1856,7 @@ It's the set of highest weight representations of the current algebra. You could
 372
 00:45:16,440 --> 00:45:18,920
 the Z of S, at least the objects in Z of S.
-Z(S) 中的对象，至少是 Z(S) 的对象。
+中的对象，至少是 Z(S) 的对象。
 
 373
 00:45:21,240 --> 00:45:25,480
@@ -1871,7 +1871,7 @@ They have highest weight, they have unitary representations, highest weight repr
 375
 00:45:29,800 --> 00:45:36,840
 Z of S, the objects in Z of S are the unitary representations of that loop group, of that current algebra.
-Z(S) 中的对象是那个环群、那个当前代数的酉表示。
+中的对象是那个环群、那个当前代数的酉表示。
 
 376
 00:45:36,840 --> 00:45:41,160
@@ -2251,52 +2251,52 @@ the rest of what I'm going to say. How long do I have now? Oh, four minutes.
 451
 00:54:58,840 --> 00:55:02,520
 Well, let me say that this is an incomplete definition. So
-Well, let me say that this is an incomplete definition. So 1. 这是一个不完整的定义。所以
+这是一个不完整的定义。所以
 
 452
 00:55:05,880 --> 00:55:10,280
 there should be, or this should be supplemented.
-there should be, or this should be supplemented. 2. 应该补充一些内容。
+应该补充一些内容。
 
 453
 00:55:12,440 --> 00:55:20,760
 By lots of additional gluing rules.
-By lots of additional gluing rules. 3. 通过许多额外的粘合规则。
+通过许多额外的粘合规则。
 
 454
 00:55:25,400 --> 00:55:29,000
 The gluing rules should tell you not just what happens when you glue together,
-The gluing rules should tell you not just what happens when you glue together, 4. 粘合规则应该告诉你不仅在你将两个部分沿着公共边界粘合在一起时会发生什么，
+粘合规则应该告诉你不仅在你将两个部分沿着公共边界粘合在一起时会发生什么，
 
 455
 00:55:31,560 --> 00:55:39,400
 let's say, a closed manifold out of two pieces along a common boundary, but it should also
-let's say, a closed manifold out of two pieces along a common boundary, but it should also 5. 而且当你将一个 D 维流形作为具有角的部分的并集粘合在一起时会发生什么，
+而且当你将一个 D 维流形作为具有角的部分的并集粘合在一起时会发生什么，
 
 456
 00:55:39,400 --> 00:55:44,920
 tell you what happens when you glue together a manifold of dimension D
-tell you what happens when you glue together a manifold of dimension D 6. 它也应该告诉你当将一个 D 维流形粘合在一起时会发生什么
+它也应该告诉你当将一个 D 维流形粘合在一起时会发生什么
 
 457
 00:55:45,800 --> 00:55:48,760
 as a union of pieces that are manifolds with corners.
-as a union of pieces that are manifolds with corners. 7. 这些部分是具有角的流形。
+这些部分是具有角的流形。
 
 458
 00:55:53,160 --> 00:56:03,640
 And so in the non-extended case, we could summarize the TQ's definition not by writing out
-And so in the non-extended case, we could summarize the TQ's definition not by writing out 8. 因此在非扩展情况下，我们可以通过使用范畴论的语言来总结 TQFT 的定义，
+因此在非扩展情况下，我们可以通过使用范畴论的语言来总结 TQFT 的定义，
 
 459
 00:56:03,640 --> 00:56:13,960
 exactly what the gluing rules were, but using the language of category theory,
-exactly what the gluing rules were, but using the language of category theory, 9. 而不是写出具体的粘合规则，而是使用范畴论的语言，
+而不是写出具体的粘合规则，而是使用范畴论的语言，
 
 460
 00:56:13,960 --> 00:56:20,040
 we could say there is a bordism category and what a TQFT is, is a tensor functor from that
-we could say there is a bordism category and what a TQFT is, is a tensor functor from that 10. 我们可以说有一个配边范畴，而一个 TQFT 就是从那个范畴到张量范畴的函子
+我们可以说有一个配边范畴，而一个 TQFT 就是从那个范畴到张量范畴的函子
 
 461
 00:56:20,040 --> 00:56:25,880
@@ -2606,7 +2606,7 @@ needing to make them. So if D is equal to two, then tending to
 522
 01:05:03,480 --> 01:05:09,720
 comm plus D looks a little bit like you're introducing open, what physicists would call
-comm 加上 D 看起来有点像你在引入开放的，物理学家会称之为
+加上 D 看起来有点像你在引入开放的，物理学家会称之为
 
 523
 01:05:09,720 --> 01:05:17,640
@@ -2616,7 +2616,7 @@ open strings, right? The objects are points. The one intervals, those are the op
 524
 01:05:19,160 --> 01:05:26,040
 And the endomorphisms are roll sheets. One of the big motivations for Mike Hopkins
-而自同态是滚纸片。迈克·霍普金斯和我在开始思考这个问题时的一个主要动机是阅读凯文·科斯特洛关于
+而自同态是滚纸片。Mike Hopkins 和我在开始思考这个问题时的一个主要动机是阅读 Kevin Costello 关于
 
 525
 01:05:26,040 --> 01:05:31,080
@@ -2886,7 +2886,7 @@ thinking of the values on points to be algebras or differential graded algebras.
 578
 01:11:17,320 --> 01:11:21,400
 you allow differential graded algebras, there's lots of things with strong finiteness conditions
-Frobenius 代数，圆圈不会是半单的。对。
+代数，圆圈不会是半单的。对。
 
 579
 01:11:21,400 --> 01:11:28,120
@@ -3236,7 +3236,7 @@ Some papers by.
 648
 01:18:10,880 --> 01:18:11,880
 Roberts.
-Robert 斯特罗明戈撰写的论文。
+斯特罗明戈撰写的论文。
 
 649
 01:18:11,880 --> 01:18:12,880
@@ -3366,22 +3366,22 @@ Is.
 674
 01:18:37,880 --> 01:18:38,880
 Kapustin.
-Kapustin。
+。
 
 675
 01:18:38,880 --> 01:18:39,880
 Salina.
-Salina。
+。
 
 676
 01:18:39,880 --> 01:18:40,880
 Kapustin.
-Kapustin。
+。
 
 677
 01:18:40,880 --> 01:18:41,880
 Salina.
-Salina。
+。
 
 678
 01:18:41,880 --> 01:18:42,880
@@ -4831,7 +4831,7 @@ I said at the beginning.
 967
 01:32:01,880 --> 01:32:04,880
 There's several variants of the definition of TQFT.
-TQFT 的定义有几种变体。
+的定义有几种变体。
 
 968
 01:32:04,880 --> 01:32:07,880

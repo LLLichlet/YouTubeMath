@@ -1,0 +1,2236 @@
+1
+00:00:00,000 --> 00:00:10,000
+So welcome back.
+
+2
+00:00:10,000 --> 00:00:16,040
+It's a great honor to introduce a mathematical legend.
+
+3
+00:00:16,040 --> 00:00:25,080
+John Milnor, who as an undergraduate showed that the integral of the curvature of a knot
+
+4
+00:00:25,120 --> 00:00:34,120
+was at least four pi, and became very famous as a result,
+
+5
+00:00:34,120 --> 00:00:42,120
+won the Fields Medal at the age of 31, was professor at Princeton and the Institute for Advanced Study,
+
+6
+00:00:42,120 --> 00:00:48,120
+and is now director of the Center for Mathematical Research at Stony Brook,
+
+7
+00:00:48,120 --> 00:00:54,120
+and is a recipient of many honors, including the National Medal of Science,
+
+8
+00:00:54,160 --> 00:00:58,160
+We'll introduce the next speaker.
+
+9
+00:00:58,160 --> 00:01:05,160
+Jack Milnor, go ahead.
+
+10
+00:01:05,160 --> 00:01:10,160
+Well, it's a great pleasure to introduce Vladimir Voevodsky.
+
+11
+00:01:10,160 --> 00:01:16,160
+Voevodsky began his mathematical career in Moscow, and then came here to Harvard as a junior fellow,
+
+12
+00:01:16,160 --> 00:01:23,160
+and after a few years at Northwestern, is now at the Institute for Advanced Study.
+
+13
+00:01:23,200 --> 00:01:30,200
+And as you all know, he was recently awarded a Fields Medal for his work on motivic homotopy theory.
+
+14
+00:01:30,200 --> 00:01:39,200
+This is a marvelous development which introduces ideas and methods from homotopy theory into pure algebra,
+
+15
+00:01:39,200 --> 00:01:45,200
+and gives an essential new tool for solving algebraic problems.
+
+16
+00:01:45,200 --> 00:01:49,200
+So it's a great pleasure to introduce Voevodsky.
+
+17
+00:01:49,240 --> 00:02:02,240
+Hello, thank you very much for, thank you, Jack, for the introduction.
+
+18
+00:02:02,240 --> 00:02:09,240
+So I was given by Arthur sort of an impossible task.
+
+19
+00:02:09,240 --> 00:02:17,240
+I was requested to explain motivic homotopy theory so that it will be understood by non-mathematicians.
+
+20
+00:02:17,280 --> 00:02:21,280
+So whatever came out of it, you'll see now,
+
+21
+00:02:21,280 --> 00:02:31,280
+but I don't guarantee that it will be now understandable by either mathematicians or non-mathematicians.
+
+22
+00:02:31,280 --> 00:02:42,280
+So what there was at first, so at first there were spaces.
+
+23
+00:02:42,320 --> 00:02:49,320
+So mathematicians were studying spaces and starting with simple examples of spaces.
+
+24
+00:02:49,320 --> 00:02:52,320
+So one of the most basic spaces is a point.
+
+25
+00:02:52,320 --> 00:02:56,320
+There is one which is even more basic, but it's hard to draw.
+
+26
+00:02:56,320 --> 00:03:03,320
+Another one is standard space, which I will have to talk about, is a unit interval.
+
+27
+00:03:03,320 --> 00:03:07,320
+So an interval of the real line, a line between 0 and 1.
+
+28
+00:03:07,360 --> 00:03:15,360
+The third example here on the picture is some example of a space of dimension 2.
+
+29
+00:03:15,360 --> 00:03:26,360
+It's supposed to look like some baking good with two holes in it.
+
+30
+00:03:26,360 --> 00:03:32,360
+So the last example is more sophisticated, and I want to include it here.
+
+31
+00:03:32,360 --> 00:03:35,360
+It's a more sort of mathematical example of a space.
+
+32
+00:03:35,400 --> 00:03:42,400
+It's a space of all n by n matrices with complex entries and with non-zero determinant.
+
+33
+00:03:42,400 --> 00:03:46,400
+That would be a sophisticated space of dimension n, well,
+
+34
+00:03:46,400 --> 00:03:52,400
+depending on how you count, n square or 2n square.
+
+35
+00:03:52,400 --> 00:03:58,400
+So there are many different axiomatizations of the notion of a space in mathematics.
+
+36
+00:03:58,400 --> 00:04:02,400
+For instance, there are topological spaces, there are metric spaces.
+
+37
+00:04:02,440 --> 00:04:04,440
+At the end, it all doesn't matter.
+
+38
+00:04:04,440 --> 00:04:11,440
+As long as one only considers non-pathological examples,
+
+39
+00:04:11,440 --> 00:04:13,440
+it all comes to the same thing.
+
+40
+00:04:13,440 --> 00:04:20,440
+So I will assume that there is some intuitive understanding of what space is.
+
+41
+00:04:22,440 --> 00:04:25,440
+That such understanding is present.
+
+42
+00:04:25,480 --> 00:04:33,480
+So any space, if you formalize it, really write down a definition,
+
+43
+00:04:33,480 --> 00:04:35,480
+it will be a tremendously infinite object.
+
+44
+00:04:35,480 --> 00:04:37,480
+So it's very difficult to work with.
+
+45
+00:04:37,480 --> 00:04:44,480
+So to distinguish spaces mathematically, we use what we call invariance.
+
+46
+00:04:44,480 --> 00:04:49,480
+So something more understandable, more finite, typically,
+
+47
+00:04:49,480 --> 00:04:52,480
+than the space itself associated to a space.
+
+48
+00:04:52,520 --> 00:04:58,520
+So there are two invariants which I will dare to call the most fundamental ones.
+
+49
+00:04:58,520 --> 00:05:01,520
+One is the dimension of a space.
+
+50
+00:05:03,520 --> 00:05:08,520
+So we have dimension zero for a point and dimension one for the interval.
+
+51
+00:05:08,520 --> 00:05:18,520
+And another invariant is the number of pieces the space consists of.
+
+52
+00:05:18,560 --> 00:05:24,560
+So in this picture, again, the point consists of one piece.
+
+53
+00:05:24,560 --> 00:05:27,560
+You cannot divide it into two disconnected pieces.
+
+54
+00:05:27,560 --> 00:05:33,560
+And then there is something below the point which is sort of a deformed circle
+
+55
+00:05:33,560 --> 00:05:36,560
+with some deformed interval sitting inside,
+
+56
+00:05:36,560 --> 00:05:39,560
+but it consists of two different pieces, two disjoint pieces.
+
+57
+00:05:39,560 --> 00:05:41,560
+There's a circle and there's an interval.
+
+58
+00:05:41,560 --> 00:05:44,560
+So the number of pieces is another invariant of a space.
+
+59
+00:05:44,560 --> 00:05:46,560
+Typically, when one thinks of a space,
+
+60
+00:05:46,600 --> 00:05:49,600
+one thinks of a space which has only one piece.
+
+61
+00:05:49,600 --> 00:05:56,600
+But that's just a custom.
+
+62
+00:05:56,600 --> 00:06:02,600
+So what is homotopy theory about?
+
+63
+00:06:04,600 --> 00:06:10,600
+What it does, it basically studies...
+
+64
+00:06:10,600 --> 00:06:13,600
+Oh, I need to say something.
+
+65
+00:06:13,640 --> 00:06:20,640
+Let's call pi zero over space the set of its pieces.
+
+66
+00:06:20,640 --> 00:06:24,640
+So if space has two pieces, then pi zero is a set of two elements,
+
+67
+00:06:24,640 --> 00:06:26,640
+namely these pieces.
+
+68
+00:06:26,640 --> 00:06:29,640
+So it's typically much more finite than the space itself.
+
+69
+00:06:29,640 --> 00:06:34,640
+What homotopy theory does, it studies some fancy versions of this invariant,
+
+70
+00:06:34,640 --> 00:06:36,640
+which are called higher homotopy sets.
+
+71
+00:06:36,680 --> 00:06:42,680
+Now, I will try to explain how one gets to these pi n's,
+
+72
+00:06:42,680 --> 00:06:47,680
+where pi n will be some set for any integer n,
+
+73
+00:06:47,680 --> 00:06:50,680
+for any, excuse me, non-negative integer n,
+
+74
+00:06:50,680 --> 00:06:53,680
+how one gets to pi n from pi zero.
+
+75
+00:06:53,680 --> 00:06:56,680
+The first thing which I need to...
+
+76
+00:06:56,680 --> 00:06:58,680
+It can be done in different ways.
+
+77
+00:06:58,680 --> 00:07:03,680
+So I choose to base my explanation on the notion of a continuous map,
+
+78
+00:07:03,720 --> 00:07:07,720
+which will also play a fundamental role further.
+
+79
+00:07:07,720 --> 00:07:09,720
+So what is a continuous map?
+
+80
+00:07:09,720 --> 00:07:11,720
+So I have a space.
+
+81
+00:07:11,720 --> 00:07:13,720
+This I cannot show on the projection.
+
+82
+00:07:13,720 --> 00:07:17,720
+I have a space n, m, and a space n.
+
+83
+00:07:17,720 --> 00:07:20,720
+And a map from one to another is any rule
+
+84
+00:07:20,720 --> 00:07:22,720
+which assigns to point of the first space
+
+85
+00:07:22,720 --> 00:07:24,720
+and point of the second space.
+
+86
+00:07:24,720 --> 00:07:26,720
+The easiest way, of course, to understand it
+
+87
+00:07:26,720 --> 00:07:29,720
+is by looking at examples.
+
+88
+00:07:29,760 --> 00:07:31,760
+And the idea that it's continuous means
+
+89
+00:07:31,760 --> 00:07:33,760
+that if something was close,
+
+90
+00:07:33,760 --> 00:07:36,760
+then it doesn't get too far apart.
+
+91
+00:07:40,760 --> 00:07:44,760
+So let's denote by c of m, n
+
+92
+00:07:44,760 --> 00:07:48,760
+the set of all continuous maps from m to n.
+
+93
+00:07:48,760 --> 00:07:50,760
+And we'll see again, by example, what it is.
+
+94
+00:07:50,760 --> 00:07:52,760
+If I'm looking at continuous maps
+
+95
+00:07:52,760 --> 00:07:55,760
+from a point to any space,
+
+96
+00:07:55,760 --> 00:07:58,760
+so what is a map from a point to a space?
+
+97
+00:07:58,800 --> 00:08:02,800
+It's just determined by where this unique point goes.
+
+98
+00:08:02,800 --> 00:08:04,800
+So a map from a point to a space
+
+99
+00:08:04,800 --> 00:08:06,800
+is the same as a point on this space.
+
+100
+00:08:06,800 --> 00:08:09,800
+So the set of maps from the point to any space
+
+101
+00:08:09,800 --> 00:08:13,800
+is just a set of points of this very same space.
+
+102
+00:08:13,800 --> 00:08:16,800
+Another example is what is the set of maps
+
+103
+00:08:16,800 --> 00:08:18,800
+from any space to a point?
+
+104
+00:08:18,800 --> 00:08:21,800
+There's only one place for all the points
+
+105
+00:08:21,800 --> 00:08:23,800
+of the first space to go,
+
+106
+00:08:23,800 --> 00:08:27,800
+namely this only point on the target space.
+
+107
+00:08:27,840 --> 00:08:30,840
+And there's always only one map
+
+108
+00:08:30,840 --> 00:08:32,840
+from any space to the point.
+
+109
+00:08:32,840 --> 00:08:35,840
+So that's example number two.
+
+110
+00:08:36,840 --> 00:08:39,840
+Here is a more fancy example.
+
+111
+00:08:39,840 --> 00:08:42,840
+Let's look at maps
+
+112
+00:08:44,840 --> 00:08:46,840
+from the unit interval,
+
+113
+00:08:46,840 --> 00:08:48,840
+the interval of the real line,
+
+114
+00:08:48,840 --> 00:08:50,840
+to any space.
+
+115
+00:08:50,840 --> 00:08:54,840
+So it will have some beginning
+
+116
+00:08:54,840 --> 00:08:56,840
+where the point zero goes
+
+117
+00:08:56,880 --> 00:08:57,880
+or point one goes,
+
+118
+00:08:57,880 --> 00:08:59,880
+and then there will be all the points
+
+119
+00:08:59,880 --> 00:09:02,880
+where all the numbers between zero and one go.
+
+120
+00:09:02,880 --> 00:09:04,880
+So the fact that it's a continuous map
+
+121
+00:09:04,880 --> 00:09:08,880
+means that this gadget will have no breaks in it.
+
+122
+00:09:08,880 --> 00:09:10,880
+That's what it intuitively means.
+
+123
+00:09:10,880 --> 00:09:12,880
+So the set of all continuous maps
+
+124
+00:09:12,880 --> 00:09:15,880
+from the interval to any space
+
+125
+00:09:15,880 --> 00:09:19,880
+is just a set of paths inside this space.
+
+126
+00:09:27,840 --> 00:09:29,840
+Now let's go back to the notion
+
+127
+00:09:29,840 --> 00:09:32,840
+of the number of pieces of a space.
+
+128
+00:09:34,840 --> 00:09:37,840
+How can we say formally
+
+129
+00:09:37,840 --> 00:09:40,840
+when two points lie in the same piece?
+
+130
+00:09:40,840 --> 00:09:42,840
+So if they lie in the same piece,
+
+131
+00:09:42,840 --> 00:09:44,840
+then they can be connected by a path.
+
+132
+00:09:44,840 --> 00:09:46,840
+In different pieces,
+
+133
+00:09:46,840 --> 00:09:48,840
+there's no way you can find a path
+
+134
+00:09:48,840 --> 00:09:51,840
+without breaks which connects one point to another.
+
+135
+00:09:51,840 --> 00:09:54,840
+So to define formally
+
+136
+00:09:54,840 --> 00:09:57,840
+what it means for two points to belong to the same piece,
+
+137
+00:09:57,840 --> 00:09:59,840
+one can use this notion of a path,
+
+138
+00:09:59,840 --> 00:10:02,840
+of a continuous map from interval to the space.
+
+139
+00:10:06,840 --> 00:10:09,840
+So let me repeat myself again.
+
+140
+00:10:09,840 --> 00:10:12,840
+So the only thing which one needs to know
+
+141
+00:10:14,840 --> 00:10:17,840
+to define the set pi zero of n,
+
+142
+00:10:17,840 --> 00:10:19,840
+the set of pieces,
+
+143
+00:10:19,840 --> 00:10:22,840
+is to know what are points and what are paths
+
+144
+00:10:22,840 --> 00:10:25,840
+between these points.
+
+145
+00:10:30,840 --> 00:10:33,840
+Well, this is a little bit more fancy,
+
+146
+00:10:33,840 --> 00:10:37,840
+and maybe I'm not able to explain it as good.
+
+147
+00:10:37,840 --> 00:10:40,840
+Now here I'm moving to the next invariant,
+
+148
+00:10:40,840 --> 00:10:42,840
+next homotopy set pi one.
+
+149
+00:10:42,840 --> 00:10:44,840
+As I said, pi zero is the starting point
+
+150
+00:10:44,840 --> 00:10:48,840
+of an infinite series of homotopy sets.
+
+151
+00:10:48,840 --> 00:10:51,840
+So what one does for pi zero,
+
+152
+00:10:51,840 --> 00:10:53,840
+one takes points
+
+153
+00:10:53,840 --> 00:10:57,840
+and identifies sort of those
+
+154
+00:10:57,840 --> 00:11:00,840
+which can be connected by a path.
+
+155
+00:11:00,840 --> 00:11:03,840
+Now suppose I fix two points, P and Q.
+
+156
+00:11:03,840 --> 00:11:06,840
+Now let's consider all the paths which connect them.
+
+157
+00:11:06,840 --> 00:11:08,840
+Suppose they land the same piece,
+
+158
+00:11:08,840 --> 00:11:10,840
+so there is some path which connects them.
+
+159
+00:11:10,840 --> 00:11:13,840
+Let's look at all paths.
+
+160
+00:11:13,840 --> 00:11:16,840
+So we get some space of paths, whatever that means.
+
+161
+00:11:16,840 --> 00:11:18,840
+Let's try to understand how many pieces
+
+162
+00:11:18,840 --> 00:11:20,840
+this space of paths has,
+
+163
+00:11:20,840 --> 00:11:22,840
+and call this set of pieces the pi one
+
+164
+00:11:22,840 --> 00:11:26,840
+of my original space relative to points P and Q.
+
+165
+00:11:26,840 --> 00:11:30,840
+So in practice what one has to do
+
+166
+00:11:30,840 --> 00:11:33,840
+is to consider now continuous maps from a square.
+
+167
+00:11:33,840 --> 00:11:38,840
+If I have a square mapping to the space,
+
+168
+00:11:38,840 --> 00:11:43,840
+and let's say I request to have a map
+
+169
+00:11:43,840 --> 00:11:47,840
+which contracts this side completely to point P
+
+170
+00:11:47,840 --> 00:11:50,840
+and this side completely to point Q.
+
+171
+00:11:50,840 --> 00:11:53,840
+Then the image of this side will be a path
+
+172
+00:11:53,840 --> 00:11:55,840
+going from P to Q,
+
+173
+00:11:55,840 --> 00:11:57,840
+and the image of this side will also be a path
+
+174
+00:11:57,840 --> 00:12:00,840
+which is going from P to Q.
+
+175
+00:12:00,840 --> 00:12:04,840
+And as I move from this side to this side continuously,
+
+176
+00:12:04,840 --> 00:12:08,840
+I can think of it as being a path between the paths.
+
+177
+00:12:08,840 --> 00:12:11,840
+So it's continuous deformation between the paths.
+
+178
+00:12:11,840 --> 00:12:14,840
+So it generates...
+
+179
+00:12:14,840 --> 00:12:19,840
+Now I can consider the set of pieces
+
+180
+00:12:23,840 --> 00:12:25,840
+of the space of paths
+
+181
+00:12:25,840 --> 00:12:30,840
+where two paths are declared
+
+182
+00:12:30,840 --> 00:12:32,840
+to belong to the same piece
+
+183
+00:12:32,840 --> 00:12:36,840
+if they can be connected by such a map from a square.
+
+184
+00:12:36,840 --> 00:12:39,840
+Now this is a procedure which can be repeated,
+
+185
+00:12:39,840 --> 00:12:44,840
+and then I can use cubes to connect maps from squares
+
+186
+00:12:44,840 --> 00:12:49,840
+and so on, and one gets a sequence of sets
+
+187
+00:12:49,840 --> 00:12:52,840
+which are called homotope sets over space.
+
+188
+00:12:52,840 --> 00:12:54,840
+Now...
+
+189
+00:13:03,840 --> 00:13:06,840
+Well, I'm sorry, that's what I just said.
+
+190
+00:13:09,840 --> 00:13:14,840
+There is one nice example which I want to give.
+
+191
+00:13:17,840 --> 00:13:20,840
+If we try to define these homotope sets
+
+192
+00:13:20,840 --> 00:13:23,840
+for the space of complex matrices
+
+193
+00:13:23,840 --> 00:13:27,840
+with a non-zero determinant,
+
+194
+00:13:27,840 --> 00:13:29,840
+it's, of course, a very complicated problem
+
+195
+00:13:29,840 --> 00:13:31,840
+how to compare the homotope sets
+
+196
+00:13:31,840 --> 00:13:34,840
+with the space of complex matrices
+
+197
+00:13:34,840 --> 00:13:37,840
+with a non-zero determinant.
+
+198
+00:13:37,840 --> 00:13:39,840
+It's, of course, a very complicated problem
+
+199
+00:13:39,840 --> 00:13:42,840
+how to compute such a weird thing for such a weird space.
+
+200
+00:13:42,840 --> 00:13:44,840
+However, it turns out that it can be done,
+
+201
+00:13:44,840 --> 00:13:47,840
+and the answer,
+
+202
+00:13:47,840 --> 00:13:51,840
+at least when we consider matrices which are very, very big,
+
+203
+00:13:51,840 --> 00:13:54,840
+n by n, where n is very large,
+
+204
+00:13:54,840 --> 00:13:58,840
+the answer turns out to be wonderfully simple.
+
+205
+00:13:58,840 --> 00:14:02,840
+It's the first homotope set is the point.
+
+206
+00:14:02,840 --> 00:14:04,840
+Any two matrices can be connected by a path,
+
+207
+00:14:04,840 --> 00:14:07,840
+and there's only one piece in the whole space of matrices.
+
+208
+00:14:09,840 --> 00:14:12,840
+If I consider paths,
+
+209
+00:14:12,840 --> 00:14:17,840
+then it turns out that the pieces in the space of paths
+
+210
+00:14:17,840 --> 00:14:20,840
+are numbered by integers.
+
+211
+00:14:20,840 --> 00:14:23,840
+So pi 1 is a set of integers...
+
+212
+00:14:23,840 --> 00:14:26,840
+I'm sorry, did I...
+
+213
+00:14:26,840 --> 00:14:30,840
+I made a mistake writing this page.
+
+214
+00:14:30,840 --> 00:14:32,840
+It has to read like this.
+
+215
+00:14:32,840 --> 00:14:35,840
+Pi 0 is a star.
+
+216
+00:14:35,840 --> 00:14:37,840
+Or did I?
+
+217
+00:14:37,840 --> 00:14:40,840
+No, no, no, sorry.
+
+218
+00:14:40,840 --> 00:14:44,840
+So pi 1 can be identified with the set of integral numbers.
+
+219
+00:14:44,840 --> 00:14:47,840
+Pi 2 is again just one point.
+
+220
+00:14:47,840 --> 00:14:49,840
+Pi 3 is again the set of integral numbers.
+
+221
+00:14:49,840 --> 00:14:53,840
+And then it goes on like that for a very long time.
+
+222
+00:14:53,840 --> 00:14:56,840
+For how long exactly depends on number n over there.
+
+223
+00:14:56,840 --> 00:14:59,840
+But basically if n is infinity, then it goes on forever.
+
+224
+00:14:59,840 --> 00:15:01,840
+And that's called what periodicity theorem.
+
+225
+00:15:01,840 --> 00:15:04,840
+There was one of the very impressive achievements
+
+226
+00:15:04,840 --> 00:15:12,840
+of mathematics in early 60s, late 50s.
+
+227
+00:15:12,840 --> 00:15:15,840
+I don't know the history well enough.
+
+228
+00:15:15,840 --> 00:15:18,840
+But that was one of the really first big computations
+
+229
+00:15:18,840 --> 00:15:20,840
+of homotopy theory.
+
+230
+00:15:25,840 --> 00:15:29,840
+So that's what I wanted to say about homotopy theory.
+
+231
+00:15:29,840 --> 00:15:31,840
+It studies spaces.
+
+232
+00:15:31,840 --> 00:15:33,840
+It associates to them the homotopy sets,
+
+233
+00:15:33,840 --> 00:15:37,840
+which come from studying paths of paths and so on.
+
+234
+00:15:37,840 --> 00:15:39,840
+And here is an example of computation.
+
+235
+00:15:39,840 --> 00:15:41,840
+These are actually things which can be computed
+
+236
+00:15:41,840 --> 00:15:43,840
+in some non-trivial cases.
+
+237
+00:15:43,840 --> 00:15:49,840
+Now I want to jump somehow and do something similar
+
+238
+00:15:49,840 --> 00:15:51,840
+in algebraic setting.
+
+239
+00:15:51,840 --> 00:15:54,840
+So there is only one way to do it.
+
+240
+00:15:54,840 --> 00:15:59,840
+And I don't know how much I will have time to say today.
+
+241
+00:15:59,840 --> 00:16:09,840
+But there is one topic which I want to talk about very quietly
+
+242
+00:16:09,840 --> 00:16:11,840
+and without hurry.
+
+243
+00:16:11,840 --> 00:16:15,840
+So that's something which I never saw it even mentioned
+
+244
+00:16:15,840 --> 00:16:18,840
+in any popular book about mathematics.
+
+245
+00:16:18,840 --> 00:16:21,840
+I saw algebraic equations mentioned.
+
+246
+00:16:21,840 --> 00:16:24,840
+I saw homotopy groups probably even mentioned,
+
+247
+00:16:24,840 --> 00:16:28,840
+especially for elementary books in topology.
+
+248
+00:16:28,840 --> 00:16:33,840
+But I think that at the heart of 20th century mathematics
+
+249
+00:16:33,840 --> 00:16:36,840
+lies one particular notion.
+
+250
+00:16:36,840 --> 00:16:38,840
+And that's the notion of a category.
+
+251
+00:16:38,840 --> 00:16:43,840
+So let me try to explain what it is about.
+
+252
+00:16:43,840 --> 00:16:47,840
+So it's a very formal gadget.
+
+253
+00:16:47,840 --> 00:16:53,840
+And I will illustrate it by an example.
+
+254
+00:16:57,840 --> 00:16:59,840
+So here are two examples of categories.
+
+255
+00:16:59,840 --> 00:17:02,840
+Let's forget about the second one for a moment.
+
+256
+00:17:02,840 --> 00:17:05,840
+Just look at the first one.
+
+257
+00:17:05,840 --> 00:17:09,840
+So here I have a picture of a category with three objects,
+
+258
+00:17:09,840 --> 00:17:11,840
+A, B, C.
+
+259
+00:17:11,840 --> 00:17:13,840
+Now there are arrows between those objects,
+
+260
+00:17:13,840 --> 00:17:15,840
+which are called morphisms.
+
+261
+00:17:15,840 --> 00:17:18,840
+And then there is the rule, which says that if I have one arrow
+
+262
+00:17:18,840 --> 00:17:21,840
+and then it's followed by another arrow,
+
+263
+00:17:21,840 --> 00:17:23,840
+then there is a third arrow.
+
+264
+00:17:23,840 --> 00:17:25,840
+Let's say if I have an arrow from A to B
+
+265
+00:17:25,840 --> 00:17:27,840
+and arrow from B to C,
+
+266
+00:17:27,840 --> 00:17:30,840
+then there is a rule to get from such a pair
+
+267
+00:17:30,840 --> 00:17:32,840
+an arrow from A to C.
+
+268
+00:17:32,840 --> 00:17:34,840
+That's called the composition rule.
+
+269
+00:17:34,840 --> 00:17:36,840
+But let's even forget this third part for a second.
+
+270
+00:17:36,840 --> 00:17:40,840
+It's not necessarily important for intuitive understanding.
+
+271
+00:17:40,840 --> 00:17:42,840
+Main thing which exists in categories
+
+272
+00:17:42,840 --> 00:17:45,840
+is that there are objects and there are morphisms.
+
+273
+00:17:45,840 --> 00:17:47,840
+There is a formal set.
+
+274
+00:17:47,840 --> 00:17:49,840
+In this case, the set of A, B, C,
+
+275
+00:17:49,840 --> 00:17:51,840
+which is called the set of objects.
+
+276
+00:17:51,840 --> 00:17:53,840
+For every pair of objects,
+
+277
+00:17:53,840 --> 00:17:55,840
+there is another formal set.
+
+278
+00:17:55,840 --> 00:17:59,840
+In this case, it's X and Y between A and B,
+
+279
+00:17:59,840 --> 00:18:03,840
+Z between B and C, and T between A and C,
+
+280
+00:18:03,840 --> 00:18:06,840
+which are called morphisms between these objects.
+
+281
+00:18:06,840 --> 00:18:09,840
+Now the first example is an example
+
+282
+00:18:09,840 --> 00:18:12,840
+of a combinatorial finite category.
+
+283
+00:18:12,840 --> 00:18:14,840
+Here is a second example.
+
+284
+00:18:14,840 --> 00:18:18,840
+Objects are spaces, all spaces which exist.
+
+285
+00:18:18,840 --> 00:18:21,840
+Morphisms between two spaces
+
+286
+00:18:21,840 --> 00:18:24,840
+are continuous maps between these spaces.
+
+287
+00:18:24,840 --> 00:18:27,840
+And of course continuous maps can be composed.
+
+288
+00:18:27,840 --> 00:18:29,840
+So that gives an example of a category
+
+289
+00:18:29,840 --> 00:18:31,840
+of a very different kind.
+
+290
+00:18:31,840 --> 00:18:37,840
+And what was somewhat amazing for me personally
+
+291
+00:18:37,840 --> 00:18:42,840
+and an amazing discovery is that almost,
+
+292
+00:18:42,840 --> 00:18:46,840
+let's say for very many classes of mathematical objects,
+
+293
+00:18:46,840 --> 00:18:49,840
+there are natural categories which correspond to them.
+
+294
+00:18:49,840 --> 00:18:52,840
+So for most classes of mathematical objects,
+
+295
+00:18:52,840 --> 00:18:57,840
+we can construct a category whose objects
+
+296
+00:18:57,840 --> 00:19:00,840
+will be these objects.
+
+297
+00:19:00,840 --> 00:19:04,840
+Morphisms will be some natural ways
+
+298
+00:19:05,840 --> 00:19:08,840
+of connecting one object of this type to another,
+
+299
+00:19:08,840 --> 00:19:11,840
+and there will be some kind of composition.
+
+300
+00:19:19,840 --> 00:19:21,840
+Sorry.
+
+301
+00:19:35,840 --> 00:19:41,840
+So here is a more formal way to see what a category is.
+
+302
+00:19:41,840 --> 00:19:44,840
+So there is a set of objects.
+
+303
+00:19:44,840 --> 00:19:47,840
+For any pair of objects, there is a set of morphisms
+
+304
+00:19:47,840 --> 00:19:50,840
+from this object to, between these two objects.
+
+305
+00:19:50,840 --> 00:19:53,840
+And then there is some composition rule.
+
+306
+00:20:04,840 --> 00:20:09,840
+Now, what I hope to do now is to show how such a,
+
+307
+00:20:09,840 --> 00:20:12,840
+well, let's see, how does it work?
+
+308
+00:20:12,840 --> 00:20:14,840
+Why is it interesting?
+
+309
+00:20:14,840 --> 00:20:16,840
+Let's, for instance, consider the category
+
+310
+00:20:16,840 --> 00:20:19,840
+of topological spaces.
+
+311
+00:20:19,840 --> 00:20:22,840
+And let's take, let's choose a space N.
+
+312
+00:20:22,840 --> 00:20:25,840
+What can we say about this space?
+
+313
+00:20:25,840 --> 00:20:29,840
+Looking at it exclusively as being an object
+
+314
+00:20:29,840 --> 00:20:31,840
+of the category of spaces.
+
+315
+00:20:31,840 --> 00:20:33,840
+So I don't want to look inside of this space.
+
+316
+00:20:33,840 --> 00:20:35,840
+I know nothing about its insides.
+
+317
+00:20:35,840 --> 00:20:40,840
+I only know continuous maps relating this space
+
+318
+00:20:40,840 --> 00:20:42,840
+to all other spaces.
+
+319
+00:20:42,840 --> 00:20:46,840
+So instead of looking on the structure of the object,
+
+320
+00:20:46,840 --> 00:20:49,840
+you look at his sort of social relationship.
+
+321
+00:20:52,840 --> 00:20:55,840
+The very first example, can we figure out
+
+322
+00:20:55,840 --> 00:20:58,840
+when the space is a point?
+
+323
+00:20:58,840 --> 00:21:00,840
+To this, there is a nice answer.
+
+324
+00:21:00,840 --> 00:21:06,840
+When a space is a point, if and only if
+
+325
+00:21:06,840 --> 00:21:10,840
+for any other space, there is a single morphism
+
+326
+00:21:10,840 --> 00:21:12,840
+to this one.
+
+327
+00:21:12,840 --> 00:21:18,840
+So that characterizes the point completely,
+
+328
+00:21:18,840 --> 00:21:24,840
+exclusively by morphisms to and from it.
+
+329
+00:21:24,840 --> 00:21:27,840
+Let's ask a more complicated question.
+
+330
+00:21:27,840 --> 00:21:29,840
+When is a space N connected?
+
+331
+00:21:29,840 --> 00:21:32,840
+So when it consists of only one piece.
+
+332
+00:21:41,840 --> 00:21:45,840
+Or more generally, can we somehow express,
+
+333
+00:21:45,840 --> 00:21:48,840
+let's say the very first homotopia set,
+
+334
+00:21:48,840 --> 00:21:52,840
+the set of pieces, purely in categorical terms?
+
+335
+00:21:52,840 --> 00:21:54,840
+It turns out that yes, we can.
+
+336
+00:21:54,840 --> 00:21:56,840
+So let's try to play this game.
+
+337
+00:21:56,840 --> 00:21:58,840
+So first of all, we know what is the set of points
+
+338
+00:21:58,840 --> 00:21:59,840
+of the space.
+
+339
+00:21:59,840 --> 00:22:03,840
+It's the set of morphisms from the point to this space.
+
+340
+00:22:03,840 --> 00:22:06,840
+And we have already characterized the point
+
+341
+00:22:06,840 --> 00:22:09,840
+in some internal way.
+
+342
+00:22:09,840 --> 00:22:13,840
+Now, let's consider the unit interval.
+
+343
+00:22:13,840 --> 00:22:16,840
+The set of maps from the unit interval, morphisms
+
+344
+00:22:16,840 --> 00:22:20,840
+from the unit interval to the space, is the set of paths.
+
+345
+00:22:24,840 --> 00:22:26,840
+Now, I need to know what is the beginning of the path
+
+346
+00:22:26,840 --> 00:22:29,840
+and what is the end of the path.
+
+347
+00:22:29,840 --> 00:22:32,840
+For that, I need the notion of a composition of morphisms.
+
+348
+00:22:32,840 --> 00:22:37,840
+So if I have a path, I have two distinguished points, 0 and 1,
+
+349
+00:22:37,840 --> 00:22:40,840
+on the unit interval, which are morphisms from the point
+
+350
+00:22:40,840 --> 00:22:42,840
+to the unit interval.
+
+351
+00:22:42,840 --> 00:22:46,840
+If I look at the composition, my path composed
+
+352
+00:22:46,840 --> 00:22:50,840
+with one of these points, I get a point of the space,
+
+353
+00:22:50,840 --> 00:22:53,840
+which is the beginning or the end of the path.
+
+354
+00:22:53,840 --> 00:22:58,840
+So using purely the structure of the category,
+
+355
+00:22:58,840 --> 00:22:59,840
+I know what is the set of points.
+
+356
+00:22:59,840 --> 00:23:01,840
+I know what is the set of paths.
+
+357
+00:23:01,840 --> 00:23:05,840
+And I know how to assign beginning and end to a path.
+
+358
+00:23:05,840 --> 00:23:09,840
+So now I can say what is the set of pieces,
+
+359
+00:23:09,840 --> 00:23:14,840
+because it's simply I have to identify two points which
+
+360
+00:23:14,840 --> 00:23:16,840
+can be connected by a path, in other words,
+
+361
+00:23:16,840 --> 00:23:19,840
+for which there is a path such that it's beginning and end.
+
+362
+00:23:19,840 --> 00:23:22,840
+And that gives me the set pi 0.
+
+363
+00:23:22,840 --> 00:23:26,840
+So the only thing which is here, which is not internal
+
+364
+00:23:26,840 --> 00:23:30,840
+to the category of categorical structure,
+
+365
+00:23:30,840 --> 00:23:31,840
+is the unit interval itself.
+
+366
+00:23:31,840 --> 00:23:36,840
+We don't know how to characterize it from the inside.
+
+367
+00:23:36,840 --> 00:23:40,840
+But as soon as I have a category and something which
+
+368
+00:23:40,840 --> 00:23:44,840
+I want to call the unit interval with two maps,
+
+369
+00:23:44,840 --> 00:23:46,840
+A and B, called beginning and end,
+
+370
+00:23:46,840 --> 00:23:49,840
+I can define some kind of pi 0.
+
+371
+00:23:49,840 --> 00:23:51,840
+How good this definition will be?
+
+372
+00:23:51,840 --> 00:23:52,840
+It's a big question.
+
+373
+00:23:59,840 --> 00:24:06,840
+So similarly, if I want to compute the next homotopy set,
+
+374
+00:24:06,840 --> 00:24:09,840
+here I'm not going in that much detail.
+
+375
+00:24:09,840 --> 00:24:17,840
+But what I will need to know will be the object point,
+
+376
+00:24:17,840 --> 00:24:19,840
+the object called unit interval.
+
+377
+00:24:19,840 --> 00:24:23,840
+And then I'll need to know to have some distinguished object
+
+378
+00:24:23,840 --> 00:24:27,840
+which is called the square.
+
+379
+00:24:27,840 --> 00:24:30,840
+And some finite number of morphisms
+
+380
+00:24:30,840 --> 00:24:32,840
+connecting these objects.
+
+381
+00:24:32,840 --> 00:24:35,840
+As soon as I have such a purely combinatorial structure
+
+382
+00:24:35,840 --> 00:24:39,840
+inside my category, I can consider morphisms
+
+383
+00:24:39,840 --> 00:24:43,840
+with values in any object and get something which
+
+384
+00:24:43,840 --> 00:24:45,840
+I will call pi 0 and pi 1.
+
+385
+00:24:45,840 --> 00:24:49,840
+I can continue that and model formally in any category.
+
+386
+00:24:53,840 --> 00:24:55,840
+Basically, for what I'm talking about,
+
+387
+00:24:55,840 --> 00:24:57,840
+it's enough to understand pi 0.
+
+388
+00:24:57,840 --> 00:25:06,840
+And the rest is just not to look too elementary.
+
+389
+00:25:06,840 --> 00:25:09,840
+So one can formalize the situation
+
+390
+00:25:09,840 --> 00:25:16,840
+when one has point, interval, square, cube,
+
+391
+00:25:16,840 --> 00:25:18,840
+cube of the next dimension, and so on.
+
+392
+00:25:18,840 --> 00:25:22,840
+Now all these things in usual topological world
+
+393
+00:25:22,840 --> 00:25:23,840
+map to each other.
+
+394
+00:25:23,840 --> 00:25:25,840
+There are two maps from the point to the interval,
+
+395
+00:25:25,840 --> 00:25:27,840
+the beginning and the end.
+
+396
+00:25:27,840 --> 00:25:30,840
+There are four maps from the interval to the square,
+
+397
+00:25:30,840 --> 00:25:32,840
+the four sides of the square.
+
+398
+00:25:32,840 --> 00:25:36,840
+There are six maps from the square to the cube,
+
+399
+00:25:36,840 --> 00:25:39,840
+the six sides of the cube, and so on.
+
+400
+00:25:39,840 --> 00:25:40,840
+They satisfy some relations.
+
+401
+00:25:40,840 --> 00:25:44,840
+So I can formally say, let's take any category whatsoever.
+
+402
+00:25:44,840 --> 00:25:49,840
+Let's take a series of objects and morphisms between them,
+
+403
+00:25:49,840 --> 00:25:53,840
+satisfying appropriate conditions.
+
+404
+00:25:53,840 --> 00:25:57,840
+Let's call such a gadget a cubical object.
+
+405
+00:25:57,840 --> 00:26:00,840
+So as soon as I have a cubical object in any category,
+
+406
+00:26:00,840 --> 00:26:04,840
+I can play the game which I sort of explained
+
+407
+00:26:04,840 --> 00:26:08,840
+for pi 0 and pi 1 and define some kind of homotopy sets
+
+408
+00:26:08,840 --> 00:26:15,840
+for any other object in this category.
+
+409
+00:26:15,840 --> 00:26:21,840
+Of course, it needs to be said that in most cases
+
+410
+00:26:21,840 --> 00:26:22,840
+it's not going to work very well,
+
+411
+00:26:22,840 --> 00:26:27,840
+but it will work somehow.
+
+412
+00:26:27,840 --> 00:26:36,840
+Now let's go to the next...
+
+413
+00:26:48,840 --> 00:26:51,840
+So of course that was just an example.
+
+414
+00:26:51,840 --> 00:26:55,840
+In principle, there are many more structures,
+
+415
+00:26:55,840 --> 00:26:57,840
+let's say in topological spaces,
+
+416
+00:26:57,840 --> 00:27:00,840
+which are needed for homotopy theory.
+
+417
+00:27:00,840 --> 00:27:04,840
+So one can translate most of the structures
+
+418
+00:27:04,840 --> 00:27:06,840
+into categorical terms,
+
+419
+00:27:06,840 --> 00:27:11,840
+as I tried to show in this example of cubical spaces.
+
+420
+00:27:11,840 --> 00:27:14,840
+And then as soon as they are translated
+
+421
+00:27:14,840 --> 00:27:16,840
+into these formal categorical terms,
+
+422
+00:27:16,840 --> 00:27:19,840
+one can try to take some very different category
+
+423
+00:27:19,840 --> 00:27:22,840
+and apply it there and see what happens.
+
+424
+00:27:22,840 --> 00:27:24,840
+So material homotopy theory happens
+
+425
+00:27:24,840 --> 00:27:28,840
+when one applies this kind of procedure
+
+426
+00:27:28,840 --> 00:27:31,840
+to the following category of algebraic equations,
+
+427
+00:27:31,840 --> 00:27:34,840
+systems of algebraic equations,
+
+428
+00:27:34,840 --> 00:27:36,840
+which I'm going to describe in a moment.
+
+429
+00:27:36,840 --> 00:27:40,840
+That's not exactly the standard approach to algebraic geometry,
+
+430
+00:27:40,840 --> 00:27:45,840
+but that's the most elementary one which I could think of.
+
+431
+00:27:45,840 --> 00:27:48,840
+So let's consider the following objects,
+
+432
+00:27:48,840 --> 00:27:51,840
+which we call systems of algebraic equations.
+
+433
+00:27:51,840 --> 00:27:53,840
+So by definition, a system of algebraic equations
+
+434
+00:27:53,840 --> 00:27:55,840
+is the following gadget.
+
+435
+00:27:55,840 --> 00:27:57,840
+It's first of all a list of letters
+
+436
+00:27:57,840 --> 00:27:59,840
+which are called variables of the system,
+
+437
+00:27:59,840 --> 00:28:03,840
+and second of all some list of polynomials in these variables
+
+438
+00:28:03,840 --> 00:28:06,840
+which are called equations of the system.
+
+439
+00:28:06,840 --> 00:28:08,840
+So here is an example.
+
+440
+00:28:08,840 --> 00:28:10,840
+There is one variable X
+
+441
+00:28:10,840 --> 00:28:13,840
+and one equation X squared plus one.
+
+442
+00:28:13,840 --> 00:28:15,840
+Here is another example.
+
+443
+00:28:15,840 --> 00:28:18,840
+There are N variables, X1, XN,
+
+444
+00:28:18,840 --> 00:28:21,840
+and there are no equations whatsoever.
+
+445
+00:28:21,840 --> 00:28:25,840
+That's a very important system which is denoted by AN.
+
+446
+00:28:27,840 --> 00:28:30,840
+Here is a more sophisticated example.
+
+447
+00:28:30,840 --> 00:28:34,840
+I'm sorry, I was getting late writing it,
+
+448
+00:28:34,840 --> 00:28:37,840
+and it's not probably very readable.
+
+449
+00:28:37,840 --> 00:28:41,840
+I have N squared variables.
+
+450
+00:28:41,840 --> 00:28:46,840
+I'm thinking about them as about entries in a matrix
+
+451
+00:28:46,840 --> 00:28:49,840
+plus one additional variable which I call T.
+
+452
+00:28:49,840 --> 00:28:51,840
+And I have one equation which says
+
+453
+00:28:51,840 --> 00:28:55,840
+it's the determinant of this matrix times T minus one.
+
+454
+00:28:55,840 --> 00:28:58,840
+Well, it doesn't say anything, but that's my equation.
+
+455
+00:28:58,840 --> 00:29:01,840
+That's my polynomial.
+
+456
+00:29:01,840 --> 00:29:05,840
+And such a system of equations I want to denote by GLN.
+
+457
+00:29:06,840 --> 00:29:10,840
+Now, let's define morphisms.
+
+458
+00:29:15,840 --> 00:29:18,840
+Oh, I need to say something else.
+
+459
+00:29:18,840 --> 00:29:22,840
+So now I want to try to define
+
+460
+00:29:22,840 --> 00:29:26,840
+the category of systems of algebraic equations.
+
+461
+00:29:28,840 --> 00:29:31,840
+So what I need first are
+
+462
+00:29:31,840 --> 00:29:34,840
+objects, and as objects I will take...
+
+463
+00:29:34,840 --> 00:29:36,840
+I want to sort of say let's consider
+
+464
+00:29:36,840 --> 00:29:38,840
+all systems of algebraic equations,
+
+465
+00:29:38,840 --> 00:29:40,840
+but that's a bit too many.
+
+466
+00:29:40,840 --> 00:29:44,840
+So a typical approach is we first choose
+
+467
+00:29:44,840 --> 00:29:47,840
+what kind of coefficients are we going to consider.
+
+468
+00:29:47,840 --> 00:29:51,840
+So let's take some system of coefficients,
+
+469
+00:29:51,840 --> 00:29:55,840
+integral numbers or real numbers or complex numbers,
+
+470
+00:29:55,840 --> 00:29:59,840
+and consider all systems with the same coefficients.
+
+471
+00:29:59,840 --> 00:30:01,840
+And consider all systems with coefficients
+
+472
+00:30:01,840 --> 00:30:05,840
+in this type of numbers.
+
+473
+00:30:05,840 --> 00:30:09,840
+That will be the class of objects of our category.
+
+474
+00:30:11,840 --> 00:30:14,840
+Now I need morphisms from one system to another.
+
+475
+00:30:14,840 --> 00:30:17,840
+So I tried to write it down,
+
+476
+00:30:17,840 --> 00:30:22,840
+and it's difficult to read on a projector.
+
+477
+00:30:22,840 --> 00:30:27,840
+So by morphism I want to mean a change of variables.
+
+478
+00:30:27,840 --> 00:30:31,840
+So a morphism from one system in variables x
+
+479
+00:30:31,840 --> 00:30:34,840
+to another system in variables y
+
+480
+00:30:34,840 --> 00:30:37,840
+is going to be some way to express variables y
+
+481
+00:30:37,840 --> 00:30:41,840
+through variables x, such that the equations
+
+482
+00:30:41,840 --> 00:30:45,840
+sort of are satisfied on both sides.
+
+483
+00:30:45,840 --> 00:30:48,840
+There is some obvious way to compose these things.
+
+484
+00:30:48,840 --> 00:30:50,840
+It wasn't I who invented this.
+
+485
+00:30:50,840 --> 00:30:52,840
+I don't know who invented it,
+
+486
+00:30:52,840 --> 00:30:54,840
+but I read it in a wonderful textbook
+
+487
+00:30:54,840 --> 00:30:58,840
+by Manin on algebraic geometry,
+
+488
+00:30:58,840 --> 00:31:00,840
+which was published in Soviet Union
+
+489
+00:31:00,840 --> 00:31:03,840
+in the end of the 60s.
+
+490
+00:31:05,840 --> 00:31:09,840
+So here is an example.
+
+491
+00:31:09,840 --> 00:31:11,840
+Let's consider A0.
+
+492
+00:31:11,840 --> 00:31:14,840
+So remember A0 is...
+
+493
+00:31:16,840 --> 00:31:18,840
+Let me do it this way.
+
+494
+00:31:19,840 --> 00:31:27,840
+A0 is a system of no equations and no variables.
+
+495
+00:31:27,840 --> 00:31:32,840
+So a morphism from such a system
+
+496
+00:31:32,840 --> 00:31:40,840
+would mean that I have to find expressions of my x1, xn
+
+497
+00:31:40,840 --> 00:31:42,840
+in terms of no variables whatsoever.
+
+498
+00:31:42,840 --> 00:31:45,840
+So it means I have to replace them by constants,
+
+499
+00:31:45,840 --> 00:31:47,840
+and the equations still have to be satisfied.
+
+500
+00:31:47,840 --> 00:31:50,840
+So such a morphism is exactly a solution
+
+501
+00:31:50,840 --> 00:31:52,840
+of my system of equations.
+
+502
+00:31:52,840 --> 00:31:54,840
+So morphisms from A0 to x
+
+503
+00:31:54,840 --> 00:31:57,840
+are solutions of the system of equations.
+
+504
+00:31:57,840 --> 00:32:02,840
+Similarly, one can verify that morphisms from x to A0,
+
+505
+00:32:02,840 --> 00:32:05,840
+there's always only one morphism.
+
+506
+00:32:05,840 --> 00:32:09,840
+So these objects An,
+
+507
+00:32:09,840 --> 00:32:15,840
+these systems sort of with no equations,
+
+508
+00:32:15,840 --> 00:32:18,840
+they form a cubical object in a very naive sense.
+
+509
+00:32:18,840 --> 00:32:20,840
+One can easily build all the maps
+
+510
+00:32:20,840 --> 00:32:23,840
+which exist between usual cubes.
+
+511
+00:32:23,840 --> 00:32:26,840
+One can build them between these systems.
+
+512
+00:32:26,840 --> 00:32:28,840
+And so I can use this cubical object
+
+513
+00:32:28,840 --> 00:32:30,840
+to define some kind of homotypic groups
+
+514
+00:32:30,840 --> 00:32:34,840
+for any system of algebraic equations.
+
+515
+00:32:34,840 --> 00:32:37,840
+In general, I will get...
+
+516
+00:32:37,840 --> 00:32:39,840
+Sorry, homotypic sets.
+
+517
+00:32:39,840 --> 00:32:44,840
+In general, I will get not quite correct results,
+
+518
+00:32:44,840 --> 00:32:47,840
+but there is an example.
+
+519
+00:32:47,840 --> 00:32:51,840
+If I apply it to the system GLN,
+
+520
+00:32:51,840 --> 00:32:54,840
+I will actually get very, very reasonable things.
+
+521
+00:32:54,840 --> 00:32:59,840
+I will get sets which are called algebraic K groups
+
+522
+00:32:59,840 --> 00:33:02,840
+of the original system of coefficients.
+
+523
+00:33:02,840 --> 00:33:08,840
+And these groups were defined in many difficult ways
+
+524
+00:33:08,840 --> 00:33:15,840
+over the last, I don't know, 40 years.
+
+525
+00:33:15,840 --> 00:33:18,840
+And they're still a source of great many
+
+526
+00:33:18,840 --> 00:33:22,840
+interesting mathematical problems and insights.
+
+527
+00:33:22,840 --> 00:33:25,840
+This is something which really depends on key.
+
+528
+00:33:25,840 --> 00:33:29,840
+So for integers, it will have something to do
+
+529
+00:33:29,840 --> 00:33:32,840
+with number theory and arithmetics.
+
+530
+00:33:32,840 --> 00:33:36,840
+For complex numbers or real numbers,
+
+531
+00:33:36,840 --> 00:33:41,840
+there are connections with special functions
+
+532
+00:33:41,840 --> 00:33:44,840
+such as polylogarism and hyperbolic geometry,
+
+533
+00:33:44,840 --> 00:33:46,840
+and I don't know what else.
+
+534
+00:33:46,840 --> 00:33:48,840
+So these are very, very interesting groups.
+
+535
+00:33:48,840 --> 00:33:56,840
+And sort of this is an example of how such a game
+
+536
+00:33:56,840 --> 00:33:59,840
+can lead us to actually objects
+
+537
+00:33:59,840 --> 00:34:01,840
+which are of independent interest.
+
+538
+00:34:02,840 --> 00:34:11,840
+So now let me have the last slide
+
+539
+00:34:11,840 --> 00:34:14,840
+and get a little philosophical.
+
+540
+00:34:14,840 --> 00:34:19,840
+And so that's how I see the whole picture.
+
+541
+00:34:19,840 --> 00:34:22,840
+Let me start with geometry,
+
+542
+00:34:22,840 --> 00:34:25,840
+category of topological spaces.
+
+543
+00:34:25,840 --> 00:34:28,840
+We invent something about this geometrical world
+
+544
+00:34:28,840 --> 00:34:31,840
+using our basically visual intuition.
+
+545
+00:34:31,840 --> 00:34:34,840
+The notion of pieces comes exclusively
+
+546
+00:34:34,840 --> 00:34:37,840
+from visual intuition.
+
+547
+00:34:37,840 --> 00:34:40,840
+We're somehow abstracted and rewrite it
+
+548
+00:34:40,840 --> 00:34:42,840
+in terms of category theory,
+
+549
+00:34:42,840 --> 00:34:45,840
+which provides this connecting language.
+
+550
+00:34:45,840 --> 00:34:48,840
+And then we apply it in a new situation,
+
+551
+00:34:48,840 --> 00:34:50,840
+in this case in the situation of algebraic equations,
+
+552
+00:34:50,840 --> 00:34:52,840
+which is purely algebraic.
+
+553
+00:34:52,840 --> 00:34:54,840
+So what we get is some fantastic way
+
+554
+00:34:54,840 --> 00:34:56,840
+to translate geometric intuition
+
+555
+00:34:56,840 --> 00:35:01,840
+into results about algebraic objects.
+
+556
+00:35:01,840 --> 00:35:03,840
+And that's, from my point of view,
+
+557
+00:35:03,840 --> 00:35:06,840
+the main fun of doing mathematics.
+
+558
+00:35:06,840 --> 00:35:08,840
+Thank you.
+
+559
+00:35:08,840 --> 00:35:17,840
+Applause
+

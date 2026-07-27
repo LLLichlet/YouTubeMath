@@ -16,6 +16,8 @@ audio.srt
 audio.zh.srt
 audio_kt.srt
 audio_kt.zh.srt
+audio_mht.srt
+audio_mht.zh.srt
 
 # 输出视频
 output_*.mp4

@@ -1,0 +1,2794 @@
+1
+00:00:00,000 --> 00:00:10,000
+So welcome back.
+欢迎回来。
+
+2
+00:00:10,000 --> 00:00:16,040
+It's a great honor to introduce a mathematical legend.
+有幸介绍一位数学传奇人物。
+
+3
+00:00:16,040 --> 00:00:25,080
+John Milnor, who as an undergraduate showed that the integral of the curvature of a knot
+John Milnor，在本科期间证明了纽结曲率的积分
+
+4
+00:00:25,120 --> 00:00:34,120
+was at least four pi, and became very famous as a result,
+结果至少为四π，并因此而非常著名，
+
+5
+00:00:34,120 --> 00:00:42,120
+won the Fields Medal at the age of 31, was professor at Princeton and the Institute for Advanced Study,
+在31岁时获得了菲尔兹奖，曾在普林斯顿大学和高等研究院任教，
+
+6
+00:00:42,120 --> 00:00:48,120
+and is now director of the Center for Mathematical Research at Stony Brook,
+现在是石溪数学研究所的主任，
+
+7
+00:00:48,120 --> 00:00:54,120
+and is a recipient of many honors, including the National Medal of Science,
+并且获得过许多荣誉，包括国家科学奖章，
+
+8
+00:00:54,160 --> 00:00:58,160
+We'll introduce the next speaker.
+我们将介绍下一位演讲者。
+
+9
+00:00:58,160 --> 00:01:05,160
+Jack Milnor, go ahead.
+Jack Milnor，请发言。
+
+10
+00:01:05,160 --> 00:01:10,160
+Well, it's a great pleasure to introduce Vladimir Voevodsky.
+非常荣幸地向大家介绍 Vladimir Voevodsky。
+
+11
+00:01:10,160 --> 00:01:16,160
+Voevodsky began his mathematical career in Moscow, and then came here to Harvard as a junior fellow,
+开始他的数学生涯在莫斯科，然后作为初级研究员来到哈佛，
+
+12
+00:01:16,160 --> 00:01:23,160
+and after a few years at Northwestern, is now at the Institute for Advanced Study.
+在西北大学工作几年后，现在在高等研究院。
+
+13
+00:01:23,200 --> 00:01:30,200
+And as you all know, he was recently awarded a Fields Medal for his work on motivic homotopy theory.
+而你们都知道，他最近因为对母题同伦论的工作获得了菲尔兹奖。
+
+14
+00:01:30,200 --> 00:01:39,200
+This is a marvelous development which introduces ideas and methods from homotopy theory into pure algebra,
+这是一个美妙的发展，它将同伦理论的思想和方法引入纯粹代数，
+
+15
+00:01:39,200 --> 00:01:45,200
+and gives an essential new tool for solving algebraic problems.
+为解决代数问题提供了必不可少的新工具。
+
+16
+00:01:45,200 --> 00:01:49,200
+So it's a great pleasure to introduce Voevodsky.
+所以很荣幸介绍 Voevodsky。
+
+17
+00:01:49,240 --> 00:02:02,240
+Hello, thank you very much for, thank you, Jack, for the introduction.
+你好，非常感谢 Jack 的介绍。
+
+18
+00:02:02,240 --> 00:02:09,240
+So I was given by Arthur sort of an impossible task.
+我被 Arthur 给了几乎不可能完成的任务。
+
+19
+00:02:09,240 --> 00:02:17,240
+I was requested to explain motivic homotopy theory so that it will be understood by non-mathematicians.
+要求我解释母题同伦论，使其能够被非数学家理解。
+
+20
+00:02:17,280 --> 00:02:21,280
+So whatever came out of it, you'll see now,
+所以你们现在将会看到结果。
+
+21
+00:02:21,280 --> 00:02:31,280
+but I don't guarantee that it will be now understandable by either mathematicians or non-mathematicians.
+但我不保证这现在对数学家或非数学家来说都能理解。
+
+22
+00:02:31,280 --> 00:02:42,280
+So what there was at first, so at first there were spaces.
+所以最初的情况是，一开始有空间。
+
+23
+00:02:42,320 --> 00:02:49,320
+So mathematicians were studying spaces and starting with simple examples of spaces.
+所以数学家研究空间，并从简单的空间例子开始。
+
+24
+00:02:49,320 --> 00:02:52,320
+So one of the most basic spaces is a point.
+最基本的空间之一是一个点。
+
+25
+00:02:52,320 --> 00:02:56,320
+There is one which is even more basic, but it's hard to draw.
+还有一个更基本的，但很难画出来。
+
+26
+00:02:56,320 --> 00:03:03,320
+Another one is standard space, which I will have to talk about, is a unit interval.
+另一个标准空间，我将不得不讨论的是单位区间。
+
+27
+00:03:03,320 --> 00:03:07,320
+So an interval of the real line, a line between 0 and 1.
+所以实数线上的一个区间，在0和1之间的一条线段。
+
+28
+00:03:07,360 --> 00:03:15,360
+The third example here on the picture is some example of a space of dimension 2.
+图片中的第三个例子是一个二维空间的例子。
+
+29
+00:03:15,360 --> 00:03:26,360
+It's supposed to look like some baking good with two holes in it.
+它应该看起来像一个有两孔的烘焙食品。
+
+30
+00:03:26,360 --> 00:03:32,360
+So the last example is more sophisticated, and I want to include it here.
+最后一个例子更复杂，我想把它包括进来。
+
+31
+00:03:32,360 --> 00:03:35,360
+It's a more sort of mathematical example of a space.
+这是一个更数学意义上的空间例子。
+
+32
+00:03:35,400 --> 00:03:42,400
+It's a space of all n by n matrices with complex entries and with non-zero determinant.
+这是一个所有 n 乘 n 的复矩阵构成的空间，并且行列式非零。
+
+33
+00:03:42,400 --> 00:03:46,400
+That would be a sophisticated space of dimension n, well,
+那将是一个复杂的 n 维空间，好，
+
+34
+00:03:46,400 --> 00:03:52,400
+depending on how you count, n square or 2n square.
+取决于你如何计数，是 n 平方或 2n 平方。
+
+35
+00:03:52,400 --> 00:03:58,400
+So there are many different axiomatizations of the notion of a space in mathematics.
+在数学中，有许多不同的空间公理化概念。
+
+36
+00:03:58,400 --> 00:04:02,400
+For instance, there are topological spaces, there are metric spaces.
+比如说，有拓扑空间，有度量空间。
+
+37
+00:04:02,440 --> 00:04:04,440
+At the end, it all doesn't matter.
+最终，这并不重要。
+
+38
+00:04:04,440 --> 00:04:11,440
+As long as one only considers non-pathological examples,
+只要只考虑非病态的例子，
+
+39
+00:04:11,440 --> 00:04:13,440
+it all comes to the same thing.
+它们最终都是一样的。
+
+40
+00:04:13,440 --> 00:04:20,440
+So I will assume that there is some intuitive understanding of what space is.
+因此我将假设对空间的概念有一些直观的理解。
+
+41
+00:04:22,440 --> 00:04:25,440
+That such understanding is present.
+这样的理解是存在的。
+
+42
+00:04:25,480 --> 00:04:33,480
+So any space, if you formalize it, really write down a definition,
+所以任何空间，如果你形式化它，真正写下定义，
+
+43
+00:04:33,480 --> 00:04:35,480
+it will be a tremendously infinite object.
+它将是一个极其无穷的对象。
+
+44
+00:04:35,480 --> 00:04:37,480
+So it's very difficult to work with.
+因此很难处理。
+
+45
+00:04:37,480 --> 00:04:44,480
+So to distinguish spaces mathematically, we use what we call invariance.
+为了在数学上区分空间，我们使用所谓的不变量。
+
+46
+00:04:44,480 --> 00:04:49,480
+So something more understandable, more finite, typically,
+因此一些更易于理解、更有限的东西，
+
+47
+00:04:49,480 --> 00:04:52,480
+than the space itself associated to a space.
+比该空间本身通常要多。
+
+48
+00:04:52,520 --> 00:04:58,520
+So there are two invariants which I will dare to call the most fundamental ones.
+所以有两个不变量我敢称之为最基础的。
+
+49
+00:04:58,520 --> 00:05:01,520
+One is the dimension of a space.
+其中一个是空间的维数。
+
+50
+00:05:03,520 --> 00:05:08,520
+So we have dimension zero for a point and dimension one for the interval.
+我们有维度为零的点和维度为一的区间。
+
+51
+00:05:08,520 --> 00:05:18,520
+And another invariant is the number of pieces the space consists of.
+另一个不变量是空间由多少部分组成。
+
+52
+00:05:18,560 --> 00:05:24,560
+So in this picture, again, the point consists of one piece.
+所以在这个图中，点仍然由一个部分组成。
+
+53
+00:05:24,560 --> 00:05:27,560
+You cannot divide it into two disconnected pieces.
+你不能将其分成两个不连通的部分。
+
+54
+00:05:27,560 --> 00:05:33,560
+And then there is something below the point which is sort of a deformed circle
+点下方有一些变形的圆圈，
+
+55
+00:05:33,560 --> 00:05:36,560
+with some deformed interval sitting inside,
+其中有某个变形的区间嵌在里面，
+
+56
+00:05:36,560 --> 00:05:39,560
+but it consists of two different pieces, two disjoint pieces.
+但它由两部分不同且不交的部分组成。
+
+57
+00:05:39,560 --> 00:05:41,560
+There's a circle and there's an interval.
+有一条圆和一条区间。
+
+58
+00:05:41,560 --> 00:05:44,560
+So the number of pieces is another invariant of a space.
+所以部分的数量是空间的另一个不变量。
+
+59
+00:05:44,560 --> 00:05:46,560
+Typically, when one thinks of a space,
+通常，当人们想到一个空间时，
+
+60
+00:05:46,600 --> 00:05:49,600
+one thinks of a space which has only one piece.
+他们想到的是只有一个部分的空间。
+
+61
+00:05:49,600 --> 00:05:56,600
+But that's just a custom.
+但这只是一种习惯。
+
+62
+00:05:56,600 --> 00:06:02,600
+So what is homotopy theory about?
+所以同伦理论主要研究什么呢？
+
+63
+00:06:04,600 --> 00:06:10,600
+What it does, it basically studies...
+它所做的，基本上是研究...
+
+64
+00:06:10,600 --> 00:06:13,600
+Oh, I need to say something.
+哦，我需要说一些事情。
+
+65
+00:06:13,640 --> 00:06:20,640
+Let's call pi zero over space the set of its pieces.
+我们可以称空间上的 π₀ 为该空间的组成部分集合。
+
+66
+00:06:20,640 --> 00:06:24,640
+So if space has two pieces, then pi zero is a set of two elements,
+因此，如果空间有两个部分，那么 π₀ 就是一个包含两个元素的集合，
+
+67
+00:06:24,640 --> 00:06:26,640
+namely these pieces.
+即这些部分本身。
+
+68
+00:06:26,640 --> 00:06:29,640
+So it's typically much more finite than the space itself.
+它通常比空间本身要有限得多。
+
+69
+00:06:29,640 --> 00:06:34,640
+What homotopy theory does, it studies some fancy versions of this invariant,
+同伦理论研究这个不变量的一些复杂版本，
+
+70
+00:06:34,640 --> 00:06:36,640
+which are called higher homotopy sets.
+这些被称为高次同伦集。
+
+71
+00:06:36,680 --> 00:06:42,680
+Now, I will try to explain how one gets to these pi n's,
+现在，我将尝试解释如何得到这些 πₙ，
+
+72
+00:06:42,680 --> 00:06:47,680
+where pi n will be some set for any integer n,
+其中 πₙ 将是某个集合，对于任何整数 n，
+
+73
+00:06:47,680 --> 00:06:50,680
+for any, excuse me, non-negative integer n,
+对于任何，抱歉，非负整数 n，
+
+74
+00:06:50,680 --> 00:06:53,680
+how one gets to pi n from pi zero.
+从 π₀ 如何得到 πₙ。
+
+75
+00:06:53,680 --> 00:06:56,680
+The first thing which I need to...
+首先我需要...
+
+76
+00:06:56,680 --> 00:06:58,680
+It can be done in different ways.
+可以用不同的方法来做。
+
+77
+00:06:58,680 --> 00:07:03,680
+So I choose to base my explanation on the notion of a continuous map,
+所以我选择基于连续映射的概念来解释，
+
+78
+00:07:03,720 --> 00:07:07,720
+which will also play a fundamental role further.
+这个概念将在以后发挥重要作用。
+
+79
+00:07:07,720 --> 00:07:09,720
+So what is a continuous map?
+那么什么是连续映射？
+
+80
+00:07:09,720 --> 00:07:11,720
+So I have a space.
+我有一个空间。
+
+81
+00:07:11,720 --> 00:07:13,720
+This I cannot show on the projection.
+这在投影上无法显示。
+
+82
+00:07:13,720 --> 00:07:17,720
+I have a space n, m, and a space n.
+我有一个 n,m 空间，和一个 n 空间。
+
+83
+00:07:17,720 --> 00:07:20,720
+And a map from one to another is any rule
+从第一个空间到另一个空间的映射是任意规则
+
+84
+00:07:20,720 --> 00:07:22,720
+which assigns to point of the first space
+它将第一个空间中的点
+
+85
+00:07:22,720 --> 00:07:24,720
+and point of the second space.
+和第二个空间中的点指定。
+
+86
+00:07:24,720 --> 00:07:26,720
+The easiest way, of course, to understand it
+当然，最容易理解的方式
+
+87
+00:07:26,720 --> 00:07:29,720
+is by looking at examples.
+是通过看例子。
+
+88
+00:07:29,760 --> 00:07:31,760
+And the idea that it's continuous means
+而它连续的意思是
+
+89
+00:07:31,760 --> 00:07:33,760
+that if something was close,
+如果某物靠近，
+
+90
+00:07:33,760 --> 00:07:36,760
+then it doesn't get too far apart.
+那么它不会相差太远。
+
+91
+00:07:40,760 --> 00:07:44,760
+So let's denote by c of m, n
+所以我们用 c(m, n) 表示从 m 到 n 的所有连续映射的集合。
+
+92
+00:07:44,760 --> 00:07:48,760
+the set of all continuous maps from m to n.
+并且我们再次通过例子来说明它是什么。
+
+93
+00:07:48,760 --> 00:07:50,760
+And we'll see again, by example, what it is.
+如果我考虑从一个点到任何空间的连续映射，
+
+94
+00:07:50,760 --> 00:07:52,760
+If I'm looking at continuous maps
+那么从一个点到一个空间的映射是什么呢？
+
+95
+00:07:52,760 --> 00:07:55,760
+from a point to any space,
+它仅仅由这个唯一点映到哪里决定。
+
+96
+00:07:55,760 --> 00:07:58,760
+so what is a map from a point to a space?
+所以从一个点到一个空间的映射
+
+97
+00:07:58,800 --> 00:08:02,800
+It's just determined by where this unique point goes.
+就相当于这个空间中的一个点。
+
+98
+00:08:02,800 --> 00:08:04,800
+So a map from a point to a space
+因此，从一个点到任何空间的映射集合
+
+99
+00:08:04,800 --> 00:08:06,800
+is the same as a point on this space.
+与这个空间中的点集是一致的。
+
+100
+00:08:06,800 --> 00:08:09,800
+So the set of maps from the point to any space
+(已与上一条字幕合并)
+
+101
+00:08:09,800 --> 00:08:13,800
+is just a set of points of this very same space.
+这只是一个空间中点的集合。
+
+102
+00:08:13,800 --> 00:08:16,800
+Another example is what is the set of maps
+另一个例子是任何空间到一个点的映射集是什么？
+
+103
+00:08:16,800 --> 00:08:18,800
+from any space to a point?
+从任意空间到一个点？
+
+104
+00:08:18,800 --> 00:08:21,800
+There's only one place for all the points
+第一空间的所有点只能去一个地方，
+
+105
+00:08:21,800 --> 00:08:23,800
+of the first space to go,
+即目标空间上的唯一一点。
+
+106
+00:08:23,800 --> 00:08:27,800
+namely this only point on the target space.
+而从任意空间到这个点的映射只有一个。
+
+107
+00:08:27,840 --> 00:08:30,840
+And there's always only one map
+所以这就是第二个例子。
+
+108
+00:08:30,840 --> 00:08:32,840
+from any space to the point.
+这是一个更复杂的例子。
+
+109
+00:08:32,840 --> 00:08:35,840
+So that's example number two.
+(已与上一条字幕合并)
+
+110
+00:08:36,840 --> 00:08:39,840
+Here is a more fancy example.
+(已与上一条字幕合并)
+
+111
+00:08:39,840 --> 00:08:42,840
+Let's look at maps
+让我们看看从单位区间
+
+112
+00:08:44,840 --> 00:08:46,840
+from the unit interval,
+到任意空间的映射，
+
+113
+00:08:46,840 --> 00:08:48,840
+the interval of the real line,
+实数线上的区间，
+
+114
+00:08:48,840 --> 00:08:50,840
+to any space.
+到任何空间的映射。
+
+115
+00:08:50,840 --> 00:08:54,840
+So it will have some beginning
+所以它会有一个起点
+
+116
+00:08:54,840 --> 00:08:56,840
+where the point zero goes
+其中点零被映射到
+
+117
+00:08:56,880 --> 00:08:57,880
+or point one goes,
+或者点一被映射到，
+
+118
+00:08:57,880 --> 00:08:59,880
+and then there will be all the points
+然后所有介于零和一之间的数字会被映射到所有的中间点。
+
+119
+00:08:59,880 --> 00:09:02,880
+where all the numbers between zero and one go.
+因此，它是连续映射。
+
+120
+00:09:02,880 --> 00:09:04,880
+So the fact that it's a continuous map
+(已与上一条字幕合并)
+
+121
+00:09:04,880 --> 00:09:08,880
+means that this gadget will have no breaks in it.
+这意味着这个装置不会有断点。
+
+122
+00:09:08,880 --> 00:09:10,880
+That's what it intuitively means.
+这就是它的直观含义。
+
+123
+00:09:10,880 --> 00:09:12,880
+So the set of all continuous maps
+所以从区间到任意空间的所有连续映射
+
+124
+00:09:12,880 --> 00:09:15,880
+from the interval to any space
+就是一个空间内的路径集合。
+
+125
+00:09:15,880 --> 00:09:19,880
+is just a set of paths inside this space.
+现在让我们回到空间连通分支的概念。
+
+126
+00:09:27,840 --> 00:09:29,840
+Now let's go back to the notion
+我们如何正式地说两个点属于同一个连通分支？
+
+127
+00:09:29,840 --> 00:09:32,840
+of the number of pieces of a space.
+当两点位于同一个连通分支时，
+
+128
+00:09:34,840 --> 00:09:37,840
+How can we say formally
+(已与上一条字幕合并)
+
+129
+00:09:37,840 --> 00:09:40,840
+when two points lie in the same piece?
+(已与上一条字幕合并)
+
+130
+00:09:40,840 --> 00:09:42,840
+So if they lie in the same piece,
+(已与上一条字幕合并)
+
+131
+00:09:42,840 --> 00:09:44,840
+then they can be connected by a path.
+然后它们可以通过一条路径连接。
+
+132
+00:09:44,840 --> 00:09:46,840
+In different pieces,
+在不同的部分，
+
+133
+00:09:46,840 --> 00:09:48,840
+there's no way you can find a path
+你无法找到一条不中断的路径
+
+134
+00:09:48,840 --> 00:09:51,840
+without breaks which connects one point to another.
+将一个点连接到另一个点。
+
+135
+00:09:51,840 --> 00:09:54,840
+So to define formally
+因此为了正式定义
+
+136
+00:09:54,840 --> 00:09:57,840
+what it means for two points to belong to the same piece,
+两点属于同一部分的意义，
+
+137
+00:09:57,840 --> 00:09:59,840
+one can use this notion of a path,
+可以使用路径的概念，
+
+138
+00:09:59,840 --> 00:10:02,840
+of a continuous map from interval to the space.
+即从区间映射到空间的连续映射。
+
+139
+00:10:06,840 --> 00:10:09,840
+So let me repeat myself again.
+所以我再重复一遍。
+
+140
+00:10:09,840 --> 00:10:12,840
+So the only thing which one needs to know
+因此唯一需要知道的是
+
+141
+00:10:14,840 --> 00:10:17,840
+to define the set pi zero of n,
+要定义 π₀(n) 的集合，
+
+142
+00:10:17,840 --> 00:10:19,840
+the set of pieces,
+该集合中的元素是各个部分，
+
+143
+00:10:19,840 --> 00:10:22,840
+is to know what are points and what are paths
+就是要知道哪些是点，哪些是从这些点出发的路径。
+
+144
+00:10:22,840 --> 00:10:25,840
+between these points.
+这些点之间的路径。
+
+145
+00:10:30,840 --> 00:10:33,840
+Well, this is a little bit more fancy,
+嗯，这稍微有点复杂，
+
+146
+00:10:33,840 --> 00:10:37,840
+and maybe I'm not able to explain it as good.
+我可能无法解释得特别好。
+
+147
+00:10:37,840 --> 00:10:40,840
+Now here I'm moving to the next invariant,
+现在我转移到下一个不变量，
+
+148
+00:10:40,840 --> 00:10:42,840
+next homotopy set pi one.
+下一个同伦群 π₁。
+
+149
+00:10:42,840 --> 00:10:44,840
+As I said, pi zero is the starting point
+如我所说，π₀ 是一系列同伦群的起点。
+
+150
+00:10:44,840 --> 00:10:48,840
+of an infinite series of homotopy sets.
+一系列同伦群。
+
+151
+00:10:48,840 --> 00:10:51,840
+So what one does for pi zero,
+所以对于 π₀，
+
+152
+00:10:51,840 --> 00:10:53,840
+one takes points
+一个取点，
+
+153
+00:10:53,840 --> 00:10:57,840
+and identifies sort of those
+然后将那些可以通过路径连接的点视为相同。
+
+154
+00:10:57,840 --> 00:11:00,840
+which can be connected by a path.
+现在我固定两个点 P 和 Q。
+
+155
+00:11:00,840 --> 00:11:03,840
+Now suppose I fix two points, P and Q.
+现在让我们考虑所有连接它们的路径。
+
+156
+00:11:03,840 --> 00:11:06,840
+Now let's consider all the paths which connect them.
+假设它们落在同一个连通分支上，
+
+157
+00:11:06,840 --> 00:11:08,840
+Suppose they land the same piece,
+所以存在一条路径连接它们。
+
+158
+00:11:08,840 --> 00:11:10,840
+so there is some path which connects them.
+让我们来看所有的路径。
+
+159
+00:11:10,840 --> 00:11:13,840
+Let's look at all paths.
+因此我们得到一些路径空间，无论那是什么意思。
+
+160
+00:11:13,840 --> 00:11:16,840
+So we get some space of paths, whatever that means.
+(已与上一条字幕合并)
+
+161
+00:11:16,840 --> 00:11:18,840
+Let's try to understand how many pieces
+让我们尝试理解这个路径空间包含多少个部分
+
+162
+00:11:18,840 --> 00:11:20,840
+this space of paths has,
+并且称这些部分的集合为我的原始空间相对于点P和Q的π₁
+
+163
+00:11:20,840 --> 00:11:22,840
+and call this set of pieces the pi one
+于是实际上我们需要做的事情是
+
+164
+00:11:22,840 --> 00:11:26,840
+of my original space relative to points P and Q.
+现在考虑从一个正方形到该空间的连续映射。
+
+165
+00:11:26,840 --> 00:11:30,840
+So in practice what one has to do
+如果我有一个正方形映射到这个空间，
+
+166
+00:11:30,840 --> 00:11:33,840
+is to consider now continuous maps from a square.
+而且假设我们要求这个映射
+
+167
+00:11:33,840 --> 00:11:38,840
+If I have a square mapping to the space,
+完全将这条边收缩到点P
+
+168
+00:11:38,840 --> 00:11:43,840
+and let's say I request to have a map
+并且完全将这条边收缩到点Q。
+
+169
+00:11:43,840 --> 00:11:47,840
+which contracts this side completely to point P
+(已与上一条字幕合并)
+
+170
+00:11:47,840 --> 00:11:50,840
+and this side completely to point Q.
+(已与上一条字幕合并)
+
+171
+00:11:50,840 --> 00:11:53,840
+Then the image of this side will be a path
+然后这个侧面的像将是一条从 P 到 Q 的路径
+
+172
+00:11:53,840 --> 00:11:55,840
+going from P to Q,
+并且这个侧面的像也将是一条从 P 到 Q 的路径。
+
+173
+00:11:55,840 --> 00:11:57,840
+and the image of this side will also be a path
+当我连续地从这个侧面移动到这个侧面，
+
+174
+00:11:57,840 --> 00:12:00,840
+which is going from P to Q.
+我可以把它看作是路径之间的路径。
+
+175
+00:12:00,840 --> 00:12:04,840
+And as I move from this side to this side continuously,
+所以这是一个路径之间的连续变形。
+
+176
+00:12:04,840 --> 00:12:08,840
+I can think of it as being a path between the paths.
+因此它生成了...
+
+177
+00:12:08,840 --> 00:12:11,840
+So it's continuous deformation between the paths.
+现在我可以考虑空间中路径片段的集合
+
+178
+00:12:11,840 --> 00:12:14,840
+So it generates...
+的集合。
+
+179
+00:12:14,840 --> 00:12:19,840
+Now I can consider the set of pieces
+(已与上一条字幕合并)
+
+180
+00:12:23,840 --> 00:12:25,840
+of the space of paths
+(已与上一条字幕合并)
+
+181
+00:12:25,840 --> 00:12:30,840
+where two paths are declared
+如果两条路径可以由一个从正方形到空间的映射连接起来，则它们属于同一个部分。
+
+182
+00:12:30,840 --> 00:12:32,840
+to belong to the same piece
+现在这是一个可以重复的过程，
+
+183
+00:12:32,840 --> 00:12:36,840
+if they can be connected by such a map from a square.
+接着我可以使用立方体来连接正方形上的映射
+
+184
+00:12:36,840 --> 00:12:39,840
+Now this is a procedure which can be repeated,
+以此类推，最终得到一系列集合
+
+185
+00:12:39,840 --> 00:12:44,840
+and then I can use cubes to connect maps from squares
+这些集合被称为相对于空间同伦等价的集合。
+
+186
+00:12:44,840 --> 00:12:49,840
+and so on, and one gets a sequence of sets
+现在...
+
+187
+00:12:49,840 --> 00:12:52,840
+which are called homotope sets over space.
+哦，对不起，刚才我说的就是这个。
+
+188
+00:12:52,840 --> 00:12:54,840
+Now...
+现在...
+
+189
+00:13:03,840 --> 00:13:06,840
+Well, I'm sorry, that's what I just said.
+好吧，我抱歉，刚才说的就是这个。
+
+190
+00:13:09,840 --> 00:13:14,840
+There is one nice example which I want to give.
+我想给出一个很好的例子。
+
+191
+00:13:17,840 --> 00:13:20,840
+If we try to define these homotope sets
+如果我们尝试定义这些同伦集
+
+192
+00:13:20,840 --> 00:13:23,840
+for the space of complex matrices
+对于非零行列式的复矩阵空间
+
+193
+00:13:23,840 --> 00:13:27,840
+with a non-zero determinant,
+它是一个非常复杂的问题
+
+194
+00:13:27,840 --> 00:13:29,840
+it's, of course, a very complicated problem
+如何比较这些同伦集
+
+195
+00:13:29,840 --> 00:13:31,840
+how to compare the homotope sets
+与非零行列式的复矩阵空间
+
+196
+00:13:31,840 --> 00:13:34,840
+with the space of complex matrices
+它是一个非常复杂的问题
+
+197
+00:13:34,840 --> 00:13:37,840
+with a non-zero determinant.
+如何计算这样一个奇怪的空间中的如此奇怪的东西
+
+198
+00:13:37,840 --> 00:13:39,840
+It's, of course, a very complicated problem
+然而，事实证明这是可以做到的
+
+199
+00:13:39,840 --> 00:13:42,840
+how to compute such a weird thing for such a weird space.
+(已与上一条字幕合并)
+
+200
+00:13:42,840 --> 00:13:44,840
+However, it turns out that it can be done,
+(已与上一条字幕合并)
+
+201
+00:13:44,840 --> 00:13:47,840
+and the answer,
+答案是，
+
+202
+00:13:47,840 --> 00:13:51,840
+at least when we consider matrices which are very, very big,
+至少当我们考虑非常、非常大的矩阵时，
+
+203
+00:13:51,840 --> 00:13:54,840
+n by n, where n is very large,
+阶矩阵，其中 n 很大，
+
+204
+00:13:54,840 --> 00:13:58,840
+the answer turns out to be wonderfully simple.
+结果答案出奇地简单。
+
+205
+00:13:58,840 --> 00:14:02,840
+It's the first homotope set is the point.
+第一同调群只是单点集。
+
+206
+00:14:02,840 --> 00:14:04,840
+Any two matrices can be connected by a path,
+任意两个矩阵可以通过路径连接，
+
+207
+00:14:04,840 --> 00:14:07,840
+and there's only one piece in the whole space of matrices.
+而在整个矩阵空间中只有一个部分。
+
+208
+00:14:09,840 --> 00:14:12,840
+If I consider paths,
+如果我考虑路径，
+
+209
+00:14:12,840 --> 00:14:17,840
+then it turns out that the pieces in the space of paths
+那么在路径空间中的部分
+
+210
+00:14:17,840 --> 00:14:20,840
+are numbered by integers.
+由整数编号。
+
+211
+00:14:20,840 --> 00:14:23,840
+So pi 1 is a set of integers...
+所以 π₁ 是整数集...
+
+212
+00:14:23,840 --> 00:14:26,840
+I'm sorry, did I...
+对不起，我...
+
+213
+00:14:26,840 --> 00:14:30,840
+I made a mistake writing this page.
+我在写这个页面时犯了一个错误。
+
+214
+00:14:30,840 --> 00:14:32,840
+It has to read like this.
+它必须这样读。
+
+215
+00:14:32,840 --> 00:14:35,840
+Pi 0 is a star.
+π₀ 是一个星号。
+
+216
+00:14:35,840 --> 00:14:37,840
+Or did I?
+或者是我？
+
+217
+00:14:37,840 --> 00:14:40,840
+No, no, no, sorry.
+不，不，不，对不起。
+
+218
+00:14:40,840 --> 00:14:44,840
+So pi 1 can be identified with the set of integral numbers.
+所以 π₁ 可以与整数集等同。
+
+219
+00:14:44,840 --> 00:14:47,840
+Pi 2 is again just one point.
+π₂ 再次只是一个点。
+
+220
+00:14:47,840 --> 00:14:49,840
+Pi 3 is again the set of integral numbers.
+π₃ 再次是整数集。
+
+221
+00:14:49,840 --> 00:14:53,840
+And then it goes on like that for a very long time.
+然后它会持续很长一段时间。
+
+222
+00:14:53,840 --> 00:14:56,840
+For how long exactly depends on number n over there.
+到底持续多久取决于那边的 n。
+
+223
+00:14:56,840 --> 00:14:59,840
+But basically if n is infinity, then it goes on forever.
+但基本上如果 n 是无穷大，那么它会永远持续下去。
+
+224
+00:14:59,840 --> 00:15:01,840
+And that's called what periodicity theorem.
+这被称为周期性定理。
+
+225
+00:15:01,840 --> 00:15:04,840
+There was one of the very impressive achievements
+在上世纪五六十年代早期，数学上取得了一项非常令人印象深刻的成绩。
+
+226
+00:15:04,840 --> 00:15:12,840
+of mathematics in early 60s, late 50s.
+那是拓扑理论中最早的重大计算之一。
+
+227
+00:15:12,840 --> 00:15:15,840
+I don't know the history well enough.
+我对历史了解不够深入。
+
+228
+00:15:15,840 --> 00:15:18,840
+But that was one of the really first big computations
+但这是一项真正重要的重大计算。
+
+229
+00:15:18,840 --> 00:15:20,840
+of homotopy theory.
+所以这就是我想说的关于同伦论的内容。
+
+230
+00:15:25,840 --> 00:15:29,840
+So that's what I wanted to say about homotopy theory.
+(已与上一条字幕合并)
+
+231
+00:15:29,840 --> 00:15:31,840
+It studies spaces.
+它研究空间。
+
+232
+00:15:31,840 --> 00:15:33,840
+It associates to them the homotopy sets,
+它将这些空间关联到同伦集，
+
+233
+00:15:33,840 --> 00:15:37,840
+which come from studying paths of paths and so on.
+这些同伦集来自于对路径的路径的研究等等。
+
+234
+00:15:37,840 --> 00:15:39,840
+And here is an example of computation.
+而这里是一个计算的例子。
+
+235
+00:15:39,840 --> 00:15:41,840
+These are actually things which can be computed
+实际上，在某些非平凡情况下，这些东西可以被计算出来。
+
+236
+00:15:41,840 --> 00:15:43,840
+in some non-trivial cases.
+现在我想跳过一些内容，并在代数背景下做类似的事情。
+
+237
+00:15:43,840 --> 00:15:49,840
+Now I want to jump somehow and do something similar
+所以只有一个方法来做这件事。
+
+238
+00:15:49,840 --> 00:15:51,840
+in algebraic setting.
+我不知道今天我是否有足够的时间来讲述。
+
+239
+00:15:51,840 --> 00:15:54,840
+So there is only one way to do it.
+(已与上一条字幕合并)
+
+240
+00:15:54,840 --> 00:15:59,840
+And I don't know how much I will have time to say today.
+(已与上一条字幕合并)
+
+241
+00:15:59,840 --> 00:16:09,840
+But there is one topic which I want to talk about very quietly
+但有一个话题我想悄悄地谈论
+
+242
+00:16:09,840 --> 00:16:11,840
+and without hurry.
+并且不急于进行。
+
+243
+00:16:11,840 --> 00:16:15,840
+So that's something which I never saw it even mentioned
+这是我从未在任何关于数学的通俗书籍中看到过的内容。
+
+244
+00:16:15,840 --> 00:16:18,840
+in any popular book about mathematics.
+我看到了代数方程被提及。
+
+245
+00:16:18,840 --> 00:16:21,840
+I saw algebraic equations mentioned.
+我可能看到了同伦群被提及，
+
+246
+00:16:21,840 --> 00:16:24,840
+I saw homotopy groups probably even mentioned,
+尤其是在拓扑学入门书籍中。
+
+247
+00:16:24,840 --> 00:16:28,840
+especially for elementary books in topology.
+但我认为20世纪数学的核心
+
+248
+00:16:28,840 --> 00:16:33,840
+But I think that at the heart of 20th century mathematics
+涉及一个特定的概念。
+
+249
+00:16:33,840 --> 00:16:36,840
+lies one particular notion.
+那就是范畴的概念。
+
+250
+00:16:36,840 --> 00:16:38,840
+And that's the notion of a category.
+(已与上一条字幕合并)
+
+251
+00:16:38,840 --> 00:16:43,840
+So let me try to explain what it is about.
+所以让我试着解释一下。
+
+252
+00:16:43,840 --> 00:16:47,840
+So it's a very formal gadget.
+这是一个非常形式化的装置。
+
+253
+00:16:47,840 --> 00:16:53,840
+And I will illustrate it by an example.
+我将通过一个例子来说明它。
+
+254
+00:16:57,840 --> 00:16:59,840
+So here are two examples of categories.
+所以这里有两类的例子。
+
+255
+00:16:59,840 --> 00:17:02,840
+Let's forget about the second one for a moment.
+先暂时忽略第二个。
+
+256
+00:17:02,840 --> 00:17:05,840
+Just look at the first one.
+只看第一个。
+
+257
+00:17:05,840 --> 00:17:09,840
+So here I have a picture of a category with three objects,
+所以这里我画了一个有三个对象的范畴图，
+
+258
+00:17:09,840 --> 00:17:11,840
+A, B, C.
+。
+
+259
+00:17:11,840 --> 00:17:13,840
+Now there are arrows between those objects,
+现在这些对象之间有一些箭头，
+
+260
+00:17:13,840 --> 00:17:15,840
+which are called morphisms.
+这些箭头叫做态射。
+
+261
+00:17:15,840 --> 00:17:18,840
+And then there is the rule, which says that if I have one arrow
+然后有一个规则，说如果我有一个箭头
+
+262
+00:17:18,840 --> 00:17:21,840
+and then it's followed by another arrow,
+然后它被另一个箭头跟随，
+
+263
+00:17:21,840 --> 00:17:23,840
+then there is a third arrow.
+那么就会有一个第三个箭头。
+
+264
+00:17:23,840 --> 00:17:25,840
+Let's say if I have an arrow from A to B
+假设我有一个从 A 到 B 的箭头
+
+265
+00:17:25,840 --> 00:17:27,840
+and arrow from B to C,
+和一个从 B 到 C 的箭头，
+
+266
+00:17:27,840 --> 00:17:30,840
+then there is a rule to get from such a pair
+那么就有规则可以从这样的配对
+
+267
+00:17:30,840 --> 00:17:32,840
+an arrow from A to C.
+得到一个从 A 到 C 的箭头。
+
+268
+00:17:32,840 --> 00:17:34,840
+That's called the composition rule.
+这被称为合成规则。
+
+269
+00:17:34,840 --> 00:17:36,840
+But let's even forget this third part for a second.
+但让我们暂时忘记这个第三部分。
+
+270
+00:17:36,840 --> 00:17:40,840
+It's not necessarily important for intuitive understanding.
+对直观理解来说，它不一定很重要。
+
+271
+00:17:40,840 --> 00:17:42,840
+Main thing which exists in categories
+在范畴中主要存在的是对象和态射。
+
+272
+00:17:42,840 --> 00:17:45,840
+is that there are objects and there are morphisms.
+对每个对象对，还有一个形式集合。
+
+273
+00:17:45,840 --> 00:17:47,840
+There is a formal set.
+这个集合称为对象集。
+
+274
+00:17:47,840 --> 00:17:49,840
+In this case, the set of A, B, C,
+在这种情况下，集合是 A, B, C，
+
+275
+00:17:49,840 --> 00:17:51,840
+which is called the set of objects.
+称为对象集。
+
+276
+00:17:51,840 --> 00:17:53,840
+For every pair of objects,
+对于每一对对象，
+
+277
+00:17:53,840 --> 00:17:55,840
+there is another formal set.
+有一个另一个形式集合。
+
+278
+00:17:55,840 --> 00:17:59,840
+In this case, it's X and Y between A and B,
+在这种情况下，它是 A 和 B 之间的 X 和 Y，
+
+279
+00:17:59,840 --> 00:18:03,840
+Z between B and C, and T between A and C,
+B 和 C 之间的 Z，以及 A 和 C 之间的 T，
+
+280
+00:18:03,840 --> 00:18:06,840
+which are called morphisms between these objects.
+这些称为这些对象间的态射。
+
+281
+00:18:06,840 --> 00:18:09,840
+Now the first example is an example
+现在第一个例子是一个组合有限范畴的例子。
+
+282
+00:18:09,840 --> 00:18:12,840
+of a combinatorial finite category.
+这里有一个第二个例子。
+
+283
+00:18:12,840 --> 00:18:14,840
+Here is a second example.
+对象是空间，所有存在的空间。
+
+284
+00:18:14,840 --> 00:18:18,840
+Objects are spaces, all spaces which exist.
+两个空间之间的态射是这些空间之间的连续映射。
+
+285
+00:18:18,840 --> 00:18:21,840
+Morphisms between two spaces
+当然，连续映射可以复合。
+
+286
+00:18:21,840 --> 00:18:24,840
+are continuous maps between these spaces.
+所以这给出了一个非常不同的范畴的例子。
+
+287
+00:18:24,840 --> 00:18:27,840
+And of course continuous maps can be composed.
+而且对我个人来说有些令人惊讶的是
+
+288
+00:18:27,840 --> 00:18:29,840
+So that gives an example of a category
+(已与上一条字幕合并)
+
+289
+00:18:29,840 --> 00:18:31,840
+of a very different kind.
+(已与上一条字幕合并)
+
+290
+00:18:31,840 --> 00:18:37,840
+And what was somewhat amazing for me personally
+(已与上一条字幕合并)
+
+291
+00:18:37,840 --> 00:18:42,840
+and an amazing discovery is that almost,
+令人惊讶的是，几乎对于很多类数学对象而言，
+
+292
+00:18:42,840 --> 00:18:46,840
+let's say for very many classes of mathematical objects,
+让我们说对于大多数数学对象的类别来说，
+
+293
+00:18:46,840 --> 00:18:49,840
+there are natural categories which correspond to them.
+存在自然的范畴与它们对应。
+
+294
+00:18:49,840 --> 00:18:52,840
+So for most classes of mathematical objects,
+所以对于大多数数学对象的类别，
+
+295
+00:18:52,840 --> 00:18:57,840
+we can construct a category whose objects
+我们可以构造一个范畴，
+
+296
+00:18:57,840 --> 00:19:00,840
+will be these objects.
+其中的对象将是这些对象。
+
+297
+00:19:00,840 --> 00:19:04,840
+Morphisms will be some natural ways
+态射将是将一种类型的对象连接到另一种类型的某些自然方式，
+
+298
+00:19:05,840 --> 00:19:08,840
+of connecting one object of this type to another,
+并且将存在某种复合。
+
+299
+00:19:08,840 --> 00:19:11,840
+and there will be some kind of composition.
+对不起。
+
+300
+00:19:19,840 --> 00:19:21,840
+Sorry.
+(已与上一条字幕合并)
+
+301
+00:19:35,840 --> 00:19:41,840
+So here is a more formal way to see what a category is.
+所以这里是一种更正式的方式来定义范畴。
+
+302
+00:19:41,840 --> 00:19:44,840
+So there is a set of objects.
+有一个对象集合。
+
+303
+00:19:44,840 --> 00:19:47,840
+For any pair of objects, there is a set of morphisms
+对于任意一对对象，存在一个态射集
+
+304
+00:19:47,840 --> 00:19:50,840
+from this object to, between these two objects.
+从这个对象到这两个对象之间的某个对象。
+
+305
+00:19:50,840 --> 00:19:53,840
+And then there is some composition rule.
+然后有一些复合规则。
+
+306
+00:20:04,840 --> 00:20:09,840
+Now, what I hope to do now is to show how such a,
+现在我希望做的是展示这样一种，
+
+307
+00:20:09,840 --> 00:20:12,840
+well, let's see, how does it work?
+好吧，让我们看看，它是如何工作的？
+
+308
+00:20:12,840 --> 00:20:14,840
+Why is it interesting?
+它为什么有趣？
+
+309
+00:20:14,840 --> 00:20:16,840
+Let's, for instance, consider the category
+比如，我们考虑拓扑空间范畴
+
+310
+00:20:16,840 --> 00:20:19,840
+of topological spaces.
+是怎样的。
+
+311
+00:20:19,840 --> 00:20:22,840
+And let's take, let's choose a space N.
+让我们选择一个空间 N。
+
+312
+00:20:22,840 --> 00:20:25,840
+What can we say about this space?
+我们能说这个空间的什么呢？
+
+313
+00:20:25,840 --> 00:20:29,840
+Looking at it exclusively as being an object
+仅从它作为一个空间范畴中的对象来看。
+
+314
+00:20:29,840 --> 00:20:31,840
+of the category of spaces.
+因此我不打算看这个空间内部。
+
+315
+00:20:31,840 --> 00:20:33,840
+So I don't want to look inside of this space.
+我对其内部一无所知。
+
+316
+00:20:33,840 --> 00:20:35,840
+I know nothing about its insides.
+我只知道连续映射将这个空间
+
+317
+00:20:35,840 --> 00:20:40,840
+I only know continuous maps relating this space
+关联到所有其他空间。
+
+318
+00:20:40,840 --> 00:20:42,840
+to all other spaces.
+所以我们不是关注这个对象的结构，
+
+319
+00:20:42,840 --> 00:20:46,840
+So instead of looking on the structure of the object,
+而是关注它的这种社会关系。
+
+320
+00:20:46,840 --> 00:20:49,840
+you look at his sort of social relationship.
+(已与上一条字幕合并)
+
+321
+00:20:52,840 --> 00:20:55,840
+The very first example, can we figure out
+这个非常简单的例子，当空间是一个点时我们能弄清楚吗？
+
+322
+00:20:55,840 --> 00:20:58,840
+when the space is a point?
+当空间是点的时候？
+
+323
+00:20:58,840 --> 00:21:00,840
+To this, there is a nice answer.
+对于此问题，有一个很好的答案。
+
+324
+00:21:00,840 --> 00:21:06,840
+When a space is a point, if and only if
+当空间是一个点，当且仅当
+
+325
+00:21:06,840 --> 00:21:10,840
+for any other space, there is a single morphism
+对于任何其他空间，存在唯一的态射
+
+326
+00:21:10,840 --> 00:21:12,840
+to this one.
+到这个点。
+
+327
+00:21:12,840 --> 00:21:18,840
+So that characterizes the point completely,
+这完全地、唯一地由到和从它的态射来表征。
+
+328
+00:21:18,840 --> 00:21:24,840
+exclusively by morphisms to and from it.
+让我们问一个更复杂的问题。
+
+329
+00:21:24,840 --> 00:21:27,840
+Let's ask a more complicated question.
+什么情况下一个空间 N 是连通的？
+
+330
+00:21:27,840 --> 00:21:29,840
+When is a space N connected?
+(已与上一条字幕合并)
+
+331
+00:21:29,840 --> 00:21:32,840
+So when it consists of only one piece.
+所以当它只由一个部分组成时。
+
+332
+00:21:41,840 --> 00:21:45,840
+Or more generally, can we somehow express,
+或者更一般地，我们能否 somehow 表达，
+
+333
+00:21:45,840 --> 00:21:48,840
+let's say the very first homotopia set,
+说第一个同伦集，
+
+334
+00:21:48,840 --> 00:21:52,840
+the set of pieces, purely in categorical terms?
+部件的集合，纯粹用范畴论的语言？
+
+335
+00:21:52,840 --> 00:21:54,840
+It turns out that yes, we can.
+结果是，我们可以。
+
+336
+00:21:54,840 --> 00:21:56,840
+So let's try to play this game.
+所以让我们尝试玩这个游戏。
+
+337
+00:21:56,840 --> 00:21:58,840
+So first of all, we know what is the set of points
+首先，我们知道空间中的点集
+
+338
+00:21:58,840 --> 00:21:59,840
+of the space.
+是从点到这个空间的态射集。
+
+339
+00:21:59,840 --> 00:22:03,840
+It's the set of morphisms from the point to this space.
+我们已经刻画了点。
+
+340
+00:22:03,840 --> 00:22:06,840
+And we have already characterized the point
+(已与上一条字幕合并)
+
+341
+00:22:06,840 --> 00:22:09,840
+in some internal way.
+以某种内部方式。
+
+342
+00:22:09,840 --> 00:22:13,840
+Now, let's consider the unit interval.
+现在，我们考虑单位区间。
+
+343
+00:22:13,840 --> 00:22:16,840
+The set of maps from the unit interval, morphisms
+单位区间到空间的映射集合，即态射集，是路径集合。
+
+344
+00:22:16,840 --> 00:22:20,840
+from the unit interval to the space, is the set of paths.
+现在我需要知道路径的起点和终点是什么。
+
+345
+00:22:24,840 --> 00:22:26,840
+Now, I need to know what is the beginning of the path
+为此，我需要态射复合的概念。
+
+346
+00:22:26,840 --> 00:22:29,840
+and what is the end of the path.
+所以如果我有一条路径，那么单位区间上有两个特殊的点，0 和 1，
+
+347
+00:22:29,840 --> 00:22:32,840
+For that, I need the notion of a composition of morphisms.
+它们是从点到单位区间的态射。
+
+348
+00:22:32,840 --> 00:22:37,840
+So if I have a path, I have two distinguished points, 0 and 1,
+(已与上一条字幕合并)
+
+349
+00:22:37,840 --> 00:22:40,840
+on the unit interval, which are morphisms from the point
+(已与上一条字幕合并)
+
+350
+00:22:40,840 --> 00:22:42,840
+to the unit interval.
+(已与上一条字幕合并)
+
+351
+00:22:42,840 --> 00:22:46,840
+If I look at the composition, my path composed
+如果我查看复合路径，这条路径与其中一个点复合后，
+
+352
+00:22:46,840 --> 00:22:50,840
+with one of these points, I get a point of the space,
+我得到空间中的一个点，这是路径的起点或终点。
+
+353
+00:22:50,840 --> 00:22:53,840
+which is the beginning or the end of the path.
+因此仅使用范畴结构，
+
+354
+00:22:53,840 --> 00:22:58,840
+So using purely the structure of the category,
+我知道哪些是点集。
+
+355
+00:22:58,840 --> 00:22:59,840
+I know what is the set of points.
+我知道哪些是路径集。
+
+356
+00:22:59,840 --> 00:23:01,840
+I know what is the set of paths.
+并且我知道如何给一条路径指定起点和终点。
+
+357
+00:23:01,840 --> 00:23:05,840
+And I know how to assign beginning and end to a path.
+现在我可以说明组成部分的集合是什么了，
+
+358
+00:23:05,840 --> 00:23:09,840
+So now I can say what is the set of pieces,
+因为我只是必须识别可以通过路径连接的两点，换句话说，
+
+359
+00:23:09,840 --> 00:23:14,840
+because it's simply I have to identify two points which
+(已与上一条字幕合并)
+
+360
+00:23:14,840 --> 00:23:16,840
+can be connected by a path, in other words,
+(已与上一条字幕合并)
+
+361
+00:23:16,840 --> 00:23:19,840
+for which there is a path such that it's beginning and end.
+其中有路径使得其起点和终点。
+
+362
+00:23:19,840 --> 00:23:22,840
+And that gives me the set pi 0.
+这就给了我集合 π₀。
+
+363
+00:23:22,840 --> 00:23:26,840
+So the only thing which is here, which is not internal
+所以这里唯一不在范畴内的是
+
+364
+00:23:26,840 --> 00:23:30,840
+to the category of categorical structure,
+原子结构范畴内的东西，
+
+365
+00:23:30,840 --> 00:23:31,840
+is the unit interval itself.
+就是单位区间本身。
+
+366
+00:23:31,840 --> 00:23:36,840
+We don't know how to characterize it from the inside.
+我们不知道如何从内部对其进行描述。
+
+367
+00:23:36,840 --> 00:23:40,840
+But as soon as I have a category and something which
+但只要我有一个范畴并且想要称呼这个单位区间为两个映射，
+
+368
+00:23:40,840 --> 00:23:44,840
+I want to call the unit interval with two maps,
+A 和 B，分别称为起点和终点，
+
+369
+00:23:44,840 --> 00:23:46,840
+A and B, called beginning and end,
+我就可以定义某种 π₀。
+
+370
+00:23:46,840 --> 00:23:49,840
+I can define some kind of pi 0.
+(已与上一条字幕合并)
+
+371
+00:23:49,840 --> 00:23:51,840
+How good this definition will be?
+这个定义会有多好？
+
+372
+00:23:51,840 --> 00:23:52,840
+It's a big question.
+这是一个大问题。
+
+373
+00:23:59,840 --> 00:24:06,840
+So similarly, if I want to compute the next homotopy set,
+所以同样地，如果我想计算下一个同伦集，
+
+374
+00:24:06,840 --> 00:24:09,840
+here I'm not going in that much detail.
+在这里我不会详细展开。
+
+375
+00:24:09,840 --> 00:24:17,840
+But what I will need to know will be the object point,
+但我需要知道的是对象点，
+
+376
+00:24:17,840 --> 00:24:19,840
+the object called unit interval.
+称为单位区间的一个对象。
+
+377
+00:24:19,840 --> 00:24:23,840
+And then I'll need to know to have some distinguished object
+然后我还需要知道一个特殊的对象
+
+378
+00:24:23,840 --> 00:24:27,840
+which is called the square.
+它被称为正方形。
+
+379
+00:24:27,840 --> 00:24:30,840
+And some finite number of morphisms
+连接这些对象的一些有限态射。
+
+380
+00:24:30,840 --> 00:24:32,840
+connecting these objects.
+(已与上一条字幕合并)
+
+381
+00:24:32,840 --> 00:24:35,840
+As soon as I have such a purely combinatorial structure
+一但我有了这样一个纯粹组合结构
+
+382
+00:24:35,840 --> 00:24:39,840
+inside my category, I can consider morphisms
+在我的范畴内部，我可以考虑态射
+
+383
+00:24:39,840 --> 00:24:43,840
+with values in any object and get something which
+值在任何对象上并得到一些东西
+
+384
+00:24:43,840 --> 00:24:45,840
+I will call pi 0 and pi 1.
+我会称之为 π₀ 和 π₁。
+
+385
+00:24:45,840 --> 00:24:49,840
+I can continue that and model formally in any category.
+我可以继续这样做并在任何范畴中形式化。
+
+386
+00:24:53,840 --> 00:24:55,840
+Basically, for what I'm talking about,
+基本上，就我谈论的内容而言，
+
+387
+00:24:55,840 --> 00:24:57,840
+it's enough to understand pi 0.
+理解 π₀ 就足够了。
+
+388
+00:24:57,840 --> 00:25:06,840
+And the rest is just not to look too elementary.
+而其余部分只是不要太基础。
+
+389
+00:25:06,840 --> 00:25:09,840
+So one can formalize the situation
+因此，可以形式化当有点、区间、正方形、立方体时的情况
+
+390
+00:25:09,840 --> 00:25:16,840
+when one has point, interval, square, cube,
+的情形。
+
+391
+00:25:16,840 --> 00:25:18,840
+cube of the next dimension, and so on.
+高一维的立方体，依次类推。
+
+392
+00:25:18,840 --> 00:25:22,840
+Now all these things in usual topological world
+现在这所有的东西在通常拓扑世界中
+
+393
+00:25:22,840 --> 00:25:23,840
+map to each other.
+互相映射。
+
+394
+00:25:23,840 --> 00:25:25,840
+There are two maps from the point to the interval,
+从点到区间有两个映射，
+
+395
+00:25:25,840 --> 00:25:27,840
+the beginning and the end.
+分别是开始和结束。
+
+396
+00:25:27,840 --> 00:25:30,840
+There are four maps from the interval to the square,
+从区间到正方形有四个映射，
+
+397
+00:25:30,840 --> 00:25:32,840
+the four sides of the square.
+正方形的四条边。
+
+398
+00:25:32,840 --> 00:25:36,840
+There are six maps from the square to the cube,
+从正方形到立方体有六个映射，
+
+399
+00:25:36,840 --> 00:25:39,840
+the six sides of the cube, and so on.
+立方体的六条边，依次类推。
+
+400
+00:25:39,840 --> 00:25:40,840
+They satisfy some relations.
+它们满足某些关系。
+
+401
+00:25:40,840 --> 00:25:44,840
+So I can formally say, let's take any category whatsoever.
+因此我可以正式地说，让我们取任意一个范畴。
+
+402
+00:25:44,840 --> 00:25:49,840
+Let's take a series of objects and morphisms between them,
+让我们取一系列对象及其之间的态射，
+
+403
+00:25:49,840 --> 00:25:53,840
+satisfying appropriate conditions.
+满足适当的条件。
+
+404
+00:25:53,840 --> 00:25:57,840
+Let's call such a gadget a cubical object.
+我们可以称这样的装置为立方体对象。
+
+405
+00:25:57,840 --> 00:26:00,840
+So as soon as I have a cubical object in any category,
+所以只要我在任何范畴中有一个立方体对象，
+
+406
+00:26:00,840 --> 00:26:04,840
+I can play the game which I sort of explained
+我就可以玩我刚才解释过的游戏
+
+407
+00:26:04,840 --> 00:26:08,840
+for pi 0 and pi 1 and define some kind of homotopy sets
+对于 π₀ 和 π₁ 并为此范畴中的其他对象定义某种同伦集。
+
+408
+00:26:08,840 --> 00:26:15,840
+for any other object in this category.
+当然，需要说明的是，在大多数情况下
+
+409
+00:26:15,840 --> 00:26:21,840
+Of course, it needs to be said that in most cases
+它可能不会很好地工作。
+
+410
+00:26:21,840 --> 00:26:22,840
+it's not going to work very well,
+(已与上一条字幕合并)
+
+411
+00:26:22,840 --> 00:26:27,840
+but it will work somehow.
+但它会以某种方式起作用。
+
+412
+00:26:27,840 --> 00:26:36,840
+Now let's go to the next...
+现在让我们进入下一个...
+
+413
+00:26:48,840 --> 00:26:51,840
+So of course that was just an example.
+当然，这只是个例子。
+
+414
+00:26:51,840 --> 00:26:55,840
+In principle, there are many more structures,
+在原则上，还有许多更多的结构，
+
+415
+00:26:55,840 --> 00:26:57,840
+let's say in topological spaces,
+比如拓扑空间中的，
+
+416
+00:26:57,840 --> 00:27:00,840
+which are needed for homotopy theory.
+对同伦理论来说是必需的。
+
+417
+00:27:00,840 --> 00:27:04,840
+So one can translate most of the structures
+因此可以将大多数结构
+
+418
+00:27:04,840 --> 00:27:06,840
+into categorical terms,
+转换成范畴论的语言，
+
+419
+00:27:06,840 --> 00:27:11,840
+as I tried to show in this example of cubical spaces.
+就像我在立方空间的例子中尝试展示的那样。
+
+420
+00:27:11,840 --> 00:27:14,840
+And then as soon as they are translated
+然后一旦它们被转换
+
+421
+00:27:14,840 --> 00:27:16,840
+into these formal categorical terms,
+用这些形式化的范畴术语来表达，
+
+422
+00:27:16,840 --> 00:27:19,840
+one can try to take some very different category
+可以尝试取一个非常不同的范畴
+
+423
+00:27:19,840 --> 00:27:22,840
+and apply it there and see what happens.
+然后应用到那里看看会发生什么。
+
+424
+00:27:22,840 --> 00:27:24,840
+So material homotopy theory happens
+所谓的材料同伦理论发生在
+
+425
+00:27:24,840 --> 00:27:28,840
+when one applies this kind of procedure
+当将这种程序应用于
+
+426
+00:27:28,840 --> 00:27:31,840
+to the following category of algebraic equations,
+下列代数方程的范畴时，
+
+427
+00:27:31,840 --> 00:27:34,840
+systems of algebraic equations,
+代数方程系统，
+
+428
+00:27:34,840 --> 00:27:36,840
+which I'm going to describe in a moment.
+我一会儿会描述它们。
+
+429
+00:27:36,840 --> 00:27:40,840
+That's not exactly the standard approach to algebraic geometry,
+这并不是代数几何的标准方法，
+
+430
+00:27:40,840 --> 00:27:45,840
+but that's the most elementary one which I could think of.
+但这是我能想到的最基础的方法。
+
+431
+00:27:45,840 --> 00:27:48,840
+So let's consider the following objects,
+所以让我们考虑以下对象，
+
+432
+00:27:48,840 --> 00:27:51,840
+which we call systems of algebraic equations.
+我们称之为代数方程组系统。
+
+433
+00:27:51,840 --> 00:27:53,840
+So by definition, a system of algebraic equations
+由定义，一个代数方程组系统
+
+434
+00:27:53,840 --> 00:27:55,840
+is the following gadget.
+是如下装置。
+
+435
+00:27:55,840 --> 00:27:57,840
+It's first of all a list of letters
+首先是一系列字母
+
+436
+00:27:57,840 --> 00:27:59,840
+which are called variables of the system,
+称为系统的变量，
+
+437
+00:27:59,840 --> 00:28:03,840
+and second of all some list of polynomials in these variables
+其次是一些这些变量的多项式列表
+
+438
+00:28:03,840 --> 00:28:06,840
+which are called equations of the system.
+称为系统的方程式。
+
+439
+00:28:06,840 --> 00:28:08,840
+So here is an example.
+这是一个例子。
+
+440
+00:28:08,840 --> 00:28:10,840
+There is one variable X
+有一个变量 X
+
+441
+00:28:10,840 --> 00:28:13,840
+and one equation X squared plus one.
+以及一个方程 \(X^2 + 1\).
+
+442
+00:28:13,840 --> 00:28:15,840
+Here is another example.
+这是另一个例子。
+
+443
+00:28:15,840 --> 00:28:18,840
+There are N variables, X1, XN,
+有 N 个变量，\(X_1, X_N\)，
+
+444
+00:28:18,840 --> 00:28:21,840
+and there are no equations whatsoever.
+并且没有任何方程。
+
+445
+00:28:21,840 --> 00:28:25,840
+That's a very important system which is denoted by AN.
+那是一个非常重要的系统，记作 \(A_N\)。
+
+446
+00:28:27,840 --> 00:28:30,840
+Here is a more sophisticated example.
+这是一个更复杂的例子。
+
+447
+00:28:30,840 --> 00:28:34,840
+I'm sorry, I was getting late writing it,
+对不起，我写晚了，
+
+448
+00:28:34,840 --> 00:28:37,840
+and it's not probably very readable.
+而且可能不太容易读。
+
+449
+00:28:37,840 --> 00:28:41,840
+I have N squared variables.
+我有 \(N^2\) 个变量。
+
+450
+00:28:41,840 --> 00:28:46,840
+I'm thinking about them as about entries in a matrix
+我把它们当作矩阵中的元素来考虑。
+
+451
+00:28:46,840 --> 00:28:49,840
+plus one additional variable which I call T.
+除此之外，还有一个变量 T。
+
+452
+00:28:49,840 --> 00:28:51,840
+And I have one equation which says
+我有一个方程，说的是
+
+453
+00:28:51,840 --> 00:28:55,840
+it's the determinant of this matrix times T minus one.
+这个矩阵的行列式乘以 T 减一。
+
+454
+00:28:55,840 --> 00:28:58,840
+Well, it doesn't say anything, but that's my equation.
+好吧，这并没有说什么，但这就是我的方程。
+
+455
+00:28:58,840 --> 00:29:01,840
+That's my polynomial.
+这是我的多项式。
+
+456
+00:29:01,840 --> 00:29:05,840
+And such a system of equations I want to denote by GLN.
+而这样的方程系统我希望表示为 GLN。
+
+457
+00:29:06,840 --> 00:29:10,840
+Now, let's define morphisms.
+现在，我们来定义态射。
+
+458
+00:29:15,840 --> 00:29:18,840
+Oh, I need to say something else.
+哦，我还需要说一些其他的事情。
+
+459
+00:29:18,840 --> 00:29:22,840
+So now I want to try to define
+现在我想尝试定义
+
+460
+00:29:22,840 --> 00:29:26,840
+the category of systems of algebraic equations.
+方程系统的范畴。
+
+461
+00:29:28,840 --> 00:29:31,840
+So what I need first are
+首先我需要的是对象，作为对象我会取...
+
+462
+00:29:31,840 --> 00:29:34,840
+objects, and as objects I will take...
+对象，作为对象我会取...
+
+463
+00:29:34,840 --> 00:29:36,840
+I want to sort of say let's consider
+我想说的是让我们考虑
+
+464
+00:29:36,840 --> 00:29:38,840
+all systems of algebraic equations,
+所有代数方程系统，
+
+465
+00:29:38,840 --> 00:29:40,840
+but that's a bit too many.
+但这有点太多了。
+
+466
+00:29:40,840 --> 00:29:44,840
+So a typical approach is we first choose
+因此一个典型的办法是我们首先选择
+
+467
+00:29:44,840 --> 00:29:47,840
+what kind of coefficients are we going to consider.
+我们要考虑什么样的系数。
+
+468
+00:29:47,840 --> 00:29:51,840
+So let's take some system of coefficients,
+那么我们取一些系数系统，
+
+469
+00:29:51,840 --> 00:29:55,840
+integral numbers or real numbers or complex numbers,
+整数或实数或复数，
+
+470
+00:29:55,840 --> 00:29:59,840
+and consider all systems with the same coefficients.
+并考虑具有相同系数的所有系统。
+
+471
+00:29:59,840 --> 00:30:01,840
+And consider all systems with coefficients
+考虑所有带有这种数作为系数的系统。
+
+472
+00:30:01,840 --> 00:30:05,840
+in this type of numbers.
+这些将是我们的范畴中的对象类。
+
+473
+00:30:05,840 --> 00:30:09,840
+That will be the class of objects of our category.
+现在我需要从一个系统到另一个系统的态射。
+
+474
+00:30:11,840 --> 00:30:14,840
+Now I need morphisms from one system to another.
+所以我试着写下来，
+
+475
+00:30:14,840 --> 00:30:17,840
+So I tried to write it down,
+但在投影仪上很难看清楚。
+
+476
+00:30:17,840 --> 00:30:22,840
+and it's difficult to read on a projector.
+因此，通过态射我希望表示变量的变化。
+
+477
+00:30:22,840 --> 00:30:27,840
+So by morphism I want to mean a change of variables.
+所以从变量 x 的一个系统
+
+478
+00:30:27,840 --> 00:30:31,840
+So a morphism from one system in variables x
+到另一个变量 y 的系统的态射
+
+479
+00:30:31,840 --> 00:30:34,840
+to another system in variables y
+将是某种表达变量 y 的方式。
+
+480
+00:30:34,840 --> 00:30:37,840
+is going to be some way to express variables y
+(已与上一条字幕合并)
+
+481
+00:30:37,840 --> 00:30:41,840
+through variables x, such that the equations
+通过变量 x，使得方程在两边近似成立。
+
+482
+00:30:41,840 --> 00:30:45,840
+sort of are satisfied on both sides.
+这种关系在两边都近似满足。
+
+483
+00:30:45,840 --> 00:30:48,840
+There is some obvious way to compose these things.
+这些东西有一种显然的组合方式。
+
+484
+00:30:48,840 --> 00:30:50,840
+It wasn't I who invented this.
+我不是发明这个的人。
+
+485
+00:30:50,840 --> 00:30:52,840
+I don't know who invented it,
+我不知道是谁发明的，
+
+486
+00:30:52,840 --> 00:30:54,840
+but I read it in a wonderful textbook
+但我在一本精彩的教科书里读到过
+
+487
+00:30:54,840 --> 00:30:58,840
+by Manin on algebraic geometry,
+关于代数几何的著作，
+
+488
+00:30:58,840 --> 00:31:00,840
+which was published in Soviet Union
+它在20世纪60年代末期出版于苏联。
+
+489
+00:31:00,840 --> 00:31:03,840
+in the end of the 60s.
+所以这里有一个例子。
+
+490
+00:31:05,840 --> 00:31:09,840
+So here is an example.
+这是一个例子。
+
+491
+00:31:09,840 --> 00:31:11,840
+Let's consider A0.
+让我们考虑 A0。
+
+492
+00:31:11,840 --> 00:31:14,840
+So remember A0 is...
+所以记得 A0 是...
+
+493
+00:31:16,840 --> 00:31:18,840
+Let me do it this way.
+我就用这种方式来做。
+
+494
+00:31:19,840 --> 00:31:27,840
+A0 is a system of no equations and no variables.
+A0 是一个没有方程也没有变量的系统。
+
+495
+00:31:27,840 --> 00:31:32,840
+So a morphism from such a system
+因此，从这样一个系统的态射
+
+496
+00:31:32,840 --> 00:31:40,840
+would mean that I have to find expressions of my x1, xn
+就意味着我必须找到 x1, xn 的表达式
+
+497
+00:31:40,840 --> 00:31:42,840
+in terms of no variables whatsoever.
+用没有任何变量的方式。
+
+498
+00:31:42,840 --> 00:31:45,840
+So it means I have to replace them by constants,
+所以这就意味着我要把它们替换为常数，
+
+499
+00:31:45,840 --> 00:31:47,840
+and the equations still have to be satisfied.
+而方程仍然需要被满足。
+
+500
+00:31:47,840 --> 00:31:50,840
+So such a morphism is exactly a solution
+因此这样的态射正好是一个解。
+
+501
+00:31:50,840 --> 00:31:52,840
+of my system of equations.
+我系统的方程组。
+
+502
+00:31:52,840 --> 00:31:54,840
+So morphisms from A0 to x
+所以从 A0 到 x 的态射
+
+503
+00:31:54,840 --> 00:31:57,840
+are solutions of the system of equations.
+是方程组的解。
+
+504
+00:31:57,840 --> 00:32:02,840
+Similarly, one can verify that morphisms from x to A0,
+同样，可以验证从 x 到 A0 的态射，
+
+505
+00:32:02,840 --> 00:32:05,840
+there's always only one morphism.
+通常只有一个态射。
+
+506
+00:32:05,840 --> 00:32:09,840
+So these objects An,
+因此这些对象 An，
+
+507
+00:32:09,840 --> 00:32:15,840
+these systems sort of with no equations,
+这些系统仿佛没有方程，
+
+508
+00:32:15,840 --> 00:32:18,840
+they form a cubical object in a very naive sense.
+在非常朴素的意义上形成了一个立方体对象。
+
+509
+00:32:18,840 --> 00:32:20,840
+One can easily build all the maps
+可以很容易地构建所有存在的映射
+
+510
+00:32:20,840 --> 00:32:23,840
+which exist between usual cubes.
+哪些在通常的立方体之间存在。
+
+511
+00:32:23,840 --> 00:32:26,840
+One can build them between these systems.
+可以在这些系统之间构建它们。
+
+512
+00:32:26,840 --> 00:32:28,840
+And so I can use this cubical object
+而我可以使用这个立方体对象
+
+513
+00:32:28,840 --> 00:32:30,840
+to define some kind of homotypic groups
+来定义某种同构群
+
+514
+00:32:30,840 --> 00:32:34,840
+for any system of algebraic equations.
+对于任何代数方程系统。
+
+515
+00:32:34,840 --> 00:32:37,840
+In general, I will get...
+一般来说，我会得到...
+
+516
+00:32:37,840 --> 00:32:39,840
+Sorry, homotypic sets.
+抱歉，是同构集。
+
+517
+00:32:39,840 --> 00:32:44,840
+In general, I will get not quite correct results,
+一般来说，我不会得到完全正确的结果，
+
+518
+00:32:44,840 --> 00:32:47,840
+but there is an example.
+但有一个例子。
+
+519
+00:32:47,840 --> 00:32:51,840
+If I apply it to the system GLN,
+如果将其应用于 GLN 系统，
+
+520
+00:32:51,840 --> 00:32:54,840
+I will actually get very, very reasonable things.
+我实际上会得到非常合理的东西。
+
+521
+00:32:54,840 --> 00:32:59,840
+I will get sets which are called algebraic K groups
+我将得到称为代数 K 群的集合
+
+522
+00:32:59,840 --> 00:33:02,840
+of the original system of coefficients.
+原始系数系统的。
+
+523
+00:33:02,840 --> 00:33:08,840
+And these groups were defined in many difficult ways
+而这些群是在过去的几十年中以许多困难的方式定义的。
+
+524
+00:33:08,840 --> 00:33:15,840
+over the last, I don't know, 40 years.
+大概是最近 40 年。
+
+525
+00:33:15,840 --> 00:33:18,840
+And they're still a source of great many
+它们仍然是许多有趣的数学问题和洞察力的来源。
+
+526
+00:33:18,840 --> 00:33:22,840
+interesting mathematical problems and insights.
+这些确实取决于关键点。
+
+527
+00:33:22,840 --> 00:33:25,840
+This is something which really depends on key.
+对于整数，它将与数论和算术有关。
+
+528
+00:33:25,840 --> 00:33:29,840
+So for integers, it will have something to do
+对于复数或实数，
+
+529
+00:33:29,840 --> 00:33:32,840
+with number theory and arithmetics.
+(已与上一条字幕合并)
+
+530
+00:33:32,840 --> 00:33:36,840
+For complex numbers or real numbers,
+(已与上一条字幕合并)
+
+531
+00:33:36,840 --> 00:33:41,840
+there are connections with special functions
+与特殊函数有关
+
+532
+00:33:41,840 --> 00:33:44,840
+such as polylogarism and hyperbolic geometry,
+如多项对数和双曲几何，
+
+533
+00:33:44,840 --> 00:33:46,840
+and I don't know what else.
+而我不知道还有其他什么。
+
+534
+00:33:46,840 --> 00:33:48,840
+So these are very, very interesting groups.
+所以这些是非常有趣的群组。
+
+535
+00:33:48,840 --> 00:33:56,840
+And sort of this is an example of how such a game
+而这种例子展示了这样的游戏
+
+536
+00:33:56,840 --> 00:33:59,840
+can lead us to actually objects
+可能会引导我们到一些独立有趣的对象。
+
+537
+00:33:59,840 --> 00:34:01,840
+which are of independent interest.
+因此现在让我展示最后一张幻灯片
+
+538
+00:34:02,840 --> 00:34:11,840
+So now let me have the last slide
+并稍微谈谈哲学问题。
+
+539
+00:34:11,840 --> 00:34:14,840
+and get a little philosophical.
+这就是我看待整体图景的方式。
+
+540
+00:34:14,840 --> 00:34:19,840
+And so that's how I see the whole picture.
+(已与上一条字幕合并)
+
+541
+00:34:19,840 --> 00:34:22,840
+Let me start with geometry,
+让我们从几何开始，
+
+542
+00:34:22,840 --> 00:34:25,840
+category of topological spaces.
+拓扑空间的范畴。
+
+543
+00:34:25,840 --> 00:34:28,840
+We invent something about this geometrical world
+我们用基本的视觉直觉来发明一些关于这个几何世界的东西。
+
+544
+00:34:28,840 --> 00:34:31,840
+using our basically visual intuition.
+我们是通过视觉直观来构建这些概念的。
+
+545
+00:34:31,840 --> 00:34:34,840
+The notion of pieces comes exclusively
+零件的概念完全来自于视觉直观。
+
+546
+00:34:34,840 --> 00:34:37,840
+from visual intuition.
+但我们有些抽象，并将其重新写成范畴论的语言，
+
+547
+00:34:37,840 --> 00:34:40,840
+We're somehow abstracted and rewrite it
+这种语言提供了连接不同概念的方式。
+
+548
+00:34:40,840 --> 00:34:42,840
+in terms of category theory,
+然后我们将其应用于新的情况，
+
+549
+00:34:42,840 --> 00:34:45,840
+which provides this connecting language.
+(已与上一条字幕合并)
+
+550
+00:34:45,840 --> 00:34:48,840
+And then we apply it in a new situation,
+(已与上一条字幕合并)
+
+551
+00:34:48,840 --> 00:34:50,840
+in this case in the situation of algebraic equations,
+在这种情况下，在代数方程的情况下，
+
+552
+00:34:50,840 --> 00:34:52,840
+which is purely algebraic.
+这是纯粹的代数。
+
+553
+00:34:52,840 --> 00:34:54,840
+So what we get is some fantastic way
+所以我们得到的是某种奇妙的方法
+
+554
+00:34:54,840 --> 00:34:56,840
+to translate geometric intuition
+将几何直觉
+
+555
+00:34:56,840 --> 00:35:01,840
+into results about algebraic objects.
+转化为关于代数对象的结果。
+
+556
+00:35:01,840 --> 00:35:03,840
+And that's, from my point of view,
+对我来说，
+
+557
+00:35:03,840 --> 00:35:06,840
+the main fun of doing mathematics.
+这就是做数学的主要乐趣。
+
+558
+00:35:06,840 --> 00:35:08,840
+Thank you.
+谢谢。
+
+559
+00:35:08,840 --> 00:35:17,840
+Applause
+鼓掌
